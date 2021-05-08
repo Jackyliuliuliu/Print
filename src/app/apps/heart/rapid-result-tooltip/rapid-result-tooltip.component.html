@@ -1,0 +1,9 @@
+<div class="renderTemplate FlexRow">
+    <input style="max-width: 3.5rem; margin: 0px" [ngClass]="inputError ? 'red-border' : 'no-border'" nz-input placeholder="自定义" (ngModelChange)="onNumberChange($event)" [(ngModel)]="inputValue" #inputElement />
+    <a class="m5_l" onmouseover="this.style.color='#1890ff';" onmouseout="this.style.color='white';" (click)="addRotateNum()" style="color:whitesmoke">添加</a>
+    <img id="infoImage" src="../../../../assets/assets/images/info.svg" class="info-img" (mouseenter)="showOverTooltip()">
+    <div class="tag-transparent" id="tooltipFrame">
+        <em></em>
+        <span class="tooltip">请输入1-360的整数</span>
+    </div>
+</div>

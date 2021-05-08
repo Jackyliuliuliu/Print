@@ -1,0 +1,35 @@
+<div class="FlexRow FullElement" unselectable="on" onselectstart="return false;">
+  <div class="FlexColumn " style="background-color:#555;flex:1;">
+    <StudyList #studyList class="FlexRow" [studyData]="studyDTO"></StudyList>
+    <ProgressControl #progress></ProgressControl>
+    <CommonTools #commonTools [appName]="commonToolAppName"></CommonTools>
+    <!-- <right-sidebar></right-sidebar> -->
+    <p style="margin-left: 15px;">
+      <!-- <button (click)="test_1()" style="margin-right:2px;  width:70px; ">测试按钮 </button>
+      <button (click)="send_s()"  style="margin-right:2px; width:70px;">重新加载 </button> -->
+      <button (click)="setlayout1()" style="margin-right:2px; width:70px;">布局2*2 </button>
+      <button (click)="setlayout2()" style="margin-right:2px; width:70px;">布局1*3 </button>
+      <button (click)="setlayout3()" style="margin-right:2px;margin-top: 2px; width:70px;">布局1+3 </button>
+      <button (click)="setlayout4()" style="margin-right:2px;margin-top: 2px; width:70px;">复杂布局 </button>
+      <button (click)="setlayout5()" style="margin-right:2px; margin-top: 2px;width:70px;">序列布局</button>
+      <button (click)="resetlayout()" style="margin-right:2px; margin-top: 2px;width:70px;">重新布局 </button>
+      <button (click)="saveImage()" style="margin-right:2px; margin-top: 2px;width:70px;">快速保存</button>
+      <button (click)="autoRotate()" style="margin-right:2px; margin-top: 2px;width:70px;">自动旋转</button>
+      <button (click)="sendToVRFilming()"
+        style="margin-right:2px; margin-top: 2px;width:70px;">发送VR或选中Cell到Filming</button>
+      <button (click)="callFilmingFE()" style="margin-right:2px; margin-top: 2px;width:70px;">给FilmingFE发命令测试</button>
+      <!-- <button (click)="test()" style="margin-right:2px; margin-top: 2px;width:70px;">test</button> -->
+    </p>
+  </div>
+  <div class="FullElement ViewerContainer FlexRow" #viewerControl style="flex:4;background-color:black;">
+  </div>
+  <!-- <nz-modal nzWrapClassName="vertical-center-modal" [(nzVisible)]="isFilmingWindowVisible"
+    nzTitle="Vertically centered modal dialog" (nzOnCancel)="handleCancelMiddle()" (nzOnOk)="handleOkMiddle()">
+    
+  </nz-modal> -->
+  <div style="position: absolute;" [ngClass]="isFilmingWindowVisible ? 'filmingShow' : 'filmingHide'">
+    <app-dynamic-component-host #filmingHost></app-dynamic-component-host>
+  </div>
+
+</div>
+<!-- <app-filming-review #farea></app-filming-review>> -->

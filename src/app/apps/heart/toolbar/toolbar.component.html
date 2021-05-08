@@ -1,0 +1,218 @@
+<div class="toolbar-region">
+    <button id="current_operation_btn_hide" ondragstart="return false" [class.disable]="isEditorMode" class="butt m15_l" (click)='toggleStudyList()' [class.selected]="isHiddenStudyList">
+        <img id="current_operation_btn_hide_img" src="assets/images/icon_light_PAlist.svg" title='显示/隐藏' name='study-list' class='butt-img'>
+    </button>
+    <splitter></splitter>
+    <button class="butt m5_r" title="选择" ondragstart="return false" name="pointer" (click)="pointer()" [class.selected]="selectedBtn=='pointer'">
+        <img src="assets/images/icon_light_check.svg" class="butt-img">
+    </button>
+    
+    <button  class="butt" title="缩放" ondragstart="return false" name="zoom" (click)="zoom()" [class.selected]="selectedBtn=='zoom'">
+        <img  src="assets/images/icon_light_zoom_1.svg" class="butt-img">
+    </button>
+    <button class="butt" title="平移" ondragstart="return false" name="pan" (click)="pan()" [class.selected]="selectedBtn=='pan'">
+        <img src="assets/images/icon_light_move.svg" class="butt-img">
+    </button>
+    <!--
+    <button id="current_operation_btn" class="butt UIH_ComboBox m5_r" type='button' (click)="showOrHideMenu($event)" title="选择" name="pointer" 
+    [class.selected]="selectedBtn=='pointer' || selectedBtn=='zoom' || selectedBtn=='pan'">
+        <img id="current_operation_btn_img" src="assets/images/icon_light_check.svg" class="butt-img">
+        <span id="current_operation_btn_arrow" class="arrow" title="展开/收起"></span>
+        <div id="current_operation_btn_menu" class="menuButtonDiv Down close">
+            <button id="current_operation_btn_pointer" class="butt item" title="选择" name="pointer" (click)="pointer()" [class.downselected]="selectedBtn=='pointer'">
+                <img id="current_operation_btn_pointer_img" src="assets/images/icon_light_check.svg" class="butt-img">
+            </button>
+            <button id="current_operation_btn_zoom" class="butt item" title="缩放" name="zoom" (click)="zoom()" [class.downselected]="selectedBtn=='zoom'">
+                <img id="current_operation_btn_zoom_img" src="assets/images/icon_light_zoom_1.svg" class="butt-img">
+            </button>
+            <button id="current_operation_btn_pan" class="butt item" title="平移" name="pan" (click)="pan()" [class.downselected]="selectedBtn=='pan'">
+                <img id="current_operation_btn_pan_img" src="assets/images/icon_light_move.svg" class="butt-img">
+            </button>
+        </div>
+    </button>
+    -->
+    <!-- <button class="btn" title="正负片切换" name="正负片切换" >
+            <img src="assets/images/butt-inverse.svg">
+        </button> -->
+    <button class="butt m5_r" ondragstart="return false" (click)="resetWindowing()" title="恢复窗宽窗位" name="reset">
+        <img src="assets/images/icon_light_windowing_re.svg" class="butt-img">
+    </button>
+    <button id="current_wwwl_btn" class="butt UIH_ComboBox" ondragstart="return false" type='button' (click)="showOrHideMenu($event)" title="切换窗" name="pointer">
+        <img id="current_wwwl_btn_img" src="assets/images/icon_light_windowing_pre.svg" class="butt-img">
+        <span id="current_wwwl_btn_arrow" class="arrow" title="展开/收起"></span>
+        <div id="current_wwwl_btn_menu" class="menuButtonDiv Down close ">
+            <button [id]="'current_wwwl_btn_' + item.name" (click)="updateWLWW(item.name, item.windowLevel, item.windowWidth)" 
+            *ngFor="let item of windowLevelWidthList" class="butt" [title]="item.name">
+                <!-- <img [src]="item.src" [class.downselected]="currentWwwlName==item.name"/> -->
+                <button class="butt text-left item drop-item" [class.downselected]="currentWwwlName==item.name">{{item.name}}</button>
+            </button>
+        </div>
+    </button>
+    <button class="butt" ondragstart="return false" (click)="fitWindowing()" title="适应窗口显示" name="fit-window">
+        <img src="assets/images/icon_light_reset.svg" class="butt-img">
+    </button>
+    <splitter></splitter>
+    <button [class.disable]="isEditorMode" class="butt" ondragstart="return false" (click)="drawline()" title="长度测量" name="measure-line" [class.selected]="selectedBtn=='annotationLine'">
+        <img src="assets/images/icon_light_length.svg" class="butt-img">
+    </button>
+    <!-- <button class="butt" (click)="drawArea()" title="测量面积" name="measure-area">
+            <img src="assets/images/icon_light_M2.svg" class="butt-img" [class.selected]="selectedBtn=='regionRectangle'">
+        </button> -->
+    <splitter></splitter>
+
+    <!-- <button class="butt" (click)="showPrompt()" title="添加血管" name="add-stenosis">
+            <img src="assets/images/icon_light_xueguan.svg" class="butt-img">
+        </button>
+        <button class="butt" (click)="showPrompt()" title="修改中心线" name="add-stenosis">
+            <img src="assets/images/icon_light_editcenterline.svg" class="butt-img">
+        </button> -->
+    <button class="butt" ondragstart="return false" (click)='startEdit()' title='编辑' name='editor'>
+        <img src="assets/images/icon_light_edit.svg" class="butt-img">
+    </button>
+    <button [class.disable]="isEditorMode" class="butt m5_r" ondragstart="return false" (click)="addSenosis()" title="标记狭窄" name="add-stenosis">
+        <img src="assets/images/icon_light_stenosis.svg" class="butt-img">
+    </button>
+    <button [class.disable]="isEditorMode" class="butt" ondragstart="return false" (click)="addStent()" title="标记支架/心肌桥" name="add-stent">
+        <img src="assets/images/icon_light_biaojizhijia.svg" class="butt-img">
+    </button>
+    <button [class.disable]="isEditorMode" class="butt" (click)="showResetDialog()" title="重置AI结果" name="reset-algorithm">
+        <img [src]="airesetSrc" class="butt-img">
+    </button>
+
+    <splitter></splitter>
+
+    <button [class.disable]="isEditorMode" class="butt m5_r" ondragstart="return false" (click)="saveImage()" title="保存当前影像" name="send-PACS">
+        <img src="assets/images/icon_light_fasongdaojiaopian.svg" class="butt-img">
+    </button>
+    <button [class.disable]="isEditorMode" class="butt" ondragstart="return false" (click)="printPreview()" title="打印预览" name="send-PACS">
+        <img src="assets/images/icon_light_print.svg" class="butt-img">
+    </button>
+<!--
+    <button [disabled]="isEditorMode" class="butt" (click)="autoRotate()" title="VR自动旋转" name="auto-Rotate" *ngIf="isAutoRotateVREnable">
+        <img src="assets/images/icon_light_fasongdaoPACS.svg" class="butt-img">
+    </button>
+-->
+    <splitter></splitter>
+    <button [class.disable]="isEditorMode"  class="butt m5_r" ondragstart="return false" (click)='showUsage()' title='使用说明' name='usage'>
+        <img src="assets/images/icon_light_help.svg" class="butt-img">
+    </button>
+    <!--
+    <button [class.disable]="isEditorMode" class="butt" (click)='showExitDialog()' title='退出' name='exit'>
+        <img src="assets/images/icon_light_exit.svg" class="butt-img">
+    </button>
+    -->
+    <!-- Logo region -->
+    <div class="logo" ondragstart="return false">
+        <div>
+            <div class="logo-img" (click)="showInfo()"></div>
+        </div>
+    </div>
+</div>
+
+<!-- reset dialog region -->
+<nz-modal [(nzVisible)]="showResetAiDialog" nzWrapClassName="vertical-center-modal" [nzContent]="resetContent" [nzTitle]="resetTitle" [nzFooter]="resetFooter" (nzOnCancel)="cancelResetAi()">
+    <ng-template #resetTitle>
+        重置
+    </ng-template>
+    <ng-template #resetContent>
+        <div class="modal-content-wrapper">
+            <img class="MarkIcon" ondragstart="return false" src="assets/images/question.mark.svg"/>
+            <p class="modal-content">
+                当前操作将会清除所有手动修改的记录，恢复到AI计算结果，是否确定执行？
+            </p>
+        </div>
+
+    </ng-template>
+    <ng-template #resetFooter>
+        <button class="modal-butt cancel" (click)="cancelResetAi()">取 消</button>
+        <button class="modal-butt confirm" (click)="doResetAi()">确 定</button>
+    </ng-template>>
+</nz-modal>
+<!-- reset dialog region end -->
+
+<!-- promptMessages region -->
+<nz-modal [(nzVisible)]="showMessages" [nzTitle]="modalTitle" [nzContent]="modalContent" [nzFooter]="modalFooter" (nzOnCancel)="closePrompt()" nzWrapClassName="vertical-center-modal">
+    <ng-template #modalTitle>
+        Message
+    </ng-template>
+    <ng-template #modalContent>
+        <div class="modal-content-wrapper">
+            <p class="modal-content">{{showContent}}</p>
+        </div>
+    </ng-template>
+    <ng-template #modalFooter>
+        <button nz-button nzType="primary" (click)="closePrompt()">OK</button>
+    </ng-template>
+</nz-modal>
+<!-- promptMessages region end -->
+
+<!-- exit dialog region -->
+<nz-modal [(nzVisible)]="showDialog" nzWrapClassName="vertical-center-modal" [nzTitle]="modalTitle" [nzContent]="exitContent" [nzFooter]="exitFooter" (nzOnCancel)="cancelExit()">
+    <ng-template #modalTitle>
+        退出
+    </ng-template>
+    <ng-template #exitContent>
+        <div class="modal-content-wrapper">
+            <img src="assets/images/question.mark.svg"/>
+            <p class="modal-content">
+                是否确认退出系统?
+            </p>
+        </div>
+    </ng-template>
+    <ng-template #exitFooter>
+        <button class="modal-butt cancel" (click)="cancelExit()">取 消</button>
+        <button class="modal-butt confirm" (click)="doExit()">确 定</button>
+    </ng-template>
+</nz-modal>
+<!-- exit dialog region end -->
+
+<!-- exit dialog region -->
+<nz-modal [(nzVisible)]="ShowStartEdit" nzWrapClassName="vertical-center-modal" [nzTitle]="startEditTitle" [nzContent]="startEditContent" [nzFooter]="startEditFooter" (nzOnCancel)="cancelStartEdit()">
+    <ng-template #startEditTitle>
+        是否开始编辑？
+    </ng-template>
+    <ng-template #startEditContent>
+        <div class="modal-content-wrapper">
+            <img src="assets/images/question.mark.svg"/>
+            <p class="modal-content">
+                进入编辑状态，如有手动添加的狭窄和心肌桥/支架，将被清空。
+            </p>
+        </div>
+    </ng-template>
+    <ng-template #startEditFooter>
+        <button class="modal-butt cancel" (click)="cancelStartEdit()">取 消</button>
+        <button class="modal-butt confirm" (click)="doStartEdit()">确 定</button>
+    </ng-template>
+</nz-modal>
+<!-- exit dialog region end -->
+
+
+<!-- software information region -->
+<nz-modal [(nzVisible)]="showInformation" [nzTitle]="infoTitle" [nzContent]="infoContent" [nzFooter]="infoFooter"
+(nzOnCancel)="closeInfo()" nzWrapClassName="vertical-center-modal">
+    <ng-template #infoTitle>
+        产品信息
+    </ng-template>
+
+    <ng-template #infoContent>
+        <!-- <p class="modal-content m10_b">产品名：冠脉CTA辅助分析软件</p>
+        <p class="modal-content m10_b">型号规格：uAI Discover-Coronary</p>
+        <p class="modal-content m10_b">版本号：R001</p>
+        <p class="modal-content m10_b">Copyright © 2019上海联影智能医疗科技有限公司 版权所有</p>
+        <p class="modal-content m10_b">本软件仅用于临床研究</p> -->
+        <div class="text-center">
+            <img class="about_logo" src="assets/images/ailogo.png"/>
+            <label class="block software">冠脉CTA辅助分析软件</label>
+            <span class="block version">版本号:R001</span>
+            <span class="block product">uAI-CoronaryCTA</span>
+            <p class="block footer">Copyright © 2019上海联影智能医疗科技有限公司 版权所有</p>
+        </div>
+    </ng-template>
+
+    <ng-template #infoFooter>
+        <!-- <button class="modal-butt confirm" (click)="closeInfo()">确定</button> -->
+    </ng-template>
+</nz-modal>
+<!-- software information region end -->
+
+<app-batch #batcharea></app-batch>

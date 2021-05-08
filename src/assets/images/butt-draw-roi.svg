@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon/tool/roi_drawing</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/tool/roi_drawing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-891" x="0" y="0" width="38" height="37.9408816"></rect>
+        <path d="M19,11 C25.627417,11 31,14.581722 31,19 C31,23.418278 25.627417,27 19,27 C12.372583,27 7,23.418278 7,19 C7,14.581722 12.372583,11 19,11 Z M19,12 C12.8596172,12 8,15.2397448 8,19 C8,22.7602552 12.8596172,26 19,26 C25.1403828,26 30,22.7602552 30,19 C30,15.2397448 25.1403828,12 19,12 Z" id="椭圆形" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <path d="M21,25 L21,29 L17,29 L17,25 L21,25 Z M9,18 L9,22 L5,22 L5,18 L9,18 Z M33,17 L33,21 L29,21 L29,17 L33,17 Z M21,9 L21,13 L17,13 L17,9 L21,9 Z" id="形状结合" fill="#82B1FF"></path>
+    </g>
+</svg>

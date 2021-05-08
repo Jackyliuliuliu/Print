@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.探针测距</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.探针测距">
+            <g>
+                <g id="icon.eraser">
+                    <rect id="bg" x="0" y="0" width="38" height="38"></rect>
+                    <path d="M28.0985144,11.8637729 C27.9731194,11.6023039 27.9028838,11.3093542 27.9028838,11 C27.9028838,9.8954305 28.7983143,9 29.9028838,9 C31.0074533,9 31.9028838,9.8954305 31.9028838,11 C31.9028838,12.1045695 31.0074533,13 29.9028838,13 C29.6331098,13 29.3758111,12.9465871 29.140986,12.8497598 L21.9220164,20.0379542 L21,19.0227741 L28.0985144,11.8637729 Z M29.9028838,12 C30.4551685,12 30.9028838,11.5522847 30.9028838,11 C30.9028838,10.4477153 30.4551685,10 29.9028838,10 C29.350599,10 28.9028838,10.4477153 28.9028838,11 C28.9028838,11.5522847 29.350599,12 29.9028838,12 Z" id="Combined-Shape" fill="#62A5BE"></path>
+                </g>
+                <polygon id="Triangle" stroke="#EEEEEE" fill="#EEEEEE" transform="translate(14.071068, 16.071068) scale(-1, 1) rotate(45.000000) translate(-14.071068, -16.071068) " points="14.0710678 10.0710678 18.0710678 22.0710678 10.0710678 22.0710678"></polygon>
+                <path d="M16.5,18.5 L25.5,27.5" id="Line-3" stroke="#EEEEEE" fill="#EEEEEE" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

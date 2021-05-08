@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icon/light/refresh_mini</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/light/refresh_mini" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-opacity="0" fill="#BCE6FF" x="0" y="0" width="24" height="24"></rect>
+        <path d="M11,5 C14.6009634,5 17.5668617,7.71903733 17.9565875,11.2160047 L19.6749942,8.85114101 L20.4840112,9.43892626 L18.1328702,12.6749942 L17.545085,13.4840112 L13.5,10.545085 L14.0877853,9.73606798 L16.997,11.849 L16.9958615,11.7750617 C16.8775718,8.56557489 14.2383969,6 11,6 C7.6862915,6 5,8.6862915 5,12 C5,15.3137085 7.6862915,18 11,18 C12.6729134,18 14.2347512,17.3125613 15.3614205,16.120462 L16.0881908,16.8073425 C14.7745335,18.1972889 12.9508007,19 11,19 C7.13400675,19 4,15.8659932 4,12 C4,8.13400675 7.13400675,5 11,5 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+    </g>
+</svg>

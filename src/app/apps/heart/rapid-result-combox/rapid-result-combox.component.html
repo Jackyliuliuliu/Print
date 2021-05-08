@@ -1,0 +1,31 @@
+<div class="container">
+    <div>
+        <nz-select [(ngModel)]="lrMode" [nzSuffixIcon]="suffixIcon_triangle" style="width:63px" nzSize='small'>
+            <nz-option nzValue="LAO" nzLabel="LAO"></nz-option>
+            <nz-option nzValue="RAO" nzLabel="RAO"></nz-option>
+        </nz-select>
+        <!-- <input class="annual-range-year" style="text-align:center;" type="text" id="canvasInput" autocomplete="off" onchange="changeRadio()" /> -->
+        <input #inputElementLr class="number-input" [ngClass]="lrError ? 'red-border' : 'no-border'" style="max-width: 40px" nz-input nzOverlayClassName="numeric-input" [(ngModel)]="lrValue" placeholder="度" (ngModelChange)="onNumberChange($event, 'lr')" />
+        <nz-select [(ngModel)]="auMode" [nzSuffixIcon]="suffixIcon_triangle" style="width:63px; " nzSize='small'>
+            <nz-option nzValue="CAU" nzLabel="CAU"></nz-option>
+            <nz-option nzValue="CRA" nzLabel="CRA"></nz-option>
+        </nz-select>
+        <input #inputElementAu class="number-input " [ngClass]="auError ? 'red-border' : 'no-border'" style="max-width: 40px " nz-input nzOverlayClassName="numeric-input " [(ngModel)]="auValue " placeholder="度" (ngModelChange)="onNumberChange($event,'au')" />
+        <a class="m5_l" [type]="type" onmouseover="this.style.color='#1890ff';" onmouseout="this.style.color='white';" (click)="addItem()" style="color:whitesmoke">添加</a>
+        <img src="../../../../assets/assets/images/info.svg" class="info-img" (mouseenter)="showOverTooltip()">
+        <div class="tag-transparent" id="tooltipFrame">
+            <em></em>
+            <span class="tooltip">请输入1-360的整数</span>
+        </div>
+        <ng-template #suffixIcon_triangle let-node>
+            <i class="ant-select-arrow-icon">
+        <svg width="8px" height="8px" viewBox="0 0 8 8">
+          <g id="dropdown_triangle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <polygon id="Rectangle" fill="#AAAAAA" points="8 1 4 7 0 1"></polygon>
+          </g>
+        </svg>
+      </i>
+        </ng-template>
+
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>butt-clut</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="64.9878293%" x2="100%" y2="64.9878263%" id="linearGradient-1">
+            <stop stop-color="#D02CA9" offset="0%"></stop>
+            <stop stop-color="#D21D00" offset="15.2996134%"></stop>
+            <stop stop-color="#CF9300" offset="32.5916436%"></stop>
+            <stop stop-color="#C2D200" offset="40.3469582%"></stop>
+            <stop stop-color="#00D200" offset="61.443299%"></stop>
+            <stop stop-color="#00CCCA" offset="82.7863653%"></stop>
+            <stop stop-color="#0328D8" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="7" y="7" width="24" height="24"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="butt-clut">
+            <g id="icon-._color">
+                <rect id="bg" fill-opacity="0.01" fill="#FFFFFF" x="0" y="0" width="38" height="38"></rect>
+                <g id="Rectangle-548">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" x="7.5" y="7.5" width="23" height="23"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

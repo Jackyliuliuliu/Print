@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icon/light/stenosis备份</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/light/stenosis备份" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-3" transform="translate(21.194172, 23.816491) rotate(80.000000) translate(-21.194172, -23.816491) translate(12.694172, 13.316491)">
+            <path d="M5.98136525,12.1872226 C7.74748768,15.0836206 10.4141544,17.1342653 13.9813652,18.3391568" id="路径" stroke="#007AFF" stroke-dasharray="2,1"></path>
+            <path d="M2.52502272,3 C3.47660418,7.48824196 4.62871835,10.5506495 5.98136525,12.1872226" id="路径" stroke="#FFFFFF"></path>
+            <circle id="椭圆形" fill="#FFFFFF" cx="2" cy="2" r="2"></circle>
+            <circle id="椭圆形备份" fill="#FFFFFF" cx="6" cy="12" r="2"></circle>
+            <circle id="椭圆形备份-2" fill="#007AFF" cx="15" cy="19" r="2"></circle>
+        </g>
+        <path d="M29.6941718,22.3164909 L29.6941718,27.3164909 L34.6941718,27.3164909 L34.6941718,28.3164909 L29.6941718,28.3164909 L29.6941718,33.3164909 L28.6941718,33.3164909 L28.6941718,28.3164909 L23.6941718,28.3164909 L23.6941718,27.3164909 L28.6941718,27.3164909 L28.6941718,22.3164909 L29.6941718,22.3164909 Z" id="形状结合" fill="#FFFFFF"></path>
+    </g>
+</svg>

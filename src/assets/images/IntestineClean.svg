@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.colon.电子清肠</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.colon.电子清肠">
+            <g id="Rectangle4-Copy-2" transform="translate(5.000000, 10.000000)">
+                <path d="M4.36228542,6.62989699 L4.65235485,6.56242701 L4.73117845,6.2752349 C5.49936978,3.47634591 8.0545232,1.5 11,1.5 C11.6247246,1.5 12.2371583,1.58799772 12.8246155,1.75944998 L13.0562259,1.82704658 L13.2532625,1.68780135 C14.3411086,0.919023394 15.6384463,0.5 17,0.5 C19.1693095,0.5 21.1571081,1.57002892 22.3624558,3.32540544 L22.4921618,3.51429929 L22.7199244,3.53937342 C25.9951999,3.89994476 28.5,6.67801477 28.5,10 C28.5,12.6298226 26.9239156,14.9693251 24.5457938,15.9826725 L24.4512066,16.0357667 C24.0305476,16.3361934 23.527661,16.5 22.9986131,16.5 L7.00138694,16.5 C6.82116215,16.5 6.64370348,16.480975 6.47088706,16.4436183 L6.28720452,16.4384586 C6.02863336,16.4793175 5.76571697,16.5 5.5,16.5 C2.73857625,16.5 0.5,14.2614237 0.5,11.5 C0.5,9.16288897 2.11671637,7.15221504 4.36228542,6.62989699 Z" id="Combined-Shape" stroke="#EFEFEF"></path>
+                <ellipse id="Oval" stroke="#62A5BE" cx="9.5" cy="10.5" rx="2.5" ry="2.5"></ellipse>
+                <circle id="Oval-Copy" stroke="#62A5BE" cx="20" cy="9" r="3"></circle>
+                <path d="M17.5,6.5 L15.5,5.5" id="Line" stroke="#62A5BE" stroke-linecap="square"></path>
+                <path d="M10.5,7.5 L11.5,5.5" id="Line" stroke="#62A5BE" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

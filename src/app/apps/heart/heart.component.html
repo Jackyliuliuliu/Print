@@ -1,0 +1,69 @@
+<div class="div-progress" [hidden]="canAllPageResponse">
+  <div class="progress" [hidden]="isHiddenProgress">
+    <p class="progress-p">正在加载图像......</p>
+    <div>
+      <nz-progress [nzPercent]="loadPercent"  [nzShowInfo]="false"></nz-progress>
+       <!-- <span class="m10_l">X</span> -->
+    </div>
+  </div>
+</div>
+
+<div class='layout-container' (click)="clickAppArea($event)">
+  <div class='layout-navi'>
+    <!-- tool bar region -->
+    <toolbar #toolbar (openFilming)="onOpenFilming()"></toolbar>
+    <!-- tool bar region end -->
+  </div>
+
+  <div class='layout-content layout-direction'>
+    <!-- medviewcontrol region -->
+    <div class='layout-image relative'>
+      <!-- study list -->
+      <!-- this div should float on the main container region -->
+      <div class="FlexRow study-list" [hidden]="isHiddenStudyList">
+          <StudyList #studyList class="FlexRow" [studyData]="studyTree"></StudyList>
+          <div class="mask" [hidden]="!isEditorMode"></div>
+      </div>
+
+      <div class="FlexRow editor" [hidden]="!isEditorMode">
+        <app-editor #editor></app-editor>
+      </div>
+
+      <div class="layout-content-main">
+        <!-- viewer container -->
+        <div class="FullElement FlexRow viewer-container" #viewerControl></div>
+
+        <!-- bottom toolbar -->
+        <div class="layout-bottom">
+          <app-toolbar-bottom #toolbarbottom></app-toolbar-bottom>
+        </div>
+      </div>
+
+    </div>
+    <!-- medviewcontrol region end -->
+
+    <!-- result region -->
+    <div class='layout-info'>
+      <div class='layout-info'>
+        <result-table #resultTable></result-table>
+      </div>
+
+      <div class="mask" [hidden]="!isEditorMode"></div>
+    </div>
+    <!-- result region end -->
+  </div>
+
+</div>
+
+<nz-modal [(nzVisible)]="showAiDialog" nzWrapClassName="vertical-center-modal" [nzContent]="showContent" [nzTitle]="showTitle" [nzFooter]="AIFooter" (nzOnCancel)="cancel()">
+  <ng-template #AIFooter>
+      <button class="modal-butt confirm" (click)="cancel()">确 定</button>
+  </ng-template>
+</nz-modal>
+
+<div #filmingDiv [ngClass]="isFilmingVisible ? 'filmingShow' : 'filmingHide'">
+  <a (click)="filmingWinclose()" class="close" *ngIf="isCloseShow">
+    <img style="width:12px;height:12px" src="../../../assets/assets/images/butt-close.svg">
+  </a>
+  <app-dynamic-component-host #filmingHost></app-dynamic-component-host>
+</div>

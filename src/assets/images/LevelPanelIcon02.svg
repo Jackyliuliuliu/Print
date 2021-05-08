@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon._rotate_2d</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon._rotate_2d" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="bg" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="38" height="38"></rect>
+            <path d="M26,23 L26,27.9971835 C26,30.207878 24.2060545,32 21.9934955,32 L17.0065045,32 C14.7937732,32 13,30.2020617 13,27.9971835 L13,19 L14,19 L14,27.9931517 C14,29.6640085 15.3457418,31 17.0057983,31 L21.9942017,31 C23.6511841,31 25,29.6537881 25,27.9931517 L25,23 L26,23 Z M26,19 L25,19 L25,11.0068483 C25,9.33599155 23.6542582,8 21.9942017,8 L17.0057983,8 C15.3488159,8 14,9.34621185 14,11.0068483 L14,15 L13,15 L13,11.0028165 C13,8.79212198 14.7939455,7 17.0065045,7 L21.9934955,7 C24.2062268,7 26,8.79793835 26,11.0028165 L26,19 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            <polygon id="Triangle-Copy" fill="#61A5BE" points="13.5 11 17 17 10 17"></polygon>
+            <polygon id="Triangle" fill="#61A5BE" points="25.5 22 29 28 22 28"></polygon>
+        </g>
+    </g>
+</svg>

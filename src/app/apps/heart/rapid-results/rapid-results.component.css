@@ -1,0 +1,501 @@
+.m8_t {
+    margin-top: 8px;
+}
+
+.m8_b {
+    margin-bottom: 8px;
+}
+
+:host {
+    background: #555;
+    overflow: hidden;
+    padding: 1.25rem;
+    display: block;
+}
+
+.ViewerContainer {
+    background-color: black;
+    height: 29.3125rem;
+}
+
+.ViewerContainer1 {
+    background-color: black;
+    width: 600px;
+    height: 600px;
+    flex: auto;
+}
+
+.info-content {
+    width: 23.125rem;
+    flex: auto;
+}
+
+.img-wrapper {
+    display: inline-block;
+    background: rgba(49, 50, 52, 0.65);
+    border: 0.0625rem solid #313234;
+    border-radius: 0.25rem;
+}
+
+.my-checkbox {
+    border-radius: 0;
+    color: #e6e6e6;
+    text-align: center;
+}
+
+.card-container .nz-select-24 ::ng-deep .ant-select-selection--single .ant-select-selection__rendered {
+    line-height: 1.5rem;
+}
+
+.card-container .nz-select-24 ::ng-deep .ant-select-selection {
+    height: 1.625rem;
+    background: rgba(11, 13, 18, 0.7);
+    border: 0.03125rem solid rgba(255, 255, 255, 0.35);
+}
+
+.card-container .nz-select-24 ::ng-deep .ant-select-selection:hover,
+.card-container .text-right ::ng-deep .ant-select-selection:hover {
+    border-right-width: 0.03125rem !important;
+}
+
+.card-container ::ng-deep .ant-select-open .ant-select-selection,
+.card-container ::ng-deep .ant-select-focused .ant-select-selection,
+.card-container ::ng-deep .ant-select-selection:active,
+.card-container ::ng-deep .ant-select-selection:focus {
+    border-right-width: 0.03125rem !important;
+}
+
+.card-container .text-right ::ng-deep .ant-select-selection--single .ant-select-selection__rendered {
+    line-height: 2rem;
+}
+
+.card-container .text-right ::ng-deep .ant-select-selection {
+    height: 2rem;
+    background: rgba(11, 13, 18, 0.7);
+    border: 0.03125rem solid rgba(255, 255, 255, 0.35);
+}
+
+.card-container ::ng-deep .ant-input {
+    height: 2.25rem;
+    line-height: 2.25rem;
+    text-align: left;
+    padding-left: 0.625rem;
+}
+
+.card-container ::ng-deep .ant-tabs-card .ant-tabs-content {
+    height: 12.5rem;
+    margin-top: -1rem;
+    /* margin-left: 15px; */
+}
+
+.card-container ::ng-deep .ant-tabs-card .ant-tabs-content .ant-tabs-tabpane {
+    background: #313234;
+    padding: 0.5rem 0px 0.5rem 0px;
+}
+
+.card-container ::ng-deep .ant-tabs-card .ant-tabs-bar {
+    border-color: #313234;
+}
+
+.card-container ::ng-deep .ant-tabs-card .ant-tabs-bar .ant-tabs-tab {
+    border-color: #2f3135;
+    background: #2f3135;
+}
+
+.card-container ::ng-deep .ant-tabs-card .ant-tabs-bar .ant-tabs-tab-active {
+    border-color: #313234;
+    background: #313234;
+}
+
+::ng-deep .FlexRow {
+    border: transparent;
+}
+
+::ng-deep .FlexColumn {
+    margin-left: 0.9375rem;
+    border: transparent;
+}
+
+::ng-deep .ant-select {
+    vertical-align: middle;
+    width: 14rem;
+}
+
+.text-right ::ng-deep .ant-select {
+    vertical-align: middle;
+    width: 16.25rem;
+}
+
+
+/* ############ nz-select start ############# */
+
+::ng-deep .ant-checkbox-wrapper+.ant-checkbox-wrapper {
+    margin-left: 0;
+}
+
+::ng-deep .ant-checkbox-input:focus+.ant-checkbox-inner {
+    border-color: #484949;
+}
+
+::ng-deep .ant-checkbox-wrapper:hover .ant-checkbox-inner {
+    border-color: #484949;
+}
+
+::ng-deep .ant-checkbox:hover .ant-checkbox-inner {
+    border-color: #484949;
+}
+
+
+/* ############ nz-select start ############# */
+
+
+/* ############ nz-empty start ############# */
+
+::ng-deep .ant-empty-description {
+    line-height: 1.375rem;
+    color: white;
+}
+
+
+/* ############ nz-empty start ############# */
+
+::ng-deep .ant-btn {
+    vertical-align: middle;
+}
+
+::ng-deep .ant-tabs-nav-scroll {
+    background-color: #1c222e;
+}
+
+.container-tab {
+    height: 13.75rem;
+    background-color: #313234;
+}
+
+.container-bottom {
+    background-color: #212326;
+    position: fixed;
+    top: 28.125rem;
+}
+
+.btn-bottom {
+    position: relative;
+    height: 1.875rem;
+    width: 6.25rem;
+    left: 0;
+    background: #363D4D;
+    border: 0.03125rem solid rgba(255, 255, 255, 0.30);
+    border-radius: 0.125rem;
+    color: white;
+}
+
+.container-bottom ::ng-deep .ant-form-item {
+    margin: 0px 0px 1.25rem 0px;
+}
+
+::ng-deep .ant-form-item-label>label {
+    color: #ffffff;
+}
+
+::ng-deep .ant-form-item-label {
+    text-align: center;
+}
+
+
+/* ::ng-deep .ant-checkbox-wrapper {
+      margin-left: 16px;
+  } */
+
+::ng-deep .ant-form-item {
+    margin: 0.375rem 0px 0px 0px;
+}
+
+.del_btn {
+    position: absolute;
+    text-align: center;
+    bottom: 1.625rem;
+    right: 0.625rem;
+    /* background: rgba(49,50,52,0.65);
+      border: 1px solid #313234;
+      border-radius: 4px; */
+}
+
+.img {
+    background: rgba(49, 50, 52, 0.65);
+    border: 0.0625rem solid #313234;
+    border-radius: 0.25rem;
+}
+
+.field {
+    width: 22%;
+    display: inline-block;
+}
+
+.info-bg {
+    background: #141924;
+}
+
+.box-show {
+    box-shadow: inset 0 -0.0625rem 0 0 rgba(255, 255, 255, 0.10);
+}
+
+
+/* ############ nz-select start ############# */
+
+.nz-select-26 {
+    height: 1.625rem;
+    width: 9.375rem;
+    margin: 0.625rem 0;
+}
+
+.nz-select-30 {
+    height: 1.875rem;
+    width: 9.375rem;
+    margin: 0.625rem 0;
+}
+
+
+/* ############ nz-select end ############# */
+
+
+/* ############ nz-input start ############# */
+
+::ng-deep .ant-input:focus {
+    border-color: transparent;
+    border-right-width: 0px !important;
+    box-shadow: none;
+}
+
+::ng-deep .ant-input:hover {
+    border-color: transparent;
+    border-right-width: 0px !important;
+}
+
+
+/* ############ nz-input end ############# */
+
+
+/* ############ nz-button start ############# */
+
+::ng-deep .ant-btn.active {
+    color: transparent;
+}
+
+
+/* ############ nz-button end ############# */
+
+.infor-text {
+    font-size: 0.875rem;
+    color: #E6E6E6;
+    text-align: left;
+    line-height: 1.375rem;
+    float: left;
+}
+
+.info-height {
+    overflow-y: auto;
+    height: 21.25rem;
+}
+
+.nz-form-item {
+    box-shadow: 0px -0.0625rem 0px 0px #17191a inset;
+}
+
+.card-row {
+    margin: 0.625rem auto;
+}
+
+.customInput {
+    width: 16.25rem;
+    max-width: 100%;
+    background: rgba(11, 13, 18, 0.70);
+    border: 0 solid rgba(255, 255, 255, 0.35);
+    border-radius: 0.125rem;
+}
+
+.bottomLeftInfo {
+    position: absolute;
+    text-align: left;
+    bottom: 1.875rem;
+    left: 0.625rem;
+}
+
+.tag-btn {
+    height: 1.875rem;
+    width: 6.25rem;
+    background: #5C6166;
+    border: 2 solid rgba(255, 255, 255, 0.20);
+    border-radius: 0.3125rem;
+    color: white;
+    float: left
+}
+
+.modal-butt {
+    padding: 0 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.125rem;
+    font-size: 0.875rem;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 1.375rem;
+    cursor: pointer;
+}
+
+.modal-butt.confirm {
+    background: #337CFF;
+    border: 0 solid rgba(255, 255, 255, 0.30);
+}
+
+.modal-content-wrapper {
+    padding: 1.875rem;
+    background: #141924;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-content {
+    border-radius: 0.125rem;
+    font-size: 0.875rem;
+    color: #E6E6E6;
+    text-align: left;
+    line-height: 2;
+    margin-left: 1.25rem;
+    margin-top: 0.625rem;
+}
+
+nz-divider {
+    margin: 0 0;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0.5rem;
+}
+
+.customInput2 {
+    width: 12.5rem;
+    max-width: 75%;
+    background: rgba(11, 13, 18, 0.70);
+    border: 0 solid rgba(255, 255, 255, 0.35);
+    border-radius: 0.125rem;
+}
+
+.number-input {
+    width: 35px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #40C4FF;
+    color: #40C4FF;
+    font-size: 12px;
+    padding: 0 2px;
+    height: 20px !important;
+    border-radius: 0;
+}
+
+.add-item {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    display: block;
+}
+
+.div-progress-back {
+    margin-top: -4.375rem;
+    margin-left: -1.25rem;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+}
+
+.LeftModalContent {
+    width: 437px;
+}
+
+.LeftModalContent ::ng-deep .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+    padding: 0;
+    text-align: center;
+    width: 84px;
+}
+
+.LeftModalContent /deep/ .CellCanvas {
+    border-width: 0 !important
+}
+
+.info-block {
+    display: flex;
+}
+
+.info-block-style{
+   flex-direction: column;
+}
+
+.info-block-style .info-block-content{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .info-block-style .info-block-content .nz-tree-select-style{
+    width: auto;
+    flex: 2.5;
+ }
+
+ .info-block-style .info-block-content .nz-select-style{
+    width: auto;
+    flex: 1;
+    margin-right: 1rem;
+ }
+
+ .info-block-style .info-block-content > span{
+    margin-top: auto;
+    margin-bottom: auto;
+ }
+
+.renderTemplate {
+    display: flex;
+    padding: 4px;
+}
+
+.option-del {
+    right: 0px;
+    position: absolute;
+}
+
+
+/* .ant-select-dropdown>div{
+  box-shadow:  0 0 0 rgba(0,0,0,0.50), 0 0 0 0 rgba(0,0,0,0.50);
+  border: 0rem solid rgba(255,255,255,0.15);
+} */
+
+.del-hover:hover img {
+    margin-top: -23px;
+    display: block;
+}
+
+.del-hover img {
+    display: none;
+}
+
+.modal-butt {
+    padding: 0 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.125rem;
+    font-size: 0.875rem;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 1.375rem;
+    cursor: pointer;
+}
+
+.modal-butt.confirm {
+    background: #337CFF;
+    border: 0.03125rem solid rgba(255, 255, 255, 0.30);
+}
+
+.modal-butt.cancel {
+    background: #363D4D;
+    border: 0.03125rem solid rgba(255, 255, 255, 0.30);
+    border-radius: 0.125rem;
+}

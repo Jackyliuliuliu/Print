@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon ._tool ._angle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-._tool-._angle">
+            <g id="Group-33">
+                <rect id="Rectangle-891-Copy-8" x="0" y="0" width="38" height="37.9408816"></rect>
+                <g id="Group" transform="translate(6.000000, 5.970441)">
+                    <circle id="Oval" fill="#FFFFFF" cx="2" cy="22" r="2"></circle>
+                    <rect id="Rectangle" fill="#FFFFFF" x="2" y="21.5" width="24" height="1"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" transform="translate(8.064941, 11.322754) rotate(-60.000000) translate(-8.064941, -11.322754) " x="-3.93505859" y="10.8227539" width="24" height="1"></rect>
+                    <rect id="Rectangle-2" fill="#FFFFFF" x="4" y="20" width="1" height="1"></rect>
+                    <rect id="Rectangle-2-Copy" fill="#FFFFFF" x="6" y="19" width="1" height="1"></rect>
+                    <rect id="Rectangle-2-Copy-2" fill="#FFFFFF" x="8" y="18" width="1" height="1"></rect>
+                    <rect id="Rectangle-2-Copy-3" fill="#FFFFFF" x="10" y="17" width="1" height="1"></rect>
+                    <rect id="Rectangle-2-Copy-4" fill="#FFFFFF" x="12" y="16" width="1" height="1"></rect>
+                    <rect id="Rectangle-2-Copy-5" fill="#FFFFFF" x="14" y="15" width="1" height="1"></rect>
+                    <rect id="Rectangle-2-Copy-6" fill="#FFFFFF" x="16" y="14" width="1" height="1"></rect>
+                    <rect id="Rectangle-2-Copy-7" fill="#FFFFFF" x="22" y="11" width="1" height="1"></rect>
+                    <path d="M7,3.42179378 C15.5726737,5.25869417 22,12.8787558 22,22 C22,23.3721661 21.8545427,24.7103588 21.5782062,26 L20.5539672,26 C20.8458771,24.7135545 21,23.3747759 21,22 C21,13.4336504 15.0159548,6.2649495 7,4.44603285 L7,3.42179378 Z" id="Combined-Shape" fill="#62A5BE"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

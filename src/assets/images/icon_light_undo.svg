@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon/light/icon_light_unknown-3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/light/icon_light_unknown-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M23.5,15 C27.6421356,15 31,18.3578644 31,22.5 C31,26.6421356 27.6421356,30 23.5,30 L13,30 L13,15 L23.5,15 Z M13,29 L23.5,29 C27.0898509,29 30,26.0898509 30,22.5 C30,18.9881894 27.2150038,16.1268494 23.7331341,16.004103 L23.5,16 L13,16 L13,29 Z" id="矩形" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <polygon id="矩形" fill="#82B1FF" points="7 15.5 15 11 15 20"></polygon>
+    </g>
+</svg>

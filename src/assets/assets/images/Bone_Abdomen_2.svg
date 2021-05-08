@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="63px" height="45px" viewBox="0 0 63 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.vessel.layout.5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.vessel.layout.5">
+            <g id="Group-Copy-4">
+                <polygon id="Combined-Shape" fill="#EEEEEE" points="63 0 63 45 0 45 0 0"></polygon>
+                <polygon id="Path" fill="#61A5BE" points="2 2 61 2 61 43 2 43"></polygon>
+                <text id="VR" font-family="ArialMT, Arial" font-size="10" font-weight="normal" letter-spacing="-0.636363626" fill="#EEEEEE">
+                    <tspan x="5.69056284" y="26">VR</tspan>
+                </text>
+                <text id="MIP" font-family="ArialMT, Arial" font-size="10" font-weight="normal" letter-spacing="-0.636363626" fill="#EEEEEE">
+                    <tspan x="25.0653853" y="26">MIP</tspan>
+                </text>
+                <text id="A" font-family="ArialMT, Arial" font-size="10" font-weight="normal" letter-spacing="-0.636363626" fill="#EEEEEE">
+                    <tspan x="49.4832209" y="12">A</tspan>
+                </text>
+                <text id="C" font-family="ArialMT, Arial" font-size="10" font-weight="normal" letter-spacing="-0.636363626" fill="#EEEEEE">
+                    <tspan x="49.207342" y="26">C</tspan>
+                </text>
+                <text id="S" font-family="ArialMT, Arial" font-size="10" font-weight="normal" letter-spacing="-0.636363626" fill="#EEEEEE">
+                    <tspan x="49.4832209" y="40">S</tspan>
+                </text>
+                <rect id="Rectangle-1853" fill="#EEEEEE" x="43.6113281" y="29" width="18.6884766" height="1"></rect>
+                <rect id="Rectangle-1853" fill="#EEEEEE" x="43.6113281" y="15" width="18.6884766" height="1"></rect>
+                <polygon id="Rectangle-1853" fill="#EEEEEE" points="44 1 44 44 43 44 43 1"></polygon>
+                <polygon id="Rectangle-1853" fill="#EEEEEE" points="23 1 23 44 22 44 22 1"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

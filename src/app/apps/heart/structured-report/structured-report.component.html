@@ -1,0 +1,22 @@
+<nz-modal appMovableModalDirective [(nzVisible)]="isShowStructuredReport" [nzWidth]='dialogWidth'
+    [nzBodyStyle]='{"height": dialogHeight - 2 + "px", "padding": "0"}' [nzStyle]="{ top: '0px' }"
+    [nzContent]="reportContent" (nzOnCancel)="closeStructuredReport()" [nzFooter]='null'>
+    <ng-template #reportContent>
+        <div class="page" id="page2pdf"
+            style='margin: auto; width: 754px; overflow: auto; padding: 40px;'
+            [ngStyle]="{'height': dialogHeight - 2 + 'px'}">
+            <app-sr-header></app-sr-header>
+            <app-sr-basic-info></app-sr-basic-info>
+            <div *ngIf='service.srM.commonM.totalPage==1'>
+                <app-sr-images></app-sr-images>
+                <app-sr-comments></app-sr-comments>
+            </div>
+            <div *ngIf='service.srM.commonM.totalPage==2'>
+                <app-sr-images [hidden]='service.srM.commonM.currentPage==2'></app-sr-images>
+                <app-sr-findings [hidden]='service.srM.commonM.currentPage==1'></app-sr-findings>
+                <app-sr-comments [hidden]='service.srM.commonM.currentPage==1'></app-sr-comments>
+            </div>
+            <app-sr-footer></app-sr-footer>
+        </div>
+    </ng-template>
+</nz-modal>

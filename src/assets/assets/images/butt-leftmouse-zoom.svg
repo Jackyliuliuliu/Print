@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon ._tool ._zoom_zone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-._tool-._zoom_zone">
+            <g>
+                <rect id="bg" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="38" height="38"></rect>
+                <g id="Group-3" transform="translate(4.500000, 6.500000)">
+                    <path d="M26.5,16.5 L26.5,1.5 L1.5,1.5 L1.5,21.5 L18.5,21.5 L18.5,22.5 L27.5,22.5 L27.5,16.5 L26.5,16.5 Z M0.5,0.5 L27.5,0.5 L27.5,22.5 L0.5,22.5 L0.5,0.5 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    <path d="M13.5,10.5 L13.5,8.5 L15.5,8.5 L15.5,10.5 L17.5,10.5 L17.5,12.5 L15.5,12.5 L15.5,14.5 L13.5,14.5 L13.5,12.5 L11.5,12.5 L11.5,10.5 L13.5,10.5 Z M20.5258638,16.7622011 L27.1697461,24.1409799 C27.5376624,24.5495923 27.5060616,25.1778417 27.0927726,25.5499688 C26.6823451,25.9195194 26.0519738,25.8885211 25.6834564,25.4792411 L19.0327483,18.0928814 C17.7443129,18.9803997 16.182836,19.5 14.5,19.5 C10.081722,19.5 6.5,15.918278 6.5,11.5 C6.5,7.081722 10.081722,3.5 14.5,3.5 C18.918278,3.5 22.5,7.081722 22.5,11.5 C22.5,13.5148018 21.7551815,15.355642 20.5258638,16.7622011 Z M14.5,18 C18.0898509,18 21,15.0898509 21,11.5 C21,7.91014913 18.0898509,5 14.5,5 C10.9101491,5 8,7.91014913 8,11.5 C8,15.0898509 10.9101491,18 14.5,18 Z" id="Combined-Shape" fill="#61A5BE"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

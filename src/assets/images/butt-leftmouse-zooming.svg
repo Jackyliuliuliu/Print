@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon/light/zoom_1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/light/zoom_1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-opacity="0" fill="#BCE6FF" x="0" y="0" width="48" height="48"></rect>
+        <path d="M22,14 C26.418278,14 30,17.581722 30,22 C30,24.0291601 29.2445279,25.8818702 27.9995083,27.2922058 L34.0710678,33.363961 L33.363961,34.0710678 L27.2922058,27.9995083 C25.8818702,29.2445279 24.0291601,30 22,30 C17.581722,30 14,26.418278 14,22 C14,17.581722 17.581722,14 22,14 Z M22,15 C18.1340068,15 15,18.1340068 15,22 C15,25.8659932 18.1340068,29 22,29 C25.8659932,29 29,25.8659932 29,22 C29,18.1340068 25.8659932,15 22,15 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        <path d="M25,25 L25,26 L19,26 L19,25 L25,25 Z M22.5,17.5 L22.5,20 L25,20 L25,21 L22.5,21 L22.5,23.5 L21.5,23.5 L21.5,21 L19,21 L19,20 L21.5,20 L21.5,17.5 L22.5,17.5 Z" id="形状结合" fill="#82B1FF"></path>
+    </g>
+</svg>

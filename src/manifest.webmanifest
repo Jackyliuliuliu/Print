@@ -1,0 +1,119 @@
+{
+  "name": "my-app-r",
+  "short_name": "my-app-r",
+  "theme_color": "#1976d2",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "assets/cursors/add_g_control_pt.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/arrow.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/drag_H.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/drag_V.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/drag_NE.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/drag_NW.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/leafing.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/move.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/no.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/pan.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/pan_mouse_down.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/pen.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/pixel_lens.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/rotate.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/rotate_3d.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/windowing.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/zoom.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/cursors/zoom_box.png",
+      "sizes": "32x32",
+      "type": "image/cur",
+      "purpose": "maskable any"
+    }
+  ]
+}

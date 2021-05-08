@@ -1,0 +1,55 @@
+<div class="container">
+    <div class='text'>
+        <nz-radio-group [(ngModel)]="radioValue" (ngModelChange)='getFooterInfo()' style="width: 100%;">
+            <label nz-radio nzValue=1 class="doctor-date">
+                <label>
+                    报告医师：
+                    <label *ngIf="radioValue == 1">
+                        {{doctorName}}
+                    </label>
+                </label>
+                <label>
+                    报告日期：
+                    <label *ngIf="radioValue == 1">
+                        {{date}}
+                    </label>
+                </label>
+            </label>
+
+            <label nz-radio nzValue=2 class="doctor-date">
+                <label>
+                    审核医师：
+                    <label *ngIf="radioValue == 2">
+                        {{doctorName}}
+                    </label>
+                </label>
+                <label>
+                    审核日期：
+                    <label *ngIf="radioValue == 2">
+                        {{date}}
+                    </label>
+                </label>
+            </label>
+        </nz-radio-group>
+    </div>
+
+    <div>
+        <span id='btn-group'>
+            <button class="text" (click)="saveReport()">保存报告</button>
+            <button class="text" (click)="printReport()">打印报告</button>
+            <button class="text" (click)="turnPage()" [hidden]='service.srM.commonM.totalPage==1'>
+                翻页{{service.srM.commonM.currentPage}}/{{service.srM.commonM.totalPage}}
+            </button>
+            <label id='page' style="color: black;" [hidden]='true'>
+                {{service.srM.commonM.currentPage}}/{{service.srM.commonM.totalPage}}
+            </label>
+        </span>
+        <label id='page' style="color: black;" [hidden]='true'>
+            {{service.srM.commonM.currentPage}}/{{service.srM.commonM.totalPage}}
+        </label>
+    </div>
+
+    <div class="text">
+        *本报告仅以此次影像为依据，供临床参考（免责声明内容以产品定义为准）
+    </div>
+</div>

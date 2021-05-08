@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="report-header">
+        <span class="report-result-header-text">影像所见</span>
+        <span *ngIf="isShowCopyAlert" class="copy-alert">(已复制)</span>
+        <div class="report-btn-group">
+            <div (click)='resetReportContent()' class="refresh-btn">
+                <img src="assets/images/icon_light_refresh_mini.svg" alt="刷新" class="refresh-img">
+            </div>
+            <button class="result-button" type="button" (click)="copyReportContent(null,content)">复制</button>
+            <!--这个版本隐藏
+            <button class="result-button" type="button" (click)="showStructedReport()">结构化报告</button>
+            -->
+        </div>
+    </div>
+    <div class="report-body">
+        <textarea class="text-area" id="report-content" [(ngModel)]="content" (blur)="lostFocus()"></textarea>
+    </div>
+</div>
+
+<app-structured-report #srarea></app-structured-report>

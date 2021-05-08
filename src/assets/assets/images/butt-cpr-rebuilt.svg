@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon ._tool ._batch_curve</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-._tool-._batch_curve">
+            <g>
+                <rect id="bg" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="38" height="38"></rect>
+                <path d="M25,25 C25,21.0049235 21,17.0024618 21,13 L21,9 L22,9 L22,13 C22,16.9959106 26,20.9918213 26,25 L26,29 L25,29 L25,25 Z M16,25 C16,21.0049235 12,17.0024618 12,13 L12,9 L13,9 L13,13 C13,16.9959106 17,20.9918213 17,25 L17,29 L16,29 L16,25 Z M13,25 C13,21.0049235 9,17.0024618 9,13 L9,9 L10,9 L10,13 C10,16.9959106 14,20.9918213 14,25 L14,29 L13,29 L13,25 Z M28,25 C28,21.0049235 24,17.0024618 24,13 L24,9 L25,9 L25,13 C25,16.9959106 29,20.9918213 29,25 L29,29 L28,29 L28,25 Z" id="curve_lines" fill="#FFFFFF"></path>
+                <path d="M19,25 C19,21.0049235 15,17.0024618 15,13 L15,9 L19,9 L19,13 C19,16.9959106 23,20.9918213 23,25 L23,29 L19,29 L19,25 Z" id="Rectangle-276" fill="#62A5BE"></path>
+            </g>
+        </g>
+    </g>
+</svg>

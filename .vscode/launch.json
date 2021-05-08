@@ -1,0 +1,33 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:4200",
+            "webRoot": "${workspaceFolder}",
+            "trace": true
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "CTCardiacAnalysis ",
+            "url": "http://localhost:4200/app/heart/WebHost/1.2.826.0.1.3680043.6.10382.2413.20150808084411.512.32/CTCardiacAnalysis@FE@5",
+            "webRoot": "${workspaceFolder}",
+            "trace": true
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "FilmingV2",
+            "url": "http://localhost:4200/app/FilmingV2/WebHost/1.2.826.0.1.3680043.6.10382.2413.20150808084411.512.32/FilmingV2@FE@11",
+            "webRoot": "${workspaceFolder}",
+            "trace": true
+        }
+
+    ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon/light/selected_mini</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/light/selected_mini" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-opacity="0" fill="#BCE6FF" x="0" y="0" width="24" height="24"></rect>
+        <path d="M8.07106781,6.07106781 L8.07106781,12.0700678 L18.0710678,12.0710678 L18.0710678,14.0710678 L8.07106781,14.0700678 L8.07106781,14.0710678 L6.07106781,14.0710678 L6.07106781,6.07106781 L8.07106781,6.07106781 Z" id="Combined-Shape" fill="#82B1FF" transform="translate(12.071068, 10.071068) rotate(-45.000000) translate(-12.071068, -10.071068) "></path>
+    </g>
+</svg>

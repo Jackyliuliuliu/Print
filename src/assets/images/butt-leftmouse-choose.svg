@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon/light/check@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/light/check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-opacity="0" fill="#BCE6FF" x="0" y="0" width="48" height="48"></rect>
+        <path d="M21.5501487,24.2419123 L25.4807314,32.671074 L27.6267119,31.6703868 L23.6971569,23.2434289 L27.2357567,23.3111735 L19.0338092,16.2164563 L19.2001993,27.1620197 L21.5501487,24.2419123 Z M21.3224717,26.1198589 L18.242423,29.9472063 L18,14 L29.981355,24.3639197 L25.2810678,24.2739353 L28.9556379,32.1540763 L24.9970419,34 L21.3224717,26.1198589 Z" id="Path" fill="#FFFFFF"></path>
+    </g>
+</svg>

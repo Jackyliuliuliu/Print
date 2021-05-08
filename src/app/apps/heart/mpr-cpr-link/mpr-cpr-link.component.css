@@ -1,0 +1,23 @@
+.highlight-text {
+    color: #e6e6e6;
+    font-family: MicrosoftYaHei;
+    font-size: 0.875rem;
+    text-align: left;
+    line-height: 1.375rem;
+  }
+
+  .checkbox {
+    box-shadow: none !important;
+    height: auto;
+    width: auto;
+    font-size: 0.75rem;
+    color: white;
+    position: absolute;
+    bottom: 1.875rem;
+    left: 0;
+    /* border: 0.0625rem solid #4a4a4a; */
+    border-radius: 0.125rem;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin: 0.125rem;
+    padding: 0.25rem;
+  }

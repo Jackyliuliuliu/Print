@@ -1,0 +1,109 @@
+<!--
+<button class="butt" title="撤销" name="undo" (click)="undo()">
+    <img src="assets/images/icon_light_undo.svg" class="butt-img">
+</button>
+
+<button class="butt" title="恢复" name="redo" (click)="redo()">
+    <img src="assets/images/icon_light_redo.svg" class="butt-img">
+</button>
+
+<button class="butt" title="裁剪" name="crop" (click)="crop()" [class.selected]="editType == 3">
+    <img src="assets/images/icon_light_scissors.svg" class="butt-img">
+</button>
+
+<button class="butt" title="生长" name="grow" (click)="grow()" [class.selected]="editType == 4">
+    <img src="assets/images/icon_light_grow.svg" class="butt-img">
+</button>
+</button>
+</button>
+<button class="butt" title="确认" name="confirm" (click)="confirm()">
+    <img src="assets/images/editCaliber.svg" class="butt-img">
+</button>
+<button class="butt" title="退出" name="exit" (click)="showExitEditor()">
+</button> -->
+
+<div class="FlexCol hFill">
+    <button class="butt mauto_l m10_r" title="退出" name="exit" (click)="showExitEditor()">
+        <img src="assets/images/close.svg" class="close-butt">
+    </button>
+    <div class="FlexRow m20_l m20_r">
+        <!-- <button class="butt m10_r" title="修改中心线名称" name="rename-centerline" (click)="renameCenterline()"
+            [class.selected]="editType == 5">
+            <img src="assets/images/editCaliber.svg" class="butt-img ">
+        </button> -->
+        <button class="butt editorButt m10_r" title="编辑中心线" name="edit-centerline" (click)="modifyCenterline()"
+            [class.selected]="editType == 6">
+            <img src="assets/images/icon_light_edit_centerline.svg" class="butt-img">
+        </button>
+        <!-- <splitter></splitter> -->
+        <button class="butt editorButt m10_r" title="添加为主血管" name="add-centerline" (click)="addCenterline()"
+            [class.selected]="editType == 6" ng-disabled = "iskeyCenterLine"
+            [ngStyle]="{background:iskeyCenterLine?'transparent':'',cursor:iskeyCenterLine?'default':'pointer'}">
+            <img [src]="iskeyCenterLine?'assets/images/light_add_disable.svg':'assets/images/light_add.svg'" class="butt-img">
+        </button>
+        <button class="butt editorButt" title="移除主血管" name="remove-centerline" (click)="removeCenterline()"
+            [class.selected]="editType == 6" ng-disabled = "!iskeyCenterLine"
+            [ngStyle]="{background:iskeyCenterLine?'':'transparent',cursor:iskeyCenterLine?'pointer':'default'}">
+            <img [src]="iskeyCenterLine?'assets/images/light_delete.svg':'assets/images/light_delete_disable.svg'" class="butt-img">
+        </button>
+        <span class="rename_label">命名</span>
+        <nz-select [(ngModel)]="selectedCenterLine" [nzSuffixIcon]="suffixIcon_triangle" (ngModelChange)="changeCenterline($event)" class="rename_select">
+            <div *ngFor="let item of allCenterLineList">
+                <nz-option nzValue="{{item.label}}" nzLabel="{{item.label}}"></nz-option>
+            </div>
+            <ng-template #suffixIcon_triangle let-node>
+                <i class="ant-select-arrow-icon">
+                    <svg width="8px" height="8px" viewBox="0 0 8 8">
+                        <g id="dropdown_triangle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <polygon id="Rectangle" fill="#AAAAAA" points="8 1 4 7 0 1"></polygon>
+                        </g>
+                    </svg>
+                </i>
+            </ng-template>
+        </nz-select>
+    </div>
+</div>
+
+<!-- confirm dialog region -->
+<nz-modal [(nzVisible)]="isShowConfirm" nzWrapClassName="vertical-center-modal" (nzOnCancel)="cancelConfirm()"
+    [nzContent]="confirmContent" [nzTitle]="confirmTitle" [nzFooter]="confirmFooter">
+    <ng-template #confirmTitle>
+        确 认
+    </ng-template>
+    <ng-template #confirmContent>
+        <div class="modal-content-wrapper">
+            <img src="assets/images/askdialog.png" />
+            <p class="modal-content">
+                {{exitPromptContent}}
+            </p>
+        </div>
+    </ng-template>
+    <ng-template #confirmFooter>
+        <button class="modal-butt confirm" (click)="doConfirm()" title={{saveTitle}}>保 存</button>
+        <button class="modal-butt cancel" (click)="cancelConfirm()" title={{cancelTitle}}>取 消</button>
+        <button class="modal-butt cancel" (click)="returnConfirm()" title={{returnTitle}}>退 出</button>
+    </ng-template>>
+</nz-modal>
+<!-- confirm dialog region end -->
+
+<!-- exitEditor dialog region -->
+<nz-modal [(nzVisible)]="isShowExitEditor" nzWrapClassName="vertical-center-modal" (nzOnCancel)="returnExitEditor()"
+    [nzContent]="exitEditorContent" [nzTitle]="exitEditorTitle" [nzFooter]="exitEditorFooter">
+    <ng-template #exitEditorTitle>
+        确 认
+    </ng-template>
+    <ng-template #exitEditorContent>
+        <div class="modal-content-wrapper">
+            <img src="assets/images/askdialog.png" />
+            <p class="modal-content">
+                是否退出编辑状态？
+            </p>
+        </div>
+    </ng-template>
+    <ng-template #exitEditorFooter>
+        <button class="modal-butt cancel" (click)="doExitEditor()" title="退出后不保存所有编辑结果，回到软件初始状态">保存并退出</button>
+        <button class="modal-butt cancel" (click)="cancelExitEditor()" title="退出后不保存所有编辑结果，回到软件初始状态">不保存并退出</button>
+        <button class="modal-butt cancel" (click)="returnExitEditor()" title="不退出，继续编辑">继续编辑</button>
+    </ng-template>>
+</nz-modal>
+<!-- exitEditor dialog region end -->

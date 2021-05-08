@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon._cutting_wire</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon._cutting_wire">
+            <g>
+                <rect id="bg" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="38" height="38"></rect>
+                <path d="M9,9 L29,9 L29,29 L9,29 L9,9 Z M10,10 L10,28 L28,28 L28,10 L10,10 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <path d="M14,21 L14,22 L16,20.5 L14,19 L14,20 L11,20 L11,21 L14,21 Z M19,24 L20,24 L18.5,22 L17,24 L18,24 L18,27 L19,27 L19,24 Z M17,11 L27,11 L27,21 L17,21 L17,11 Z M18,12 L18,20 L26,20 L26,12 L18,12 Z" id="Combined-Shape" fill="#62A5BE"></path>
+            </g>
+        </g>
+    </g>
+</svg>

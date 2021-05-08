@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon/tool/添加一页胶片</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/tool/添加一页胶片" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="bg" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="38" height="38"></rect>
+        <path d="M30,30 L30,7 L19,7 L19,6 L31,6 L31,31 L9,31 L9,19 L10,19 L10,30 L30,30 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        <path d="M12,5 L12,9 L16,9 L16,11 L11.999,11 L12,15 L10,15 L9.999,11 L6,11 L6,9 L10,9 L10,5 L12,5 Z" id="Combined-Shape" fill="#82B1FF"></path>
+    </g>
+</svg>

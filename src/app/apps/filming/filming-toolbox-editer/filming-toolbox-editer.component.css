@@ -1,0 +1,32 @@
+.disable
+{
+    opacity: 0.2;
+    pointer-events: none;
+}
+.toolBoxEditer>a {
+    margin-right:8px;
+    width:70px;
+}
+
+::ng-deep .ant-form-item-label>label{
+    color: white;    
+}
+
+/* 设置tooltip样式 */
+::ng-deep .ant-tooltip-arrow{
+    display: none;
+}
+
+::ng-deep .ant-tooltip-inner{
+    min-height: 24px;
+    border-radius: 2px;
+    background-color: #B6B9BF;
+    padding: 0px;
+    height: 24px;
+    vertical-align: middle;
+    color: #242526;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    padding: 1.5px 5px 0px 5px;
+}
+

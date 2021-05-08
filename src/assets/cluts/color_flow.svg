@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="20px" viewBox="0 0 80 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Flow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFDFB" offset="0%"></stop>
+            <stop stop-color="#FD7C25" offset="7.73925781%"></stop>
+            <stop stop-color="#F9111B" offset="18.0615234%"></stop>
+            <stop stop-color="#7D0308" offset="30.1293945%"></stop>
+            <stop stop-color="#040000" offset="45.6787109%"></stop>
+            <stop stop-color="#1C3EFB" offset="72.3901367%"></stop>
+            <stop stop-color="#31C5FD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.3d" transform="translate(-48.000000, -1214.000000)" fill="url(#linearGradient-1)">
+            <rect id="Flow" transform="translate(88.000000, 1224.000000) scale(-1, 1) translate(-88.000000, -1224.000000) " x="48" y="1214" width="80" height="20"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="20px" viewBox="0 0 80 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Perfusion</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#0E53E6" offset="14.2602539%"></stop>
+            <stop stop-color="#083CC1" offset="31.0803223%"></stop>
+            <stop stop-color="#060002" offset="54.8779297%"></stop>
+            <stop stop-color="#6E2B07" offset="73.1201172%"></stop>
+            <stop stop-color="#E1A126" offset="87.0690918%"></stop>
+            <stop stop-color="#FFFAAC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.3d" transform="translate(-285.000000, -1274.000000)" fill="url(#linearGradient-1)">
+            <rect id="Perfusion" transform="translate(325.000000, 1284.000000) scale(-1, 1) translate(-325.000000, -1284.000000) " x="285" y="1274" width="80" height="20"></rect>
+        </g>
+    </g>
+</svg>

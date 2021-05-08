@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon/tool/mirror_horizon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/tool/mirror_horizon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-891" x="0" y="0" width="38" height="37.9408816"></rect>
+        <g id="icon-._tool-._flip_horizontal" transform="translate(6.000000, 5.990666)">
+            <path d="M16,3.99377701 L27,21.9657736 L16,21.9657736 L16,3.99377701 Z M17,7.98755402 L17,20.9673293 L25,20.9673293 L17,7.98755402 Z" id="Path-70" fill="#82B1FF"></path>
+            <rect id="Rectangle-316" fill="#FFFFFF" x="13" y="23.9626621" width="1" height="2.99533276"></rect>
+            <rect id="Rectangle-316" fill="#FFFFFF" x="13" y="11.981331" width="1" height="2.99533276"></rect>
+            <polygon id="Path" fill="#FFFFFF" points="11 3.99377701 11 21.9657736 0 21.9657736"></polygon>
+            <rect id="Rectangle-315" fill="#FFFFFF" x="13" y="5.99066551" width="1" height="2.99533276"></rect>
+            <rect id="Rectangle-314" fill="#FFFFFF" x="13" y="0" width="1" height="2.99533276"></rect>
+            <rect id="Rectangle-316" fill="#FFFFFF" x="13" y="17.9719965" width="1" height="2.99533276"></rect>
+        </g>
+    </g>
+</svg>

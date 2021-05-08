@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig.xp.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/spec-xp",
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "files": [
+    "test.ts",
+    "polyfills.xp.ts"
+  ],
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}

@@ -1,0 +1,43 @@
+<div class="FlexRow FullElement" unselectable="on" onselectstart="return false;">
+  <div #controlPanelDiv class="FlexColumn " style="background-color:#555;flex:1;">
+    <StudyList #studyList class="FlexRow" [studyData]="studyDTO"></StudyList>
+    <ProgressControl #progress></ProgressControl>
+    <img #imgg width="100%" [src]="cellImage" *ngIf="cellImage != null && cellImage != undefined && cellImage != ''">
+    <div>
+      <button (click)="test_GetConvertResult()">TestConvertResult</button>
+    </div>
+    <div>
+      <input value="0" #inputImageIndex (keyup.enter)="onLoadImage(inputImageIndex.value)">
+      <input type="checkbox" id="checkboxImmediatelyShow" #checkboxImmediatelyShow (click)="onImmediatelyShowChanged()"
+        checked>
+      <label for="checkboxImmediatelyShow">IS</label>
+    </div>
+    <div>
+      <button (click)="clearCell('Review2d_LeftTop')">Clear LeftTop Cell</button>
+    </div>
+    <div>
+      <button (click)="Play()">Play 30fps</button>
+      <div>current slice index <div>{{currentPlayIndex}}</div>
+      </div>
+      <div>current frame rate
+        <input [(ngModel)]="currentFrameRate">
+      </div>
+      <div>totalSliceNum
+        <input [(ngModel)]="totalSliceNum">
+      </div>
+    </div>
+    <div>
+      <button (click)="Stop()">Stop</button>
+    </div>
+    <CommonTools #commonTools [appName]="commonToolAppName"></CommonTools>
+    <p style="margin-left: 15px;">
+      <!-- <button (click)="test_1()" style="margin-right:2px;  width:70px; ">测试按钮 </button>
+      <button (click)="send_s()"  style="margin-right:2px; width:70px;">重新加载 </button> -->
+      <button (click)="setlayout1()" style="margin-right:2px; width:70px;">布局1*1</button>
+      <button (click)="callFilmingFE()" style="margin-right:2px; margin-top: 2px;width:70px;">给FilmingFE发命令测试</button>
+    </p>
+  </div>
+
+  <div class="FullElement ViewerContainer FlexRow" #viewerControl style="flex:4;background-color:black;">
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Hue 2 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFAFB" offset="0%"></stop>
+            <stop stop-color="#F5CCFE" offset="23.2922363%"></stop>
+            <stop stop-color="#CFB8FD" offset="38.2055664%"></stop>
+            <stop stop-color="#A1B4FD" offset="46.09375%"></stop>
+            <stop stop-color="#8AE4FE" offset="57.8601074%"></stop>
+            <stop stop-color="#7AFD56" offset="68.182373%"></stop>
+            <stop stop-color="#F7FC46" offset="81.619873%"></stop>
+            <stop stop-color="#FECA3A" offset="90.5847168%"></stop>
+            <stop stop-color="#FC2C1E" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="41" y="1394" width="24" height="24"></rect>
+    </defs>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.3d" transform="translate(-41.000000, -1394.000000)">
+            <g id="Hue-2-Copy" transform="translate(53.000000, 1406.000000) scale(-1, 1) translate(-53.000000, -1406.000000) ">
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <rect stroke="#FFFFFF" stroke-width="1" x="41.5" y="1394.5" width="23" height="23"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

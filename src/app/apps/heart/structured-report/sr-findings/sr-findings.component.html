@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="region-title">
+        <div>病灶参数</div>
+    </div>
+    <nz-table #smallTable nzBordered nzSize="small" class="text" [nzData]="service.srM.lesionM.lesions"
+        [nzShowPagination]=false>
+        <thead>
+            <tr>
+                <th>分段</th>
+                <th>直径狭窄率</th>
+                <th>狭窄程度</th>
+                <th>狭窄长度</th>
+                <th>最小管腔直径</th>
+                <th>最小管腔面积</th>
+                <th>斑块类型</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let lesion of smallTable.data; let i=index">
+                <td>{{ lesion[0].extend0 ? lesion[0].extend0 : coronarySegment[lesion[0].findingType] }}</td>
+                <td>{{ lesion[0].range_in_millimeters }} %</td>
+                <td>{{ valCvt.stenosisLevelCvt(lesion[0].stenosisLevel) }}</td>
+                <td>{{ lesion[0].narrow_length }}</td>
+                <td>{{ lesion[1] }} mm</td>
+                <td>{{ lesion[2] }} mm²</td>
+                <td>{{ valCvt.plaqueTypeCvt(lesion[0].plaqueType) }}</td>
+            </tr>
+        </tbody>
+    </nz-table>
+</div>

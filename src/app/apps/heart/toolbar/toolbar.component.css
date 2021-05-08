@@ -1,0 +1,314 @@
+.toolbar-region {
+  position: relative;
+  width: 100%;
+  height: 3.75rem;
+  /* background: #333333; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #1F2430;
+  box-shadow: 0 0.125rem 0.625rem 0 rgba(0,0,0,0.50), inset 0 -0.0625rem 0 0 #17191A;
+}
+
+.toolbar-region>button+button {
+  margin-right: 0.3125rem;
+}
+
+::ng-deep .splitter {
+  background: #000000 !important;
+  box-shadow: -0.0625rem 0 0 0 rgba(255, 255, 255, 0.50);
+  margin: 0.9375rem 0.625rem !important;
+}
+
+.butt {
+  background: transparent;
+  border: none;
+  /* box-shadow: none !important; */
+  padding: 0px;
+  cursor: pointer;
+  color: white;
+}
+.butt:hover {
+  background: #000000;
+}
+
+.drop-item{
+  width: 4.375rem;
+}
+
+.butt-img{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+/* .butt-img:hover{
+  background: #242424;
+} */
+
+.version {
+  font-family: MicrosoftYaHei;
+  font-size: 0.875rem;
+  color: #999999;
+  text-align: center;
+  line-height: 1.375rem;
+  margin-top: 0.625rem;
+}
+
+.software {
+  font-family: MicrosoftYaHei;
+  font-size: 1.375rem;
+  color: #E6E6E6;
+  text-align: center;
+  line-height: 1.625rem;
+  margin-top: 1.875rem;
+}
+
+.product {
+  font-family: MicrosoftYaHei;
+  font-size: 0.875rem;
+  color: #999999;
+  text-align: center;
+  line-height: 1.375rem;
+  margin-top: 3.75rem;
+}
+
+.footer {
+  font-family: MicrosoftYaHei;
+  font-size: 0.75rem;
+  color: #6B6B6B;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+  text-align: center;
+  margin-top: 8.125rem;
+}
+
+.item:hover {
+  background: #242424;
+}
+.item{
+  padding: 0.3125rem 0.625rem;
+}
+
+.exit-butt {
+  margin-bottom: 0.625rem;
+}
+
+.selected {
+  background: #000000;
+  border: 1px solid #82B1FF;
+}
+
+.downselected {
+  background: #1A1A1A !important;
+}
+
+.logo {
+  color: #fff;
+  right: 0px;
+  position: absolute;
+  margin: 0 1.25rem;
+  display: flex;
+}
+
+.logo-img {
+  width: 9.25rem;
+  height: 2.5rem;
+  background: url(../../../../assets/images/icon_logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.logo-img:hover {
+  background: url(../../../../assets/images/icon_logo_blue.svg);
+}
+
+.UIH_ComboBox {
+  position: relative;
+  overflow: visible !important;
+  display: inline-block;
+}
+
+.UIH_ComboBox:hover {
+  z-index: 1000 !important;
+}
+
+.UIH_ComboBox button:disabled+.arrow,
+.UIH_ComboBox input:disabled+.arrow {
+  opacity: 0.5;
+}
+
+.UIH_ComboBox span.arrow {
+  position: absolute;
+  right: 0.125rem;
+  bottom: 0.125rem;
+  border-width: 0.15625rem;
+  border-style: solid;
+  border-color: transparent rgba(255, 255, 255) rgba(255, 255, 255) transparent;
+}
+
+
+.UIH_ComboBox:hover>input,
+.UIH_ComboBox:hover>button {
+  background-color: #333;
+}
+
+.UIH_ComboBox>div {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  overflow-x: hidden;
+  max-height: 12.5rem;
+  z-index: 999;
+  /* box-shadow: 0 0 9px #000000; */
+  flex-flow: column nowrap;
+  /* border-radius: 4px; */
+  /* padding: 4px 0;
+    border: 1px solid #222; */
+  border-radius: 0.125rem;
+  box-shadow: 0 0.625rem 1.25rem 0 rgba(0, 0, 0, 0.50), 0 0.3125rem 0.625rem 0 rgba(0, 0, 0, 0.50);
+}
+
+.UIH_ComboBox>div>button {
+  /* border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    background: none transparent; */
+  display: block;
+}
+
+.UIH_ComboBox>div>button,
+.UIH_ComboBox>div>input {
+  /* border: 1px solid transparent; */
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  /* background: none transparent; */
+  clear: both;
+  float: left;
+}
+
+.UIH_ComboBox>div.open {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  background: #363D4D;
+  border: 0.0625rem solid rgba(255,255,255,0.15);
+  box-shadow: 0 0.625rem 1.25rem 0 rgba(0,0,0,0.50), 0 0.3125rem 0.625rem 0 rgba(0,0,0,0.50);
+  border-radius: 0.125rem;
+}
+
+.UIH_ComboBox>div.open li:hover {
+  background: #363D4D;
+}
+
+.dropdown-menu>li button,
+.dropdown-menu>li input {
+  border: 0;
+  background-color: transparent !important;
+}
+
+.dropdown-menu>li.open li {
+  margin: 0;
+}
+
+.close {
+  display: none;
+  visibility: hidden;
+}
+
+/* .open {
+    display: block;
+    visibility: visible;
+    z-index: 999;
+} */
+
+.Down {
+  top: 100% !important;
+}
+
+.Menu {
+  background-color: #464444;
+  border-right: none;
+}
+.disable
+{
+    opacity: 0.2;
+    pointer-events: none;
+}
+.MenuItem {
+  /* color: #E6E6E6 !important; */
+  /* padding: 5px 8px 5px 8px; */
+  /* line-height: 30px;
+    width: 54px; */
+}
+
+.MenuItem:hover {
+  /* background-color: black; */
+}
+
+.modal-butt {
+  padding: 0 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.125rem;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.375rem;
+  cursor: pointer;
+}
+
+.modal-butt.confirm {
+  background: #337CFF;
+  border: 0.03125rem solid rgba(255, 255, 255, 0.30);
+}
+
+.modal-butt.cancel {
+  background: #363D4D;
+  border: 0.03125rem solid rgba(255,255,255,0.30);
+  border-radius: 0.125rem;
+}
+
+.modal-content-wrapper {
+  padding: 1.25rem;
+  background: #141924;
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-content {
+  border-radius: 0.125rem;
+  font-size: 0.875rem;
+  color: #E6E6E6;
+  text-align: left;
+  line-height: 2;
+  margin: 0;
+  margin-left: 1.25rem;
+}
+
+.MarkIcon {
+  width: 2.625rem;
+  height: 2.625rem;
+  display: flex;
+  align-self: center;
+}
+
+.about_logo {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-top: 3.125rem;
+}
+
+.img-text-group {
+  height: 100%
+}
+
+.img-text-group-left {
+  width: 50%;
+  height: 100%;
+  float: left
+}
+
+.img-text-group-right {
+  height: 100%;
+  margin-left: 50%
+}

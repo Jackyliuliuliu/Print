@@ -1,0 +1,17 @@
+.container {
+  margin-top: 10px;
+}
+.text {
+  background: white;
+  color: black;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+}
+
+.doctor-date {
+  width: 50%;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* height: 200px */
+}

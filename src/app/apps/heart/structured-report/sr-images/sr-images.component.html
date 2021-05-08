@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="region-title">
+        <div>影像所见</div>
+    </div>
+    <div class="body">
+        <div>
+            <div class="img-text img-div">
+                <img src="assets/images/11.png" class="img" alt="心脏图">
+                <div class="text1">
+                    <div>左主干起源</div>
+                    <div>{{ valCvt.coronaryOstiumCvt(service.srM.imagesM.coronaryFeatureItem.left_coronary_ostium) }}
+                    </div>
+                    <div>右冠状动脉起源</div>
+                    <div>{{ valCvt.coronaryOstiumCvt(service.srM.imagesM.coronaryFeatureItem.right_coronary_ostium) }}
+                    </div>
+                    <div>冠脉优势型</div>
+                    <div>{{ valCvt.coronaryDominanceCvt(service.srM.imagesM.coronaryFeatureItem.coronary_dominance) }}
+                    </div>
+                </div>
+            </div>
+            <div class="img-text img-div">
+                <img src="assets/images/22.png" class="img" alt="冠脉图">
+                <div class="text1">
+                    <div>冠脉狭窄与斑块</div>
+                    <div
+                        *ngIf="service.srM.lesionM.findings!=undefined && service.srM.lesionM.findings!=null && service.srM.lesionM.findings.length>0; else elseBlock">
+                        <div *ngFor="let finding of service.srM.lesionM.findings">
+                            <span>{{ finding.extend0 ? finding.extend0 : finding.newName }}</span>
+                            <span>{{ valCvt.stenosisLevelCvt(finding.stenosisLevel) }}</span>
+                            <span>-</span>
+                            <span>{{ valCvt.plaqueTypeCvt(finding.plaqueType) }}</span>
+                        </div>
+                    </div>
+                    <ng-template #elseBlock>
+                        无
+                    </ng-template>
+
+                </div>
+            </div>
+        </div>
+        <textarea class="text" [(ngModel)]="service.srM.imagesM.content"></textarea>
+    </div>
+</div>

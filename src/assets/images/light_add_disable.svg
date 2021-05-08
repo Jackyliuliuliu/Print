@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/light/add disable</title>
+    <g id="icon/light/add-disable" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect x="0" y="0" width="40" height="40"></rect>
+        <g id="加" transform="translate(10.000000, 10.000000)" fill="#656565" fill-rule="nonzero">
+            <polygon id="路径" points="0.21153532 9.32381155 19.7733159 9.32381155 19.7733159 10.3601799 0.21153532 10.3601799"></polygon>
+            <polygon id="路径" points="9.47420235 0.0611054575 10.5106176 0.0611054575 10.5106176 19.6223001 9.47420235 19.6223001"></polygon>
+        </g>
+    </g>
+</svg>

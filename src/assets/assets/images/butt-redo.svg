@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_forward</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_forward">
+            <g>
+                <rect id="Rectangle-7" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="38" height="38"></rect>
+                <g id="Group" transform="translate(18.500000, 19.000000) scale(-1, 1) translate(-18.500000, -19.000000) translate(8.000000, 10.000000)" fill="#EEEEEE">
+                    <path d="M14,4 C17.8659932,4 21,7.13400675 21,11 C21,14.8659932 17.8659932,18 14,18 L14,17 C17.3137085,17 20,14.3137085 20,11 C20,7.6862915 17.3137085,5 14,5 L14,4 L14,4 Z" id="Combined-Shape"></path>
+                    <path d="M8,17 L14,17 L14,18 L8,18 L8,17 L8,17 Z M2,4 L14,4 L14,5 L2,5 L2,4 L2,4 Z" id="Rectangle-90"></path>
+                    <polygon id="Rectangle-91" points="-1.95399252e-13 4.4426405 4.24264069 0.199999809 4.24264069 8.68528118"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

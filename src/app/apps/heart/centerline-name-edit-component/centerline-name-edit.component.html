@@ -1,0 +1,31 @@
+<div id='centerlinediv' class="bar" *ngIf="allCenterLines.length != 0" title="滑动滚轮切换">
+    <ul nz-menu [style.width]="300" class='fontStyle' [nzSelectable]="false">
+        <li nz-menu-item (click)='up()' class="listyleIconUp" *ngIf="isShowArrow&&firstDisplayIdx>0">
+            <i nz-icon nzType="up" nzTheme="outline" style="font-size: 20px"></i></li>
+    </ul>
+    <!-- <ul *ngIf="!inEditState" nz-menu [style.width]="300" class='fontStyle flex flex-column'>
+        <div *ngFor='let item of displayCenterLines'>
+            <li nz-menu-item [nzSelected]="item==selectedCenterline" class="listyle">
+                <span (click)='selectCenterline(item)'>{{ item.name }}</span>
+            </li>
+        </div>
+    </ul> -->
+    <ul nz-menu [style.width]="300" class='fontStyle flex flex-column'>
+        <div *ngFor='let item of displayCenterLines'>
+            <li nz-menu-item [nzSelected]="item.name==selectedCenterline.name" [ngClass]="{grayBackground: item.isKey==1&&item!=selectedCenterline}" class="listyle">
+                <span (click)='selectCenterline(item)'>{{ item.name }}</span>
+            </li>
+        </div>
+    </ul>
+    <ul nz-menu [style.width]="300" class='fontStyle' [nzSelectable]="false">
+        <li nz-menu-item (click)='down()' class="listyleIconDown" *ngIf="isShowArrow&&showDownIcon">
+            <i nz-icon nzType="down" nzTheme="outline" style="font-size: 20px"></i></li>
+    </ul>
+    <ng-template #contextTemplate>
+        <ul nz-menu nzInDropDown (nzClick)='close()'>
+            <li *ngFor="let newName of coronarySegment" nz-menu-item (click)=renameCenterLine(newName) nzTheme="outline">
+                {{ newName }}
+            </li>
+        </ul>
+    </ng-template>
+</div>

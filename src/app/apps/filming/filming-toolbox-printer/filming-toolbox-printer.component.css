@@ -1,0 +1,40 @@
+.CDIC-Button-0326 {
+    width: 170px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #FFF;
+    margin: 5px 20px;
+}
+
+.CDIC-Input-0401 {
+    width: 170px;
+    height: 30px;
+    margin-left:20px;
+    display: inline-block;
+    border-radius: 2px;
+    background: rgba(11,13,18,0.50);
+    border: 0.5px solid rgba(255,255,255,0.20);
+    color: #F2F2F2;
+    line-height: 30px;
+}
+
+.CDIC-Select-0401 {
+    margin-left:20px;
+    width: 170px;
+    height: 30px;
+    display: inline-block;
+}
+
+.CDIC-Div-0402{
+    margin-bottom: 12px;
+}
+
+.disable
+{
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+

@@ -1,0 +1,39 @@
+.container {
+  margin-bottom: 10px;
+}
+.center {
+  text-align: center;
+  background: white;
+  color: black;
+  font-family: "Microsoft YaHei";
+  font-size: 20px;
+}
+
+.header-left {
+  text-align: left;
+  background: white;
+  color: black;
+  font-family: "Microsoft YaHei";
+  width: 50%;
+  height: 50%;
+}
+.header-right {
+  text-align: right;
+  background: white;
+  color: black;
+  width: 50%;
+}
+  
+.logo-img {
+  width: 150px;
+  margin-left: 10px;
+}
+
+.stent-item {
+  height: 48px;
+  display: flex;
+}
+
+.title-region {
+  margin-top: 10px;
+}

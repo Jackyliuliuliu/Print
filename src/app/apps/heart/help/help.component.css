@@ -1,0 +1,93 @@
+
+.stent-table-header {
+    height: 2rem;
+    display: flex;
+    line-height: 2rem;
+    color: #999999;
+    text-align: center;
+    background: #2C2E30;
+    box-shadow: inset 0 -0.0625rem 0 0 #17191A;
+    border-radius: 0.125rem 0.125rem 0 0;
+  }
+  
+  .stent-item {
+    height: 3rem;
+    display: flex;
+    text-align: center;
+    line-height: 3rem;
+    background: rgba(255, 255, 255, 0.00);
+    box-shadow: inset -0.0625rem 0 0 0 rgb(10, 11, 12), inset 0 -0.0625rem 0 0 rgb(10, 11, 12);
+    cursor: pointer;
+    
+  }
+  
+  
+  .stent-item-column0 {
+    width: 10%;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .stent-item-column1 {
+    width: 50%;
+    height: 3rem;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+  }
+  
+  .stent-item-column2 {
+    width: 40%;
+    height: 100%;
+    text-align: left;
+    font-weight: normal;
+  }
+  
+  .stent-item-column3 {
+    width: 40%;
+    height: 100%;
+    text-align: left;
+    font-weight: normal;
+  }
+  
+  .stent-item-column4 {
+    width: 10%;
+    height: 100%;
+  }
+  
+  .container-content-stent {
+    width: 100%;
+    height: 100%;
+    background-color :#17181A;
+    
+  }
+  .container-content-stent1 {
+    width: 100%;
+    height: 50rem;
+    background-color :#17181A;
+    border-radius: 0.125rem;
+    overflow-y: overlay;
+  }
+  
+  .stent-item-field {
+    height: 100%;
+    line-height: 3rem;
+    color: #FFFFFF;
+    display: flex;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  
+.btn-bottom {
+  position: relative;
+  height: 1.875rem;
+  width: 6.25rem;
+  left: 0;
+  background: #363D4D;
+  border: 0 solid rgba(255, 255, 255, 0.20);
+  border-radius: 0.125rem;
+  color: white;
+}

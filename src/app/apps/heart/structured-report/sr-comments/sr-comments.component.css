@@ -1,0 +1,46 @@
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.body {
+    width: 100%;
+    height: calc(100% - 80px);
+    position: relative;
+    background: white;
+}
+
+.header-text {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #999999;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.text {
+    background: white;
+    color: black;
+    border-radius: 4px;
+    overflow: auto;
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid transparent;
+    padding: 10px;
+    resize: none;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* .text:focus {
+    border: 1px solid #2D79FF;
+    box-shadow: inset 0 -1px 0 0 #17191A;
+} */
+
+.region-title {
+    background: rgb(194, 188, 188);
+    color: black;
+    font-weight: 10;
+    font-size: 14px;
+    line-height: 28px;
+}

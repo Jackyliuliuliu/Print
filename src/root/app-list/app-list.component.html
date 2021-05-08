@@ -1,0 +1,36 @@
+<p>
+  app-list works!
+</p>
+<div>
+  <table class="table table-hover table-striped">
+      <thead>
+          <tr>
+              <th>{{'PatientName'}}</th>
+              <th>{{'StudyDate'}}</th>
+              <th>{{'Operations'}}</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let study of studies">
+              <td>{{study.patientName}}</td>
+              <td>{{study.studyDate}}</td>
+              <td class="dropdown">
+                
+                  <ul>
+                      <li *ngFor ="let app of appList">
+                          <a class="waves-effect waves-block"
+                             (click)="startadvapp(study.studyInstanceUID, app.appName, app.routePath)">
+                              <i class="material-icons">A2</i>{{app.appName}}
+                          </a>
+                       </li>
+                  </ul>
+              </td>
+          </tr>
+      </tbody>
+
+
+  </table>
+
+  <button (click)="initialize_s()">initialize </button>
+  <!--<button (click)="send_s()">send </button>-->
+</div>

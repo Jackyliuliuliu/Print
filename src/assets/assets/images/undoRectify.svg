@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.撤销校准</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="6.85714313" height="6.85714313"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.撤销校准">
+            <g id="Group" transform="translate(15.000000, 15.000000)">
+                <g id="Rectangle-10">
+                    <use fill-opacity="0.528702446" fill="#61A5BE" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#61A5BE" stroke-width="1" x="0.5" y="0.5" width="5.85714313" height="5.85714313"></rect>
+                </g>
+                <path d="M6.58364173,2.3285715 L9.55714326,2.3285715 L9.55714326,8.18571463 L5.26664096,8.18571463 L6.58364173,2.3285715 Z" id="Rectangle-10" stroke="#EEEEEE" transform="translate(7.349437, 5.257143) rotate(19.000000) translate(-7.349437, -5.257143) "></path>
+            </g>
+            <circle id="Path" fill="#EEEEEE" cx="9" cy="17.2292085" r="2"></circle>
+            <polygon id="Path-266" fill="#EEEEEE" points="14 7.22920847 11 12.2292085 17 12.2292085"></polygon>
+            <path d="M9,19.5 C9,25.2989899 13.7010101,30 19.5,30 L19.5,30 C25.2989899,30 30,25.2989899 30,19.5 C30,13.7010101 25.2989899,9 19.5,9 C18.1288737,9 16.8191299,9.26280971 15.6183945,9.74080321" id="Oval" stroke="#EEEEEE"></path>
+        </g>
+    </g>
+</svg>

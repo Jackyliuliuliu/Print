@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.vessel.中心线编辑</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="10.9947532" y="-0.962557145" width="1.15" height="25.3"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.vessel.中心线编辑">
+            <g id="Group-11" transform="translate(7.000000, 7.181818)">
+                <g id="Group-10" transform="translate(11.255784, 10.956256) rotate(-45.000000) translate(-11.255784, -10.956256) translate(7.230784, 0.031256)" stroke="#EEEEEE">
+                    <path d="M0.5,18.8566857 L0.5,1.98957749 C0.552485688,1.83631245 0.699719162,1.59229521 0.992012018,1.33513079 C1.57799845,0.819569582 2.51274363,0.5 3.89809201,0.5 C5.28344038,0.5 6.21818557,0.819569582 6.804172,1.33513079 C7.09646485,1.59229521 7.24369833,1.83631245 7.29618402,1.98957749 L7.29618402,18.8566857 L0.5,18.8566857 Z" id="Rectangle-576"></path>
+                    <ellipse id="Oval-21" cx="3.89809201" cy="18.9982285" rx="3.39809201" ry="2.00919999"></ellipse>
+                </g>
+                <g id="Rectangle-576" transform="translate(11.569753, 11.687443) rotate(-45.000000) translate(-11.569753, -11.687443) ">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#61A5BE" stroke-width="1" x="11.4947532" y="-0.462557145" width="1" height="24.3"></rect>
+                </g>
+                <circle id="Oval-18" fill="#61A5BE" cx="10.925" cy="10.925" r="1.725"></circle>
+                <circle id="Oval-18" fill="#61A5BE" cx="1.725" cy="1.725" r="1.725"></circle>
+                <circle id="Oval-18-Copy" fill="#61A5BE" cx="21.275" cy="21.275" r="1.725"></circle>
+            </g>
+            <path d="M15.472855,28.5309767 L11.7109784,28.5309767 L11.7109784,29.9805826 L15.472855,29.9805826 L15.472855,31.4301885 L19.0309786,29.2557797 L15.472855,27.0813709 L15.472855,28.5309767 Z" id="Combined-Shape" fill="#EEEEEE" transform="translate(15.370978, 29.255780) rotate(-45.000000) translate(-15.370978, -29.255780) "></path>
+            <path d="M20.6092187,6.66734038 L16.847342,6.66734038 L16.847342,8.11694627 L20.6092187,8.11694627 L20.6092187,9.56655215 L24.1673422,7.39214332 L20.6092187,5.21773449 L20.6092187,6.66734038 Z" id="Combined-Shape" fill="#EEEEEE" transform="translate(20.507342, 7.392143) rotate(-225.000000) translate(-20.507342, -7.392143) "></path>
+        </g>
+    </g>
+</svg>

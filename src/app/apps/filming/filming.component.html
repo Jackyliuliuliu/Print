@@ -1,0 +1,212 @@
+<div style="background: #1C222E;height: 100%">
+  <div class="div-progress" [hidden]="isHiddenPrintProgress">
+    <div class="progress">
+      <p class="progress-p">正在打印胶片......</p>
+      <nz-progress [nzPercent]="loadPrintPercent" [nzStrokeWidth]="10" [nzShowInfo]="false"
+        [nzStrokeColor]="{'0%': '#18b6ff', '100%': '#18b6ff'}"></nz-progress>
+    </div>
+  </div>
+  <div class="div-filming-progress" [hidden]="isHiddenPrintProgress"></div>
+  <div nz-row [nzType]="'flex'" [nzJustify]="'center'" style="flex:1;height: 40px;border-bottom: 1px solid rgba(255,255,255,0.1)">
+    <div style="font-family: MicrosoftYaHei;font-size: 16px;color: #FFFFFF;line-height: 24px;margin-top: 7px">胶片打印</div>
+  </div>
+  <div class="FlexRow" unselectable="on" onselectstart="return false;" style="padding:20px;width: 100%">
+    <div class="relative">
+      <div class="viewControlDiv" #viewControlDiv style="background-color:black">
+        <div #viewControlTitle class="FlexRow" *ngIf="titleModel=='model1'" style="height:40px;background-color: rgba(255,255,255,0.20);color: #FFFFFF;font-family: PingFangSC-Semibold;width:calc(100vw - 409px);margin:0 auto">
+          <div class="FlexColumn" style="display:flex;flex-flow:column;padding-left: 6px;">
+            <div style="display:flex;flex:1;align-items:center;font-size: 10px">{{patientId}}</div>
+            <div style="display:flex;flex:1;align-items:center;font-size: 10px">{{accessionNumber}}</div>
+          </div>
+          <div class="FlexColumn" style="display:flex;height:inherit;align-items:center;justify-content:center;font-size: 12px">
+            {{patientName}}
+          </div>
+          <div class="FlexColumn" style="display:flex;flex-flow:column;padding-right: 6px;">
+            <div style="display:flex;flex: 1;align-items:center;justify-content:flex-end;font-size: 10px">
+              {{institutionName}}
+            </div>
+            <div style="display:flex;flex:1;align-items:center;justify-content:flex-end;font-size: 10px">
+              {{printDate}}
+            </div>
+          </div>
+        </div>
+        <div #viewControlTitle class="model2" *ngIf="titleModel=='model2'" style="height:60px;background-color: rgba(255,255,255,0.20);color: #FFFFFF;font-family: PingFangSC-Semibold;width:calc(100vw - 409px);margin:0 auto;padding-left: 6px;padding-left: 6px">
+          <div class="FlexRow" style="display:flex;height: 33.3%;align-items: center;">
+            <div>{{patientName}}</div>
+            <div style="margin-left:10px;">{{sex}}</div>
+            <div style="margin-left:10px;">{{age}}</div>
+          </div>
+          <div class="FlexRow" style="display:flex;height: 33.3%;align-items: center;">
+            <div>{{patientId}}</div>
+          </div>
+          <div class="FlexRow" style="display:flex;height: 33.3%;align-items: center;">
+            <div>{{accessionNumber}}</div>
+          </div>
+        </div>
+        <div style="width:calc(100vw - 267px)">
+          <div class="FullElement ViewerContainer FlexRow" #viewerControl
+            style="height:calc(100vh - 152px);width:calc(100vw - 409px);border: 1px solid #3E3E3E;margin:0 auto">
+          </div>
+        </div>
+      </div>
+      <div #printControl style="background-color:black;height:5100px;width:4200px;left:-9999px;top: -9999px;position: absolute">
+        <div #printControlTitle class="FlexRow" *ngIf="titleModel=='model1'" style="background-color: rgba(255,255,255,0.20);height:289px;color: #FFFFFF;font-family: PingFangSC-Semibold;font-size: 28px;border: 1px solid #3E3E3E;">
+            <div class="FlexColumn" style="display:flex;flex-flow:column;padding-left: 20px">
+              <div style="display:flex;flex:1;align-items:center">
+                {{patientId}}
+              </div>
+              <div style="display:flex;flex:1;align-items:center">
+                {{accessionNumber}}
+              </div>
+            </div>
+            <div class="FlexColumn" style="display:flex;align-items:center;justify-content:center;height:inherit">
+              {{patientName}}
+            </div>
+            <div class="FlexColumn" style="display:flex;flex-flow:column;padding-right: 20px">
+              <div style="display:flex;flex:1;align-items:center;justify-content:flex-end">
+                {{institutionName}}
+              </div>
+              <div style="display:flex;flex:1;align-items:center;justify-content:flex-end">
+                {{printDate}}
+              </div>
+            </div>
+          </div>
+        <div #printControlTitle *ngIf="titleModel=='model2'" style="background-color: rgba(255,255,255,0.20);height:248px;color: #FFFFFF;font-family: PingFangSC-Semibold;font-size: 28px;border: 1px solid #3E3E3E; padding-left: 6px">
+          <div class="FlexRow" style="display:flex;height: 33.4%;align-items: center;">
+            <div>{{patientName}}</div>
+            <div style="margin-left:10px;">{{sex}}</div>
+            <div style="margin-left:10px;">{{age}}</div>
+          </div>
+          <div class="FlexRow" style="display:flex;height: 33.3%;align-items: center;">
+            <div>{{patientId}}</div>
+          </div>
+          <div class="FlexRow" style="display:flex;height: 33.3%;align-items: center;">
+            <div>{{accessionNumber}}</div>
+          </div>
+        </div>
+        <div class="FullElement ViewerContainer FlexRow" #viewerControlClone style="background-color:black;border: 1px solid #3E3E3E;"></div>
+      </div>
+      <div class="page-class" style="height:32px;background:  #232B3B">
+        <div style="color: #fff;text-align: right;margin-right: 20px;padding-top:3px">
+          <a (click)="firstPageClick()" style="margin-right:10px;"><img src="../../../assets/images/Filming/firstPage.svg"></a>
+          <a (click)="leftPageClick()" style="margin-right:10px;"><img src="../../../assets/images/Filming/Previous.svg"></a>
+          <label>第{{currentPage}}页</label>
+          /
+          <label>共{{pages}}页</label>
+          <a (click)="rightPageClick()" style="margin-left:10px;"><img src="../../../assets/images/Filming/next.svg"></a>
+          <a (click)="lastPageClick()" style="margin-left:10px;"><img src="../../../assets/images/Filming/lastPage.svg"></a>
+        </div>
+      </div>
+    </div>
+    <div #pagingBar class="pagingBar" (scroll)="onScroll($event)" style="width:10px;overflow-y: scroll; overflow-x:hidden;height:calc(100vh - 110px);">
+      <p #pagingp style="width:1px">
+    </div>
+    <div class="FlexColumn" style="background-color:#141924;width:217px;height:calc(100vh - 78px);overflow-y: auto; overflow-x:hidden" (document:mousemove)="onPanelMouseMove">
+      <div class="CDIC-Label-0326" style="margin-top:20px">窗口布局</div>
+      <app-filming-toolbox-editer class="toolBoxEditer" [isButtonDisable]="isButtonDisable"  (layoutClicked)="onLayoutClicked($event)"></app-filming-toolbox-editer>
+      <div class="CDIC-Label-0326">图片编辑</div>
+      <div class="toolBoxEditer">
+        <!-- 目前需求没有要求，暂时隐藏 -->
+        <!-- <a  nz-tooltip [nzTitle]="add">
+              <img  src="../../../assets/images/addFilming.svg">
+              <ng-template #add>
+                  <span>增加</span>
+              </ng-template>
+            </a> 
+              <button>
+                <img src="../../../assets/images/deleteCurrentFilming.svg">
+              </button> -->
+        <a [class.disable]="isButtonDisable" (click)="deleteCellClick()" nz-tooltip [nzTitle]="delete" nzTooltipPlacement="bottomRight">
+          <img src="../../../assets/images/deleteCurrentWndImage.svg">
+          <ng-template #delete>
+            <span>删除图像</span>
+          </ng-template>
+        </a>
+        <a [class.disable]="isButtonDisable" (click)="deleteCurrentPageClick()" nz-tooltip [nzTitle]="deleteCurrent" nzTooltipPlacement="bottomRight">
+          <img src="../../../assets/images/deleteCurrentPageImage.svg">
+          <ng-template #deleteCurrent>
+            <span>删除当前页</span>
+          </ng-template>
+        </a>
+        <a [class.disable]="isButtonDisable" (click)="deleteAllPageClick()" nz-tooltip [nzTitle]="deleteAll" nzTooltipPlacement="bottomRight">
+          <img src="../../../assets/images/deleteAllPageImage.svg">
+          <ng-template #deleteAll>
+            <span>删除所有页</span>
+          </ng-template>
+        </a>
+  
+        <!-- <button (click)="deleteCellClick()">
+                <img src="../../../assets/images/deleteCurrentWndImage.svg">
+              </button>  
+              <button (click)="deleteCurrentPageClick()">
+                <img src="../../../assets/images/deleteCurrentPageImage.svg">
+              </button>   
+              <button (click)="deleteAllPageClick()">
+                <img src="../../../assets/images/deleteAllPageImage.svg">
+              </button>
+             <button>
+                <img src="../../../assets/images/showInfo.svg">
+              </button>  -->
+        <div>
+          <label style="margin-left: 6px;margin-top: 13px"  nz-checkbox [class.disable]="isButtonDisable" [(ngModel)]="isImageTextVisible" (ngModelChange)="imageTextVisibleChangeClick()">显示四角信息</label>
+          <label style="margin-left: 6px;margin-top: 13px" nz-checkbox [class.disable]="isButtonDisable" [(ngModel)]="isSameLayout" (ngModelChange)="sameLayoutChangeClick()">统一布局</label>
+        </div>
+      </div>
+      <div style="border-top: 1px solid rgba(255,255,255,0.10);height: 1px;margin: 0 14px 0 10px"></div>
+  
+      <div>
+        <!-- 目前需求没有要求，暂时隐藏 -->
+        <!-- <div class="CDIC-Label-0326">图像编辑</div>
+              <div class="toolBoxEditer">
+            
+                <button>
+                  <img src="../../../assets/images/addFilming.svg">
+                </button>
+                <button>
+                  <img src="../../../assets/images/deleteCurrentFilming.svg">
+                </button>
+                <button (click)="deleteCellClick()">
+                  <img src="../../../assets/images/deleteCurrentWndImage.svg">
+                </button>  
+                <button (click)="deleteCurrentPageClick()">
+                  <img src="../../../assets/images/deleteCurrentPageImage.svg">
+                </button>   
+                <button (click)="deleteAllPageClick()">
+                  <img src="../../../assets/images/deleteAllPageImage.svg">
+                </button>
+                <button>
+                  <img src="../../../assets/images/showInfo.svg">
+                </button>
+                <button>
+                  <img src="../../../assets/images/deleteCurrentFilming.svg">
+                </button>
+                <button (click)="deleteCellClick()">
+                  <img src="../../../assets/images/deleteCurrentWndImage.svg">
+                </button>  
+                <button (click)="deleteCurrentPageClick()">
+                  <img src="../../../assets/images/deleteCurrentPageImage.svg">
+                </button>   
+                <button (click)="deleteAllPageClick()">
+                  <img src="../../../assets/images/deleteAllPageImage.svg">
+                </button>
+                <button>
+                  <img src="../../../assets/images/showInfo.svg">
+                </button>
+              </div> -->
+        <!-- <CommonTools #commonTools [appName]="appName" style="margin-bottom:20px"></CommonTools> -->
+      </div>
+      <app-filming-toolbox-printer [isButtonDisable]="isButtonDisable" (printPage)="onPrintPage($event)" (printAllPage)="onPrintAllPage($event)" (filmSizeChange)="onfilmSizeChange($event)" (titleModelChange)="onTitleModelChange($event)" style="margin-top: 20px;"></app-filming-toolbox-printer>
+    </div>
+  </div>
+  <popup-common style="background:#259D4F;color:white;bottom: 1.5rem; right: 0px; position:fixed;border-radius:0.25rem; font-size: 0.875rem;z-index: 1010;"
+    *ngIf="showPupup" [width]="383.99" [height]="71.97" [closebtn]="false" (popupData)="closePopupFn($event)">
+    <div class="popup-content" style="padding: 25px 30px;">
+      开始发送胶片，请勿离开
+    </div>
+  </popup-common>
+</div>
+<nz-modal [(nzVisible)]="showAiDialog" nzWrapClassName="vertical-center-modal" [nzContent]="showContent" [nzTitle]="showTitle" [nzFooter]="AIFooter" (nzOnCancel)="cancel()">
+  <ng-template #AIFooter>
+    <button class="modal-butt confirm" (click)="cancel()">确 定</button>
+  </ng-template>
+</nz-modal>

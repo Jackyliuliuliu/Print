@@ -1,0 +1,74 @@
+.fontStyle {
+    font-family: PingFangSC-Regular;
+    font-size: 0.875rem;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-right: none;
+}
+
+.listyle {
+    margin: 0.25rem 0px 0.25rem 0px;
+    /* padding: 5.5px 0px 0px 0px; */
+    height: 1.125rem;
+    line-height: 1.125rem;
+    /* top: 70px; */
+    text-decoration: none;
+}
+
+.grayBackground{
+    color: gray;
+}
+
+.listyleIconUp {
+    margin: 0.125rem 0px 0.125rem 0px;
+    padding: 0px 0px 0px 0.625rem;
+    height: 1.125rem;
+    line-height: 1.125rem;
+    /* top: 95px; */
+    text-decoration: none;
+}
+
+.listyleIconDown {
+    margin: 0.125rem 0px 0.125rem 0px;
+    padding: 0px 0px 0px 0.625rem;
+    height: 1.125rem;
+    line-height: 1.125rem;
+    /* top: 290px; */
+    text-decoration: none;
+}
+
+.listyle:hover {
+    text-decoration: underline;
+}
+
+.listyleIcon:hover {
+    text-decoration: underline;
+}
+
+::ng-deep .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: transparent;
+}
+
+::ng-deep .ant-menu-vertical .ant-menu-item:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+.bar{
+    margin: auto;
+}
+
+/* ::ng-deep .ant-dropdown-menu {
+    border-radius: 0px;
+    background-color: #333333;
+    padding: 0;
+} */
+
+/* ::ng-deep .ant-dropdown-menu-item {
+    color: #ffffff;
+    padding: 6px;
+} */
+
+/* ::ng-deep .ant-dropdown-menu-item:hover {
+    background: rgba(0,0,0,0.30);
+} */

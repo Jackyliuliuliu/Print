@@ -1,0 +1,333 @@
+* {
+  padding: 0px;
+  /* margin: 0px; */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currentlynot supported by any browser */
+}
+
+
+.layout-container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "微软雅黑";
+}
+
+.main-container-region {
+  height: calc(100% - 3.75rem);
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  overflow: hidden;
+}
+
+.viewer-container {
+  flex: 4;
+  background-color: black;
+  border: solid 0.0625rem #808080;
+  display: block;
+  height: calc(100% - 2rem);
+}
+
+.study-list {
+  width: 10rem;
+  z-index: 9999999;
+  background-color: #222;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.editor {
+  position: fixed;
+  z-index: 99;
+  height: 80px;
+  background: #1C222E;
+  border: 1px solid #1A1A1A;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.50), 0 10px 20px 0 rgba(0,0,0,0.50);
+  border-radius: 2px;
+  position: absolute;
+  width:340px;
+  left: 50%;
+  margin-left: -55px;
+}
+
+
+.mask {
+  display: block;
+  position: absolute;
+  border: 0 solid #000;
+  opacity: .75;
+  filter: alpha(opacity=75);
+  z-index: 99999999;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /* background:rgb(0, 0, 0); */
+}
+
+.layout-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-navi {
+  height: 3.75rem;
+  width: 100%;
+}
+
+.layout-bottom {
+  width: 100%;
+}
+
+.layout-content {
+  height: calc(100% - 60px); 
+  width: 100%;
+  display: flex;
+}
+
+.layout-content-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: none;
+}
+
+.bottom-toolbar {
+  display: block;
+}
+
+::ng-deep .vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+::ng-deep .vertical-center-modal-white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+::ng-deep .vertical-center-modal .ant-modal {
+  top: 0;
+}
+
+
+.modal-butt {
+  padding: 0 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.125rem;
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.375rem;
+  cursor: pointer;
+}
+
+.modal-butt.confirm {
+  background: #337CFF;
+  border: 0 solid rgba(255, 255, 255, 0.30);
+}
+
+.reset {
+  float: right;
+  margin: 0.625rem 0.625rem 0 0;
+  cursor: pointer;
+}
+
+/* 这是匹配横屏的状态，横屏时的css代码 */
+
+@media all and (orientation: landscape) {
+  .layout-direction {
+    flex-direction: row;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .layout-image {
+    height: 100%;
+    width: calc(100% - 30rem);
+  }
+
+  .layout-info {
+    background-color: #0D0F1A;
+    height: 100%;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layout-info-1 {
+    height: 65%;
+    width: 100%;
+  }
+
+  .layout-info-2 {
+    height: 35%;
+    width: 100%;
+    background-color: #17181a;
+  }
+}
+
+/* 这是匹配竖屏的状态，竖屏时的css代码 */
+
+@media all and (orientation: portrait) {
+  .layout-direction {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .layout-image {
+    height: calc(100% - 29.375rem);
+    width: 100%;
+  }
+
+  .layout-info {
+    background-color: #0D0F1A;
+    height: 29.375rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .layout-info-1 {
+    height: 100%;
+    width: 60%;
+  }
+
+  .layout-info-2 {
+    background-color: #17181a;
+    height: 100%;
+    width: 40%;
+  }
+}
+
+.card-container ::ng-deep .ant-tabs-card .ant-tabs-content {
+  height: 12.5rem;
+  margin-top: -1rem;
+  /* margin-left: 15px; */
+}
+
+.card-container ::ng-deep .ant-tabs-card .ant-tabs-content .ant-tabs-tabpane {
+  background: #313234;
+  padding: 0.5rem 0px 0.5rem 0px;
+}
+
+.card-container ::ng-deep .ant-tabs-card .ant-tabs-bar {
+  border-color: #313234;
+}
+
+.card-container ::ng-deep .ant-tabs-card .ant-tabs-bar .ant-tabs-tab {
+  border-color: #2f3135;
+  background: #2f3135;
+}
+
+.card-container ::ng-deep .ant-tabs-card .ant-tabs-bar .ant-tabs-tab-active {
+  border-color: #313234;
+  background: #313234;
+}
+
+
+
+::ng-deep .FlexRow {
+  border: transparent;
+}
+
+::ng-deep .FlexColumn {
+  margin-left: 0.9375rem;
+  border: transparent;
+}
+
+::ng-deep .ant-select {
+  vertical-align: middle;
+}
+
+::ng-deep .ant-btn {
+  vertical-align: middle;
+}
+
+::ng-deep .ant-tabs-nav-scroll {
+  background-color: #212326;
+}
+
+::ng-deep .ant-form-item-label>label {
+  color: #ffffff;
+}
+
+::ng-deep .ant-form-item-label {
+  text-align: center;
+}
+
+::ng-deep .ant-form-item {
+  margin: 0.375rem 0px 0px 0px;
+}
+.filmingHide {
+  z-index: -1;
+  visibility: hidden;
+}
+/*  */
+.filmingShow{
+    position: absolute;
+
+    /* left: 50%;
+    top: 50%;
+    margin:-450px 0 0 -700px; */
+    z-index: top-most;
+}
+
+.close {
+  /* line-height: 20px; */
+  text-align: center;
+  /* height: 12px;
+  width: 12px; */
+  /* padding: 1px; */
+  top: 0.5625rem;
+  right: 1.125rem;
+  position: absolute;
+  background: transparent;
+}
+
+/* .div-progress {
+  position: absolute;
+  background: #1C222E;
+  border: 1px solid #1A1A1A;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.50), 0 10px 20px 0 rgba(0,0,0,0.50);
+  border-radius: 2px;
+  width: 460px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -230px;
+  z-index: 100;
+}
+
+.progress {
+  height: 100%;
+  padding: 15px 20px 25px 20px;
+} */
+
+::ng-deep.ant-progress-text {
+  color:#18b6ff;
+}
+
+/* .progress-p {
+  font-size: 14px;
+  color: #FFFFFF;
+} */

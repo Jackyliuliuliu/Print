@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon/light/已编辑</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/light/已编辑" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="24" height="24"></rect>
+        <path d="M14.856,7.016 L13.944,7.928 L12.072,6.056 L12.984,5.144 C13.0800005,5.04799952 13.1979993,5 13.338,5 C13.4780007,5 13.5959995,5.04799952 13.692,5.144 L14.856,6.308 C14.9520005,6.40400048 15,6.5219993 15,6.662 C15,6.8020007 14.9520005,6.91999952 14.856,7.016 Z M6,12.128 L11.532,6.596 L13.404,8.468 L7.872,14 L6,14 L6,12.128 Z" id="" fill="#FFFFFF"></path>
+        <rect id="矩形" fill="#337CFF" x="6" y="15" width="11" height="1"></rect>
+    </g>
+</svg>

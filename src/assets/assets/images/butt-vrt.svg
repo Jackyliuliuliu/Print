@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon ._tool ._vrt</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-._tool-._vrt" fill="#FFFFFF">
+            <g>
+                <rect id="bg" fill-opacity="0" x="0" y="0" width="38" height="38"></rect>
+                <path d="M10,21.5 L7,14 L5,14 L9,24 L10,24 L11,24 L15,14 L13,14 L10,21.5 Z M17.9990507,14 L22.0018986,14 C23.1054196,14 24,14.8982606 24,15.9979131 L24,18.0020869 C24,19.1055038 23.1132936,20 22.0018986,20 L18,20 L18,24 L16,24 L16,14 L17.9990507,14 Z M18,15 L18,19 L21.0001925,19 C21.5562834,19 22,18.5480902 22,17.9906311 L22,16.0093689 C22,15.4433532 21.5523709,15 21.0001925,15 L18,15 Z M24.5,14 L32.5,14 L32.5,15 L24.5,15 L24.5,14 Z M27.5,15 L29.5,15 L29.5,24 L27.5,24 L27.5,15 Z M20,20 L22,20 L24,24 L22,24 L20,20 Z" id="vrt"></path>
+            </g>
+        </g>
+    </g>
+</svg>

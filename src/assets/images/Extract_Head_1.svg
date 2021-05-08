@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="63px" height="45px" viewBox="0 0 63 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.vessel.layout.10</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.vessel.layout.10">
+            <g id="Group">
+                <g id="Group-Copy">
+                    <polygon id="Combined-Shape" fill="#EEEEEE" points="63 0 63 45 0 45 0 0"></polygon>
+                    <polygon id="Path" fill="#61A5BE" points="2 2 61 2 61 43 2 43"></polygon>
+                    <polygon id="Rectangle-1853" fill="#EEEEEE" points="21 1 21 44 20 44 20 1"></polygon>
+                    <text id="VR" font-family="ArialMT, Arial" font-size="10" font-weight="normal" letter-spacing="-0.636363626" fill="#EEEEEE">
+                        <tspan x="24.6905628" y="16">VR</tspan>
+                    </text>
+                    <text id="A" font-family="ArialMT, Arial" font-size="10" font-weight="normal" letter-spacing="-0.636363626" fill="#EEEEEE">
+                        <tspan x="28.4832209" y="36">A</tspan>
+                    </text>
+                    <text id="C" font-family="ArialMT, Arial" font-size="10" font-weight="normal" letter-spacing="-0.636363626" fill="#EEEEEE">
+                        <tspan x="53.207342" y="26">C</tspan>
+                    </text>
+                    <text id="C" font-family="ArialMT, Arial" font-size="10" font-weight="normal" letter-spacing="-0.636363626" fill="#EEEEEE">
+                        <tspan x="12.207342" y="26">C</tspan>
+                    </text>
+                </g>
+                <rect id="Rectangle-1853" fill="#EEEEEE" x="1" y="10" width="10" height="1"></rect>
+                <rect id="Rectangle-1853" fill="#EEEEEE" x="1" y="18" width="10" height="1"></rect>
+                <rect id="Rectangle-1853-Copy" fill="#EEEEEE" x="21" y="22" width="22" height="1"></rect>
+                <rect id="Rectangle-1853" fill="#EEEEEE" x="1" y="27" width="10" height="1"></rect>
+                <rect id="Rectangle-1853" fill="#EEEEEE" x="1" y="35" width="10" height="1"></rect>
+                <polygon id="Rectangle-1853" fill="#EEEEEE" points="11 0 11 43 10 43 10 0"></polygon>
+                <polygon id="Rectangle-1853" fill="#EEEEEE" points="52 1 52 44 51 44 51 1"></polygon>
+                <rect id="Rectangle-1853" fill="#EEEEEE" x="42" y="10" width="10" height="1"></rect>
+                <rect id="Rectangle-1853" fill="#EEEEEE" x="42" y="18" width="10" height="1"></rect>
+                <rect id="Rectangle-1853" fill="#EEEEEE" x="42" y="27" width="10" height="1"></rect>
+                <rect id="Rectangle-1853" fill="#EEEEEE" x="42" y="35" width="10" height="1"></rect>
+                <polygon id="Rectangle-1853" fill="#EEEEEE" points="43 0 43 43 42 43 42 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

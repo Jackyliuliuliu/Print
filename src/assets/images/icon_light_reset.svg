@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon/light/icon_light_reset</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/light/icon_light_reset" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M20,10 C25.5228475,10 30,14.4771525 30,20 C30,25.5228475 25.5228475,30 20,30 C17.3034041,30 14.7755936,28.9270057 12.9112178,27.0533092 L13.6200855,26.3479678 C15.2986476,28.0349215 17.5722249,29 20,29 C24.9705627,29 29,24.9705627 29,20 C29,15.0294373 24.9705627,11 20,11 C15.0294373,11 11,15.0294373 11,20 L10.999,20.192 L13.363961,17.8284271 L14.0710678,18.5355339 L10.5355339,22.0710678 L7,18.5355339 L7.70710678,17.8284271 L9.999,20.12 L10,20 C10,14.4771525 14.4771525,10 20,10 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        <circle id="椭圆形" fill="#82B1FF" cx="13.5" cy="26.5" r="1.5"></circle>
+    </g>
+</svg>

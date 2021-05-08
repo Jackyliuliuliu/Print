@@ -1,0 +1,16 @@
+<button class="butt butt-first" [ngClass]="{'selected': selectedBtnName=='Default'}" title="心脏冠脉" name="Default" (click)="switchParams($event.currentTarget.name, 0)">
+    <img src="assets/images/vr-a.png">
+    <div class="BlueBG"></div>
+</button>
+<!--
+<button class="butt" [ngClass]="{'selected': selectedBtnName=='Plaque'}" title="斑块" name="Plaque" (click)="switchParams($event.currentTarget.name, 1)">
+    <img src="assets/images/vr-b.png">
+</button>
+<button class="butt" [ngClass]="{'selected': selectedBtnName=='Stent'}" title="支架" name="Stent" (click)="switchParams($event.currentTarget.name, 2)">
+    <img src="assets/images/vr-c.png">
+</button>
+-->
+<button class="butt butt-last" [ngClass]="{'selected': selectedBtnName=='MIP'}" title="MIP" name="MIP" (click)="switchParams($event.currentTarget.name, 1)">
+    <img src="assets/images/vr-d.png">
+    <div class="BlueBG"></div>
+</button>

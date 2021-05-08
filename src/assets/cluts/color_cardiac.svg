@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="20px" viewBox="0 0 80 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Cardiac</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#4CC532" offset="0%"></stop>
+            <stop stop-color="#26DBF8" offset="20.5773926%"></stop>
+            <stop stop-color="#1727F4" offset="37.9528809%"></stop>
+            <stop stop-color="#69139B" offset="52.2875977%"></stop>
+            <stop stop-color="#E11134" offset="68.9868164%"></stop>
+            <stop stop-color="#FD8E26" offset="79.2504883%"></stop>
+            <stop stop-color="#FDE233" offset="87.800293%"></stop>
+            <stop stop-color="#53C023" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.3d" transform="translate(-48.000000, -1184.000000)" fill="url(#linearGradient-1)">
+            <rect id="Cardiac" x="48" y="1184" width="80" height="20"></rect>
+        </g>
+    </g>
+</svg>

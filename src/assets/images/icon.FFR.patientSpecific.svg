@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.FFR.患者特征</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.FFR.患者特征">
+            <g id="Group-3" transform="translate(6.000000, 7.000000)">
+                <path d="M15.0405102,22.6803915 L1.06546012,22.6803915 L-1.8189894e-12,21.8370379 L-1.8189894e-12,19.7872417 C0.158161228,19.1525216 0.651840675,18.6975301 1.48103834,18.4222673 C2.31023601,18.1470045 4.42251107,17.2091544 7.81786355,15.6087169 C8.21986284,14.9324925 8.32036267,14.4970673 8.11936302,14.3024416 C7.81786355,14.0105029 6.00041761,13.7688142 5.35739661,9.67633683 C4.71437561,5.58385947 4.95450793,5.48469371 5.35739661,4.09014748 C5.76028528,2.69560124 7.65399547,-0.0963817095 11.0267429,0.00256170165 C14.3994903,0.101505113 17.1587886,2.88592834 17.4333843,3.72928196 C17.7079801,4.57263557 17.8164843,8.47500817 17.4333843,9.67633683 C17.0502844,10.8776655 15.4640769,14.045411 15.0405102,14.3024416 C14.6169435,14.5594721 14.1933767,15.6087169 14.6169435,15.6087169 C14.7825266,15.6087169 15.329664,15.8384854 16.2583558,16.2980224" id="Path-3" stroke="#EEEEEE"></path>
+                <rect id="Rectangle-3" fill="#61A5BE" x="17" y="18" width="2" height="1"></rect>
+                <rect id="Rectangle-3-Copy-2" fill="#61A5BE" x="17" y="21" width="2" height="1"></rect>
+                <rect id="Rectangle-3-Copy-4" fill="#61A5BE" x="17" y="24" width="2" height="1"></rect>
+                <rect id="Rectangle-3-Copy" fill="#61A5BE" x="20" y="18" width="7" height="1"></rect>
+                <rect id="Rectangle-3-Copy-3" fill="#61A5BE" x="20" y="21" width="7" height="1"></rect>
+                <rect id="Rectangle-3-Copy-5" fill="#61A5BE" x="20" y="24" width="7" height="1"></rect>
+            </g>
+            <rect id="Rectangle-4" x="0" y="0" width="38" height="38"></rect>
+        </g>
+    </g>
+</svg>

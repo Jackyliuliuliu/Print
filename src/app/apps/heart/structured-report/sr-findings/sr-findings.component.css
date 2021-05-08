@@ -1,0 +1,18 @@
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.region-title {
+    background: rgb(194, 188, 188);
+    color: black;
+    font-weight: 10;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.text {
+    background: white;
+    color: black;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.曲线测距</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.曲线测距">
+            <g id="icon.eraser">
+                <g>
+                    <rect id="bg" x="0" y="0" width="38" height="38"></rect>
+                    <path d="M13.7607658,9.5 L18.0822616,19.5 L22.3103448,19.5 C25.1890705,19.5 27.5,17.4522597 27.5,14.9583333 L27.5,14.0416667 C27.5,11.5477403 25.1890705,9.5 22.3103448,9.5 L13.7607658,9.5 Z" id="Rectangle" stroke="#EEEEEE"></path>
+                    <circle id="Oval" stroke="#61A5BE" cx="10.5" cy="9.5" r="2.5"></circle>
+                    <path d="M21.8592647,29.5 L19.3536784,19.5 L13.5,19.5 C10.7293321,19.5 8.5,21.5435544 8.5,24.0416667 L8.5,24.9583333 C8.5,27.4564456 10.7293321,29.5 13.5,29.5 L21.8592647,29.5 Z" id="Rectangle-Copy" stroke="#EEEEEE"></path>
+                    <circle id="Oval-Copy" stroke="#61A5BE" cx="25.5" cy="29.5" r="2.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

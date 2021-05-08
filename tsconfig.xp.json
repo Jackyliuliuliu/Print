@@ -1,0 +1,43 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es5",
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": ["ES5", "dom", "ES2015.Promise", "ES2015.Core", "ES2015.Collection", "ES2015.Reflect", "ES2015.Iterable", "ES2016.Array.Include"],
+
+    "paths": {
+      "server-api": [
+        "dist/server-api"
+      ],
+      "server-api/*": [
+        "dist/server-api/*"
+      ],
+      "framework": [
+        "dist/framework"
+      ],
+      "framework/*": [
+        "dist/framework/*"
+      ],
+      "adv-app-server-api": [
+        "dist/adv-app-server-api"
+      ],
+      "adv-app-server-api/*": [
+        "dist/adv-app-server-api/*"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>icon/play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-5-Copy-8" fill="#000000" opacity="0" x="0" y="0" width="40" height="40"></rect>
+        <path d="M20,30 C25.5228475,30 30,25.5228475 30,20 C30,14.4771525 25.5228475,10 20,10 C14.4771525,10 10,14.4771525 10,20 C10,25.5228475 14.4771525,30 20,30 Z M20,31 C13.9248678,31 9,26.0751322 9,20 C9,13.9248678 13.9248678,9 20,9 C26.0751322,9 31,13.9248678 31,20 C31,26.0751322 26.0751322,31 20,31 Z" id="Oval-5" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <polygon id="Triangle-2" fill="#4595E6" points="25 20 17 25 17 15"></polygon>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon ._tool ._window2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-._tool-._window2">
+            <g id="Group-27">
+                <rect id="Rectangle-891-Copy-13" x="0" y="0" width="38" height="37.9895862"></rect>
+                <g id="Group" transform="translate(6.000000, 6.494793)">
+                    <path d="M13,22 C8.02943725,22 4,17.9705627 4,13 C4,8.02943725 8.02943725,4 13,4 C17.9705627,4 22,8.02943725 22,13 C22,17.9705627 17.9705627,22 13,22 Z M13,21 C17.418278,21 21,17.418278 21,13 C21,8.581722 17.418278,5 13,5 C8.581722,5 5,8.581722 5,13 C5,17.418278 8.581722,21 13,21 Z" id="Combined-Shape" fill="#62A5BE"></path>
+                    <path d="M6,13 C6,16.7341192 8.6537327,19.7865 12,20 L12,6 C8.6537327,6.21349999 6,9.26588084 6,13 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    <path d="M12.5,0 L13.5,0 L13.5,3 L12.5,3 L12.5,0 Z M12.5,23 L13.5,23 L13.5,26 L12.5,26 L12.5,23 Z" id="Combined-Shape" fill="#62A5BE" transform="translate(13.000000, 13.000000) rotate(-330.000000) translate(-13.000000, -13.000000) "></path>
+                    <path d="M12.5,3.55271368e-15 L13.5,3.55271368e-15 L13.5,3 L12.5,3 L12.5,3.55271368e-15 Z M12.5,23 L13.5,23 L13.5,26 L12.5,26 L12.5,23 Z" id="Combined-Shape" fill="#62A5BE" transform="translate(13.000000, 13.000000) rotate(-300.000000) translate(-13.000000, -13.000000) "></path>
+                    <path d="M12.5,0 L13.5,0 L13.5,3 L12.5,3 L12.5,0 Z M12.5,23 L13.5,23 L13.5,26 L12.5,26 L12.5,23 Z" id="Combined-Shape" fill="#62A5BE" transform="translate(13.000000, 13.000000) rotate(-270.000000) translate(-13.000000, -13.000000) "></path>
+                    <path d="M12.5,0 L13.5,0 L13.5,3 L12.5,3 L12.5,0 Z M12.5,23 L13.5,23 L13.5,26 L12.5,26 L12.5,23 Z" id="Combined-Shape" fill="#62A5BE" transform="translate(13.000000, 13.000000) rotate(-240.000000) translate(-13.000000, -13.000000) "></path>
+                    <path d="M12.5,0 L13.5,0 L13.5,3 L12.5,3 L12.5,0 Z M12.5,23 L13.5,23 L13.5,26 L12.5,26 L12.5,23 Z" id="Combined-Shape" fill="#62A5BE" transform="translate(13.000000, 13.000000) rotate(-210.000000) translate(-13.000000, -13.000000) "></path>
+                    <path d="M12.5,1.13686838e-13 L13.5,1.13686838e-13 L13.5,3 L12.5,3 L12.5,1.13686838e-13 Z M12.5,23 L13.5,23 L13.5,26 L12.5,26 L12.5,23 Z" id="Combined-Shape" fill="#62A5BE" transform="translate(13.000000, 13.000000) rotate(-180.000000) translate(-13.000000, -13.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

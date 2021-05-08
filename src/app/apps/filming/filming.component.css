@@ -1,0 +1,65 @@
+.disable
+{
+    opacity: 0.2;
+    pointer-events: none;
+}
+.toolBoxEditer {
+  margin: 10px 15px 20px;
+}
+
+.toolBoxEditer>button {
+    width: 38px;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    margin-right: 8px;
+}
+.div-filming-progress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(128, 128, 128, 0.5);
+  }
+
+  /* .progress {
+    width: 25%;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+  }
+  .progress-p {
+    color: white;
+  } */
+  .filming-alert {
+    text-align:right;
+    margin-right:22px;
+    margin-top:15px;
+    color: #a4a7aa;
+    line-height: 36px;
+  }
+  .modal-butt {
+    padding: 0 36px;
+    height: 36px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+  }
+  
+  .modal-butt.confirm {
+    background: #337CFF;
+    border: 0 solid rgba(255, 255, 255, 0.30);
+  }
+
+  .pagingBar::-webkit-scrollbar-thumb:hover{
+    background: #5A5B5C;
+  }
+  
+  .pagingBar::-webkit-scrollbar-thumb:active{
+    background: #3A3B3C;
+  }

@@ -1,0 +1,349 @@
+<div class='container'>
+    <div class="layout-info">
+        <div class='layout-info-1'>
+            <div class="table-content-1">
+                <nz-collapse [nzBordered]="false">
+                    <nz-collapse-panel #panel1 class="bold collapse-wrapper" [nzHeader]="'智能辅助诊断结果'" [nzShowArrow]="false" [nzDisabled]="true" [nzActive]="false" [ngStyle]="customStyle" [nzExtra]="resultTpl">
+                        <ng-template #resultTpl>
+                            <div class="result-summary-div">
+                                <span class="header-summary" [title]="stenosisDes" [ngStyle]="{'color': stenosisColor}">{{stenosisDes}}</span>
+                                <button class="info-btn" nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu" [ngStyle]="{'background-color': stenosisColor}" title="CAD-RADS评分">
+                                    <span class="white"
+                                        style="color: #ffffff; margin-left: 0.75rem;">{{ScoreCADRADS}}</span>
+                                    <i nz-icon class="m5_l white" nzType="caret-down"></i>
+                                </button>
+                                <nz-dropdown-menu #menu="nzDropdownMenu">
+                                    <ul nz-menu>
+                                        <li nz-menu-item (click)="selected($event)">评分</li>
+                                        <li nz-menu-item (click)="selected($event)">N</li>
+                                    </ul>
+                                </nz-dropdown-menu>
+                            </div>
+                        </ng-template>
+                    </nz-collapse-panel>
+                </nz-collapse>
+            </div>
+
+            <div class="table-content-2">
+                <nz-collapse [nzBordered]="false">
+                    <nz-collapse-panel #panel2 class="bold" [nzHeader]="'冠脉起源及优势型'" [nzActive]="true" [ngStyle]="customStyle" [nzExpandedIcon]="collapse_arrow">
+                        <div class="img_heart_wrapper">
+                            <img class="img_heart" ondragstart="return false" src="assets/images/img_heart.png">
+                            <div class="mauto_r">
+                                <div class="coronary-item-field">
+                                    <span class="coronary-item-name">左主干起源</span>
+                                    <nz-select [(ngModel)]="coronaryFeatureItem.left_coronary_ostium" class="coronary-item-select-short" (ngModelChange)="saveCoronaryFeatureItem()" [compareWith]='compareIntValue' [nzSuffixIcon]="suffix_arrow">
+                                        <nz-option nzValue="0" nzLabel="左窦"></nz-option>
+                                        <nz-option nzValue="1" nzLabel="右窦"></nz-option>
+                                        <nz-option nzValue="2" nzLabel="其他"></nz-option>
+                                        <ng-template #suffix_arrow let-node>
+                                            <i class="ant-select-arrow-icon">
+                                                <svg width="10px" height="10px" viewBox="0 0 10 10">
+                                                    <g id="dropdown_arrow" stroke="none" stroke-width="1" fill="none"
+                                                        fill-rule="evenodd">
+                                                        <polygon id="path-2" fill="#AAAAAA"
+                                                            points="5 5.61693592 1.23899343 2 0 3.19153204 5 8 10 3.19153204 8.76100657 2">
+                                                        </polygon>
+                                                    </g>
+                                                </svg>
+                                            </i>
+                                        </ng-template>
+                                    </nz-select>
+                                </div>
+                                <div class="coronary-item-field">
+                                    <span class="coronary-item-name">右冠状动脉起源</span>
+                                    <nz-select [(ngModel)]="coronaryFeatureItem.right_coronary_ostium" class="coronary-item-select-short" (ngModelChange)="saveCoronaryFeatureItem()" [compareWith]='compareIntValue' [nzSuffixIcon]="suffix_arrow">
+                                        <nz-option nzValue="0" nzLabel="左窦"></nz-option>
+                                        <nz-option nzValue="1" nzLabel="右窦"></nz-option>
+                                        <nz-option nzValue="2" nzLabel="其他"></nz-option>
+                                        <ng-template #suffix_arrow let-node>
+                                            <i class="ant-select-arrow-icon">
+                                                <svg width="10px" height="10px" viewBox="0 0 10 10">
+                                                    <g id="dropdown_arrow" stroke="none" stroke-width="1" fill="none"
+                                                        fill-rule="evenodd">
+                                                        <polygon id="path-2" fill="#AAAAAA"
+                                                            points="5 5.61693592 1.23899343 2 0 3.19153204 5 8 10 3.19153204 8.76100657 2">
+                                                        </polygon>
+                                                    </g>
+                                                </svg>
+                                            </i>
+                                        </ng-template>
+                                    </nz-select>
+                                </div>
+                                <div class="coronary-item-field">
+                                    <span class="coronary-item-name">冠脉优势型</span>
+                                    <nz-select [(ngModel)]="coronaryFeatureItem.coronary_dominance" class="coronary-item-select" (ngModelChange)="saveCoronaryFeatureItem()" [compareWith]='compareIntValue' [nzSuffixIcon]="suffix_arrow">
+                                        <nz-option nzValue="0" nzLabel="左优势型"></nz-option>
+                                        <nz-option nzValue="1" nzLabel="右优势型"></nz-option>
+                                        <nz-option nzValue="2" nzLabel="均衡型"></nz-option>
+                                        <ng-template #suffix_arrow let-node>
+                                            <i class="ant-select-arrow-icon">
+                                                <svg width="10px" height="10px" viewBox="0 0 10 10">
+                                                    <g id="dropdown_arrow" stroke="none" stroke-width="1" fill="none"
+                                                        fill-rule="evenodd">
+                                                        <polygon id="path-2" fill="#AAAAAA"
+                                                            points="5 5.61693592 1.23899343 2 0 3.19153204 5 8 10 3.19153204 8.76100657 2">
+                                                        </polygon>
+                                                    </g>
+                                                </svg>
+                                            </i>
+                                        </ng-template>
+                                    </nz-select>
+                                </div>
+                            </div>
+                        </div>
+                        <ng-template #collapse_arrow let-node>
+                            <i class="ant-collapse-arrow-icon m15_r">
+                                <svg width="8px" height="8px" viewBox="0 0 8 8">
+                                    <g id="dropdown_triangle" stroke="none" stroke-width="1" fill="none"
+                                        fill-rule="evenodd">
+                                        <polygon id="Rectangle" fill="#AAAAAA" points="8 1 4 7 0 1"></polygon>
+                                    </g>
+                                </svg>
+                            </i>
+                        </ng-template>
+                    </nz-collapse-panel>
+
+                    <nz-collapse-panel class="bold bloodvessel" #panel3 [nzHeader]="'血管狭窄'" [nzExpandedIcon]="collapse_arrow" [nzActive]="true" [ngStyle]="customStyle" [nzExtra]="stenosisCountTpl">
+                        <div #stenosisTable class="container-content-stenosis" *ngIf="stenosisItems!=undefined && stenosisItems!=null && stenosisItems.length > 0">
+                            <div *ngFor="let stenosis of stenosisItems; let i =index" [class.disable]="isEditMode" class="stenosis-item" (mousedown)="selectStenosisItem($event, stenosis)" (mouseover)="showDelIcon(stenosis)" (mouseleave)="hideDelIcon(stenosis)" [ngClass]="{'selected-item': selectedStenosisItem.findingUID==stenosis.findingUID && stenosis.isChecked}">
+                                <ng-container *ngIf="stenosis.isKey">
+                                    <div class="stenosis-item-header">
+                                        <div class="stenosis-item-field">
+                                            <label nz-checkbox [(ngModel)]="stenosis.isChecked" [ngClass]="'my-checkbox'" (ngModelChange)="updateChecked()"></label>
+                                        </div>
+                                        <div class="stenosis-item-field">
+                                            <span class="highlight-text">{{ stenosis.findingName }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="stenosis-item-column1">
+                                        <div class="stenosis-item-field">分段：<span class="highlight-text">{{ stenosis.newName }}</span>
+                                        </div>
+                                        <div class="stenosis-item-field">狭窄：
+                                            <span *ngIf="selectedStenosisItem.findingUID!=stenosis.findingUID || !stenosis.isChecked" class="highlight-text">
+                                                {{ stenosis.narrow_length }}mm / {{ stenosis.range_in_millimeters }}%
+                                            </span>
+                                            <div *ngIf="selectedStenosisItem.findingUID==stenosis.findingUID && stenosis.isChecked" class="field-wapper" style="display: flex; width: auto;">
+                                                <span class="highlight-text">{{ stenosis.narrow_length }}</span>mm
+
+                                                <span class="highlight-text">/</span>
+                                                <input maxlength=4 nz-input [(ngModel)]="stenosis.range_in_millimeters" (keyup.enter)="keyUpEnter()" (blur)="synchroSelect()" />%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stenosis-item-column2">
+                                        <div class="stenosis-item-field">
+                                            <span>斑块类型：</span>
+                                            <span *ngIf="selectedStenosisItem.findingUID!=stenosis.findingUID || !stenosis.isChecked" class="highlight-text">{{ stenosis.plaqueName }}</span>
+                                            <nz-select *ngIf="selectedStenosisItem.findingUID==stenosis.findingUID && stenosis.isChecked" [(ngModel)]="stenosis.plaqueType" [ngClass]="'my-select'" [compareWith]='compareIntValue' (ngModelChange)="savePlaqueType($event,stenosis)" [nzSuffixIcon]="suffixIcon_triangle">
+                                                <nz-option nzValue="1" [nzLabel]="isDefaultPlaque==0?'软斑块':'非钙化斑块'">
+                                                </nz-option>
+                                                <nz-option nzValue="2" nzLabel="混合斑块"></nz-option>
+                                                <nz-option nzValue="3" nzLabel="钙化斑块"></nz-option>
+                                                <nz-option nzValue="0" nzLabel="未知" nzHide></nz-option>
+                                                <ng-template #suffixIcon_triangle let-node>
+                                                    <i class="ant-select-arrow-icon">
+                                                        <svg width="8px" height="8px" viewBox="0 0 8 8">
+                                                            <g id="dropdown_triangle" stroke="none" stroke-width="1"
+                                                                fill="none" fill-rule="evenodd">
+                                                                <polygon id="Rectangle" fill="#AAAAAA"
+                                                                    points="8 1 4 7 0 1">
+                                                                </polygon>
+                                                            </g>
+                                                        </svg>
+                                                    </i>
+                                                </ng-template>
+                                            </nz-select>
+                                        </div>
+                                        <div class="stenosis-item-field">
+                                            <span>狭窄程度：</span>
+                                            <span *ngIf="selectedStenosisItem.findingUID!=stenosis.findingUID || !stenosis.isChecked" class="highlight-text">{{ valCvt.stenosisLevelCvt(stenosis.stenosisLevel) }}</span>
+                                            <nz-select *ngIf="selectedStenosisItem.findingUID==stenosis.findingUID && stenosis.isChecked" [(ngModel)]="stenosis.stenosisLevel" [ngClass]="'my-select'" [compareWith]='compareIntValue' (ngModelChange)="synchroInput($event)" [nzSuffixIcon]="suffixIcon_triangle">
+                                                <div *ngFor="let item of NarrowList">
+                                                    <nz-option nzValue="{{item.index}}" nzLabel="{{item.label}}">
+                                                    </nz-option>
+                                                </div>
+                                                <nz-option nzValue="0" nzLabel="未知" nzHide></nz-option>
+                                                <ng-template #suffixIcon_triangle let-node>
+                                                    <i class="ant-select-arrow-icon">
+                                                        <svg width="8px" height="8px" viewBox="0 0 8 8">
+                                                            <g id="dropdown_triangle" stroke="none" stroke-width="1"
+                                                                fill="none" fill-rule="evenodd">
+                                                                <polygon id="Rectangle" fill="#AAAAAA"
+                                                                    points="8 1 4 7 0 1">
+                                                                </polygon>
+                                                            </g>
+                                                        </svg>
+                                                    </i>
+                                                </ng-template>
+                                            </nz-select>
+                                        </div>
+                                    </div>
+                                    <div class="operation-column" [hidden]="!stenosis.isHovered || !stenosis.isChecked">
+                                        <img src="assets/images/icon_light_delete_mini.svg" alt="delete" class="delete-btn1" (mousedown)="deleteStenosisItem(stenosis)" style="width: 1.5rem;height: 1.5rem;">
+                                    </div>
+                                </ng-container>
+                            </div>
+                        </div>
+                        <div class="container-content-stenosis no_finding_div" *ngIf="stenosisItems==undefined || stenosisItems==null || stenosisItems.length == 0">
+                            <img class="img_heart no_finding_img" src="assets/images/icon_nofinding.svg">
+                        </div>
+                        <ng-template #stenosisCountTpl>
+                            <!-- You can use stopPropagation if you don't want the panel to toggle -->
+                            <!-- <nz-badge [nzCount]="stenosisItems.length"></nz-badge> -->
+                            <span class="extra-text">{{stenosisItems.length}}个</span>
+                        </ng-template>
+                        <ng-template #collapse_arrow let-node>
+                            <i class="ant-collapse-arrow-icon m15_r">
+                                <svg width="8px" height="8px" viewBox="0 0 8 8">
+                                    <g id="dropdown_triangle" stroke="none" stroke-width="1" fill="none"
+                                        fill-rule="evenodd">
+                                        <polygon id="Rectangle" fill="#AAAAAA" points="8 1 4 7 0 1"></polygon>
+                                    </g>
+                                </svg>
+                            </i>
+                        </ng-template>
+                    </nz-collapse-panel>
+
+
+                </nz-collapse>
+
+            </div>
+
+            <div class="table-content-3">
+                <nz-collapse [nzBordered]="false">
+                    <nz-collapse-panel #panel4 class="bold m0_b" [nzExpandedIcon]="collapse_arrow" [nzHeader]="'心肌桥/支架'" [nzActive]="true" [ngStyle]="customStyle" [nzExtra]="stentCountTpl">
+                        <div class="stent-table-header" *ngIf="stentItems!=undefined && stentItems!=null && stentItems.length > 0">
+                            <span class="stent-item-column0">&nbsp;</span>
+                            <span class="stent-item-column1">分段</span>
+                            <span class="stent-item-column2">类型</span>
+                            <span class="stent-item-column3">详细信息</span>
+                            <span class="stent-item-column4">&nbsp;</span>
+                        </div>
+                        <div #stentTable class="container-content-stent" *ngIf="stentItems!=undefined && stentItems!=null && stentItems.length > 0">
+                            <div *ngFor="let stent of stentItems" [class.disable]="isEditMode" class="stent-item" (click)="selectStentItem($event, stent)" (mouseover)="showDelIcon(stent)" (mouseleave)="hideDelIcon(stent)" [ngClass]="{'selected-item': selectedStentItem.findingUID==stent.findingUID && stent.isChecked}">
+                                <ng-container *ngIf="stent.isKey">
+                                    <div class="stent-item-column0">
+                                        <div class="stent-item-field">
+                                            <label nz-checkbox [(ngModel)]="stent.isChecked" [ngClass]="'my-checkbox'" (ngModelChange)="updateChecked()" class="highlight-text center-content"></label>
+                                            <span class="highlight-text center-content">{{ stent.findingName }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="stent-item-column1">
+                                        <div class="stent-item-field">
+                                            <span class="highlight-text center-content">{{ stent.newName }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="stent-item-column2">
+                                        <div class="stent-item-field m10_r">
+                                            <span class="highlight-text center-content" *ngIf="selectedStentItem.findingUID!=stent.findingUID ||!stent.isChecked">{{ valCvt.isStentPresentCvt(stent.is_stent_present) }}</span>
+                                            <nz-select *ngIf="selectedStentItem.findingUID==stent.findingUID && stent.isChecked" [compareWith]='compareIntValue' [(ngModel)]="stent.is_stent_present" [ngClass]="'my_full_width_select'" (ngModelChange)='saveStentItem()' [nzSuffixIcon]="suffix_arrow">
+                                                <nz-option nzValue="0" nzLabel="心肌桥"></nz-option>
+                                                <nz-option nzValue="1" nzLabel="支架"></nz-option>
+                                                <ng-template #suffix_arrow let-node>
+                                                    <i class="ant-select-arrow-icon">
+                                                        <svg width="10px" height="10px" viewBox="0 0 10 10">
+                                                            <g id="dropdown_arrow" stroke="none" stroke-width="1"
+                                                                fill="none" fill-rule="evenodd">
+                                                                <polygon id="path-2" fill="#AAAAAA"
+                                                                    points="5 5.61693592 1.23899343 2 0 3.19153204 5 8 10 3.19153204 8.76100657 2">
+                                                                </polygon>
+                                                            </g>
+                                                        </svg>
+                                                    </i>
+                                                </ng-template>
+                                            </nz-select>
+                                        </div>
+                                    </div>
+                                    <div class="stent-item-column3">
+                                        <div class="stent-item-field">
+                                            <span class='center-content inherit' *ngIf="stent.is_stent_present == 0">
+                                                <span class='highlight-text'
+                                                    *ngIf="selectedStentItem.findingUID!=stent.findingUID ||!stent.isChecked">
+                                                    {{ valCvt.levelCvt(stent.level) }}
+                                                </span>
+                                            <nz-select *ngIf="selectedStentItem.findingUID==stent.findingUID && stent.isChecked" [(ngModel)]="stent.level" [ngClass]="'my_full_width_select'" [compareWith]='compareIntValue' (ngModelChange)="saveStentItem()" [nzSuffixIcon]="suffix_arrow">
+                                                <nz-option nzValue="1" nzLabel="浅表"></nz-option>
+                                                <nz-option nzValue="2" nzLabel="纵深"></nz-option>
+                                                <ng-template #suffix_arrow let-node>
+                                                    <i class="ant-select-arrow-icon">
+                                                            <svg width="10px" height="10px" viewBox="0 0 10 10">
+                                                                <g id="dropdown_arrow" stroke="none" stroke-width="1"
+                                                                    fill="none" fill-rule="evenodd">
+                                                                    <polygon id="path-2" fill="#AAAAAA"
+                                                                        points="5 5.61693592 1.23899343 2 0 3.19153204 5 8 10 3.19153204 8.76100657 2">
+                                                                    </polygon>
+                                                                </g>
+                                                            </svg>
+                                                        </i>
+                                                </ng-template>
+                                            </nz-select>
+                                            </span>
+
+                                            <span class='center-content inherit' *ngIf="stent.is_stent_present == 1">
+                                                <span class='highlight-text'
+                                                    *ngIf="selectedStentItem.findingUID!=stent.findingUID">
+                                                    {{ valCvt.stentRestenosisCvt(stent.is_stent_restenosis) }}
+                                                </span>
+                                            <nz-select *ngIf="selectedStentItem.findingUID==stent.findingUID && stent.isChecked" [(ngModel)]="stent.is_stent_restenosis" [ngClass]="'my_full_width_select'" [compareWith]='compareIntValue' (ngModelChange)="saveStentItem()" [nzSuffixIcon]="suffix_arrow">
+                                                <nz-option nzValue="1" nzLabel="支架内再狭窄"></nz-option>
+                                                <nz-option nzValue="2" nzLabel="无"></nz-option>
+                                                <ng-template #suffix_arrow let-node>
+                                                    <i class="ant-select-arrow-icon">
+                                                            <svg width="10px" height="10px" viewBox="0 0 10 10">
+                                                                <g id="dropdown_arrow" stroke="none" stroke-width="1"
+                                                                    fill="none" fill-rule="evenodd">
+                                                                    <polygon id="path-2" fill="#AAAAAA"
+                                                                        points="5 5.61693592 1.23899343 2 0 3.19153204 5 8 10 3.19153204 8.76100657 2">
+                                                                    </polygon>
+                                                                </g>
+                                                            </svg>
+                                                        </i>
+                                                </ng-template>
+                                            </nz-select>
+                                            </span>
+
+                                            <span class='center-content inherit' *ngIf="stent.is_stent_present == 2">
+                                                <span class='highlight-text'>未知</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="stent-item-column4" [hidden]="!stent.isHovered || !stent.isChecked">
+                                        <img src="assets/images/icon_light_delete_mini.svg" alt="delete" class="delete-btn2" (click)="deleteStentItem(stent)" style="width: 1.5rem;height: 1.5rem;">
+                                    </div>
+                                </ng-container>
+                            </div>
+                        </div>
+                        <div class="container-content-stent no_finding_div" *ngIf="stentItems==undefined || stentItems==null || stentItems.length == 0">
+                            <img class="img_heart no_finding_img" src="assets/images/icon_nofinding.svg">
+                        </div>
+                        <ng-template #stentCountTpl>
+                            <!-- You can use stopPropagation if you don't want the panel to toggle -->
+                            <!-- <nz-badge [nzCount]="stentItems.length"></nz-badge> -->
+                            <span class="extra-text">{{stentItems.length}}个</span>
+                        </ng-template>
+                        <ng-template #collapse_arrow let-active>
+                            <i class="ant-collapse-arrow-icon m15_r">
+                                <svg width="8px" height="8px" viewBox="0 0 8 8">
+                                    <g id="dropdown_triangle" stroke="none" stroke-width="1" fill="none"
+                                        fill-rule="evenodd">
+                                        <polygon id="Rectangle" fill="#AAAAAA" points="8 1 4 7 0 1"></polygon>
+                                    </g>
+                                </svg>
+                            </i>
+                        </ng-template>
+                    </nz-collapse-panel>
+                </nz-collapse>
+            </div>
+        </div>
+
+        <div class='layout-info-2'>
+            <div class="table-content-4">
+                <report #report></report>
+            </div>
+        </div>
+    </div>
+    <div class="report-foot statement">
+        本产品分析结果需结合医生诊断意见，产品不可用于单独诊断。
+    </div>
+</div>

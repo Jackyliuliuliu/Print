@@ -1,0 +1,87 @@
+.renderTemplate {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.renderTemplate a{
+    margin-right: 0.31rem;
+}
+
+.red-border {
+    border: rgba(255, 90, 75, 0.3) 2px solid;
+}
+
+.info-img {
+    /* margin-top: -3px;
+    right: 0px;
+    position: absolute; */
+    width: 1.3rem;
+}
+
+.ant-select-dropdown /deep/ div {
+    background: #363d4d;
+}
+
+.tag-transparent {
+    background-color: #101216;
+    height: 20px;
+    width: 130px;
+    top: 229px;
+    position: absolute;
+    z-index: 9999999;
+    left: -1213px;
+    opacity: 0;
+}
+
+.tag-transparent em {
+    display: block;
+    border-width: 6px;
+    position: absolute;
+    bottom: -11px;
+    left: 65px;
+    border-style: solid dashed dashed;
+    border-color: #101216 transparent transparent;
+    font-size: 0;
+    line-height: 0;
+    opacity: 0;
+}
+
+.tag-solid {
+    background-color: #101216;
+    height: 20px;
+    width: 130px;
+    top: 1229px;
+    position: absolute;
+    z-index: 9999999;
+    left: 1213px;
+    opacity: 1;
+}
+
+.tag-solid em {
+    display: block;
+    border-width: 6px;
+    position: absolute;
+    bottom: -11px;
+    left: 65px;
+    border-style: solid dashed dashed;
+    border-color: #101216 transparent transparent;
+    font-size: 0;
+    line-height: 0;
+    opacity: 1;
+}
+
+.tag-solid.fadeout {
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+    opacity: 0;
+}
+
+.tooltip {
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: right;
+}

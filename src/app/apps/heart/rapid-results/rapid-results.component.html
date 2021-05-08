@@ -1,0 +1,545 @@
+<nz-modal appMovableModalDirective [nzVisible]="isVisibleBatch" nzTitle='保存结果' [nzFooter]='null' nzWidth='53.875rem'
+    (nzOnCancel)='close()'>
+
+    <div class="FlexRow FullElement" unselectable="on" onselectstart="return false;">
+        <div class="div-progress-back" [hidden]="canAllPageResponse">
+            <div class="div-progress" [hidden]="canAllPageResponse">
+                <div class="progress" [hidden]="isHiddenProgress">
+                    <p class="progress-p">{{progressContent}}</p>
+                    <div>
+                        <nz-progress [nzPercent]="savePercent" [nzShowInfo]="false"></nz-progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative LeftModalContent">
+            <div class="tag" id="tabset">
+                <nz-tabset [(nzSelectedIndex)]="currentImageTypeIndex" [nzType]="'card'"
+                    [nzTabBarStyle]='{"margin": "0", "border": "0", "background": "white", "color": "black"}'>
+                    <nz-tab *ngFor="let tab of tabImageType; let i = index" [nzTitle]="tab"
+                        (nzClick)='selectPreviewImage(tab, i)' [nzDisabled]="disableTab">
+                    </nz-tab>
+                </nz-tabset>
+            </div>
+            <div class="relative">
+                <div class="FullElement ViewerContainer FlexRow" #viewerControl>
+                </div>
+                <div class="FullElement ViewerContainer1 FlexRow" #viewerControlClone
+                    style=" height:600px;width:600px; border: 1px solid #232B3B;left:-9999px;top: -9999px;position: absolute">
+                </div>
+                <div class="page-class">
+                    <label>{{currentPreviewIndex + 1}}</label> /
+                    <label>{{imagePreviewInfoList ? (imagePreviewInfoList.length + saveImageCount) : 0}}</label>
+                </div>
+                <div class="del_btn">
+                    <span class="img-wrapper m10_l">
+                        <img class="pointer img" src="../../../../assets/assets/images/delete.svg"
+                            (click)='deleteImage()' title="删除当前图像">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="FlexColumn info-content">
+            <div class='card-container'>
+                <div class="info-bg box-show">
+                    <label class="m20_l m10_r">模板</label>
+                    <nz-select id="selectTemplate" class="nz-select-24" [(ngModel)]="currentTemplateName"
+                        [nzSuffixIcon]="suffixIcon_triangle" (ngModelChange)="switchTemplate(currentTemplateName)"
+                        nzShowSearch (nzOnSearch)='addTemplateName($event)' (nzBlur)="addTemplate()">
+                        <nz-option *ngFor='let templateName of templateNames' nzValue="{{templateName}}"
+                            nzLabel="{{templateName}}">
+                        </nz-option>
+                    </nz-select>
+                    <ng-template #suffixIcon_triangle let-node>
+                        <i class="ant-select-arrow-icon">
+                            <svg width="8px" height="8px" viewBox="0 0 8 8">
+                                <g id="dropdown_triangle" stroke="none" stroke-width="1" fill="none"
+                                    fill-rule="evenodd">
+                                    <polygon id="Rectangle" fill="#AAAAAA" points="8 1 4 7 0 1"></polygon>
+                                </g>
+                            </svg>
+                        </i>
+                    </ng-template>
+                    <img class="m10_r m10_l m8_t m8_b pointer"
+                        [src]="templateUnsaved?'../../../../assets/assets/images/wheelPlay_save.svg':'../../../../assets/images/wheelPlay_save_unedited.svg'"
+                        (click)="saveTemplate()" title="保存配置" style="width: 1.875rem;height: 1.875rem;">
+                    <img class="pointer m8_t m8_b" src="../../../../assets/assets/images/wheelPlay_del.svg"
+                        (click)="deleteTemplate()" title="删除配置" style="width: 1.875rem;height: 1.875rem;">
+                </div>
+
+                <div class="info-bg p20_l info-height">
+                    <label class="m15_b p15_t block">图像类型</label>
+                    <!-- <div>
+            <app-rapid-result-combox ></app-rapid-result-combox>
+          </div> -->
+                    <div>
+                        <div class="info-block" style="flex-direction: column;">
+                            <label class="block m10_b" nz-checkbox [(ngModel)]="vrChecked"
+                                (ngModelChange)="vrCheckBoxChanged()">VR心脏</label>
+                            <nz-radio-group class="m10_b" *ngIf="vrChecked" [(ngModel)]="vrMode"
+                                (ngModelChange)="modeChanged('vr', true)">
+                                <div class="FlexRow">
+                                    <div class="FlexCol" style="width: 110px;">
+                                        <label class="m40_l infor-text" nz-radio [nzValue]="0">固定角度</label>
+                                        <label class="m40_l m15_t infor-text" nz-radio [nzValue]="1">旋转角度</label>
+                                    </div>
+                                    <div class="m5_t" class="FlexCol">
+                                        <nz-select [(ngModel)]="listVrImageInfo" nzMode="default" [nzMaxTagCount]="1"
+                                            nzPlaceHolder="固定角度/默认全选" [nzDropdownRender]="renderTemplate1"
+                                            [nzCustomTemplate]="defaultTemplate" [nzSuffixIcon]="suffixIcon_triangle"
+                                            [nzDropdownStyle]='{"width":"300px", "left":"-66px"}'
+                                            (ngModelChange)="onSelectChange('vr')">
+                                            <nz-option nzCustomContent><label class="m5_r" nz-checkbox
+                                                    [(ngModel)]="vrAllChecked" [nzIndeterminate]="vrIndeterminate"
+                                                    (ngModelChange)="updateAllChecked('vr')">全选</label>
+                                            </nz-option>
+                                            <nz-option nzCustomContent *ngFor="let option of vrFixedImageInfo"
+                                                [nzLabel]="option.name" [nzValue]="option.name">
+                                                <div class="del-hover">
+                                                    <label class="m5_r" nz-checkbox [(ngModel)]="option.isChecked"
+                                                        (ngModelChange)="updateSingleChecked('vr')">{{option.name}}</label>
+                                                    <img *ngIf="option.canDelete" class="option-del img"
+                                                        src="../../../../assets/assets/images/wheelPlay_del.svg"
+                                                        (click)="deleteOption('vr',option)" title="删除">
+                                                </div>
+                                            </nz-option>
+                                        </nz-select>
+                                        <ng-template #defaultTemplate let-selected>
+                                            {{vrDisplayContent}}
+                                        </ng-template>
+                                        <ng-template #renderTemplate1>
+                                            <div style="display: flex;">
+                                                <app-rapid-result-combox (outputInfo)="getOutputInfo($event, 'vr')">
+                                                </app-rapid-result-combox>
+                                            </div>
+                                        </ng-template>
+
+                                        <div class="FlexCol m5_t">
+                                            <div class="FlexRow Fill">
+                                                <span class="m10_r infor-text">左右旋转</span>
+                                                <span class="m10_r">图幅</span>
+                                                <nz-select style="width: 7rem;" class="nz-select-24"
+                                                    [(ngModel)]="vrLrNum" [nzSuffixIcon]="suffixIcon_triangle"
+                                                    [nzDropdownRender]="renderTemplateLr"
+                                                    (ngModelChange)="changeRotateNum('vr')"
+                                                    [nzDropdownStyle]='{"width":"135px"}'>
+                                                    <nz-option nzCustomContent *ngFor="let option of vrLrNumList"
+                                                        [nzLabel]="option" [nzValue]="option">
+                                                        <div class="del-hover">
+                                                            <label>{{option}}</label>
+                                                            <img class="option-del img"
+                                                                src="../../../../assets/assets/images/wheelPlay_del.svg"
+                                                                (click)="deleteNum(option,'vr','lr')" title="删除">
+                                                        </div>
+                                                    </nz-option>
+                                                </nz-select>
+                                                <ng-template #renderTemplateLr>
+                                                    <app-rapid-result-tooltip
+                                                        (inputVal)="addRotateNum($event, 'vr', 'lr')">
+                                                    </app-rapid-result-tooltip>
+                                                </ng-template>
+                                            </div>
+                                            <div class="FlexRow Fill m5_t">
+                                                <span class="m10_r infor-text">上下旋转</span>
+                                                <span class="m10_r">图幅</span>
+                                                <nz-select style="width: 7rem;" class="nz-select-24"
+                                                    [(ngModel)]="vrAuNum" [nzSuffixIcon]="suffixIcon_triangle"
+                                                    [nzDropdownRender]="renderTemplateAu"
+                                                    (ngModelChange)="changeRotateNum('vr')"
+                                                    [nzDropdownStyle]='{"width":"135px"}'>
+                                                    <nz-option nzCustomContent *ngFor="let option of vrAuNumList"
+                                                        [nzLabel]="option" [nzValue]="option">
+                                                        <div class="del-hover">
+                                                            <label>{{option}}</label>
+                                                            <img class="option-del img"
+                                                                src="../../../../assets/assets/images/wheelPlay_del.svg"
+                                                                (click)="deleteNum(option,'vr','au')" title="删除">
+                                                        </div>
+                                                    </nz-option>
+                                                </nz-select>
+                                                <ng-template #renderTemplateAu>
+                                                    <app-rapid-result-tooltip
+                                                        (inputVal)="addRotateNum($event, 'vr', 'au')">
+                                                    </app-rapid-result-tooltip>
+                                                </ng-template>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nz-radio-group>
+                        </div>
+                        <div class="info-block" style="flex-direction: column;">
+                            <label class="block m10_b" nz-checkbox [(ngModel)]="vrTreeChecked"
+                                (ngModelChange)="vrTreeCheckBoxChanged()">VR冠脉树</label>
+
+                            <nz-radio-group class="m10_b" *ngIf="vrTreeChecked" [(ngModel)]="vrTreeMode"
+                                (ngModelChange)="modeChanged('vrTree', true)">
+                                <div class="FlexRow">
+                                    <div class="FlexCol" style="width: 110px;">
+                                        <label class="m40_l infor-text" nz-radio [nzValue]="0">固定角度</label>
+                                        <label class="m40_l m15_t infor-text" nz-radio [nzValue]="1">旋转角度</label>
+                                    </div>
+                                    <div class="m5_t" class="FlexCol">
+                                        <nz-select [(ngModel)]="listVrTreeImageInfo" nzMode="default"
+                                            [nzMaxTagCount]="1" nzPlaceHolder="固定角度/默认全选"
+                                            [nzSuffixIcon]="suffixIcon_triangle" [nzDropdownRender]="renderTemplate1"
+                                            [nzCustomTemplate]="defaultTemplate"
+                                            [nzDropdownStyle]='{"width":"300px", "left":"-66px"}'
+                                            (ngModelChange)="onSelectChange('vrTree')">
+                                            <nz-option nzCustomContent><label class="m5_r" nz-checkbox
+                                                    [(ngModel)]="vrTreeAllChecked"
+                                                    [nzIndeterminate]="vrTreeIndeterminate"
+                                                    (ngModelChange)="updateAllChecked('vrTree')">全选</label></nz-option>
+                                            <nz-option nzCustomContent *ngFor="let option of vrTreeFixedImageInfo"
+                                                [nzLabel]="option.name" [nzValue]="option.name">
+                                                <div class="del-hover">
+                                                    <label class="m5_r" nz-checkbox [(ngModel)]="option.isChecked"
+                                                        (ngModelChange)="updateSingleChecked('vrTree')">{{option.name}}</label>
+                                                    <img *ngIf="option.canDelete" class="option-del img"
+                                                        src="../../../../assets/assets/images/wheelPlay_del.svg"
+                                                        (click)="deleteOption('vrTree',option)" title="删除">
+                                                </div>
+                                            </nz-option>
+                                        </nz-select>
+                                        <ng-template #defaultTemplate let-selected>
+                                            {{vrTreeDisplayContent}}
+                                        </ng-template>
+                                        <ng-template #renderTemplate1>
+                                            <div style="display: flex;">
+                                                <app-rapid-result-combox (outputInfo)="getOutputInfo($event, 'vrTree')">
+                                                </app-rapid-result-combox>
+                                            </div>
+                                        </ng-template>
+
+                                        <div class="FlexCol m5_t">
+                                            <div class="FlexRow Fill">
+                                                <span class="m10_r infor-text">左右旋转</span>
+                                                <span class="m10_r">图幅</span>
+                                                <nz-select style="width: 7rem;" class="nz-select-24"
+                                                    [(ngModel)]="vrTreeLrNum" [nzSuffixIcon]="suffixIcon_triangle"
+                                                    [nzDropdownRender]="renderTemplateLr"
+                                                    (ngModelChange)="changeRotateNum('vrTree')"
+                                                    [nzDropdownStyle]='{"width":"135px"}'>
+                                                    <nz-option nzCustomContent *ngFor="let option of vrTreeLrNumList"
+                                                        [nzLabel]="option" [nzValue]="option">
+                                                        <div class="del-hover">
+                                                            <label>{{option}}</label>
+                                                            <img class="option-del img"
+                                                                src="../../../../assets/assets/images/wheelPlay_del.svg"
+                                                                (click)="deleteNum(option,'vrTree','lr')" title="删除">
+                                                        </div>
+                                                    </nz-option>
+                                                </nz-select>
+                                                <ng-template #renderTemplateLr>
+                                                    <app-rapid-result-tooltip
+                                                        (inputVal)="addRotateNum($event, 'vrTree', 'lr')">
+                                                    </app-rapid-result-tooltip>
+                                                </ng-template>
+                                            </div>
+                                            <div class="FlexRow Fill m5_t">
+                                                <span class="m10_r infor-text">上下旋转</span>
+                                                <span class="m10_r">图幅</span>
+                                                <nz-select style="width: 7rem;" class="nz-select-24"
+                                                    [(ngModel)]="vrTreeAuNum" [nzSuffixIcon]="suffixIcon_triangle"
+                                                    [nzDropdownRender]="renderTemplateAu"
+                                                    (ngModelChange)="changeRotateNum('vrTree')"
+                                                    [nzDropdownStyle]='{"width":"135px"}'>
+                                                    <nz-option nzCustomContent *ngFor="let option of vrTreeAuNumList"
+                                                        [nzLabel]="option" [nzValue]="option">
+                                                        <div class="del-hover">
+                                                            <label>{{option}}</label>
+                                                            <img class="option-del img"
+                                                                src="../../../../assets/assets/images/wheelPlay_del.svg"
+                                                                (click)="deleteNum(option,'vrTree','au')" title="删除">
+                                                        </div>
+                                                    </nz-option>
+                                                </nz-select>
+                                                <ng-template #renderTemplateAu>
+                                                    <app-rapid-result-tooltip
+                                                        (inputVal)="addRotateNum($event, 'vrTree', 'au')">
+                                                    </app-rapid-result-tooltip>
+                                                </ng-template>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nz-radio-group>
+                        </div>
+
+                        <div class="info-block" style="flex-direction: column;">
+                            <label class="block m10_b" nz-checkbox [(ngModel)]="mipChecked"
+                                (ngModelChange)="mipCheckBoxChanged()">MIP</label>
+
+                            <nz-radio-group class="m10_b" *ngIf="mipChecked" [(ngModel)]="mipMode"
+                                (ngModelChange)="modeChanged('mip', true)">
+                                <div class="FlexRow">
+                                    <div class="FlexCol" style="width: 110px;">
+                                        <label class="m40_l infor-text" nz-radio [nzValue]="0">固定角度</label>
+                                        <label class="m40_l m15_t infor-text" nz-radio [nzValue]="1">旋转角度</label>
+                                    </div>
+                                    <div class="m5_t" class="FlexCol">
+                                        <nz-select [(ngModel)]="listMipImageInfo" nzMode="default" [nzMaxTagCount]="1"
+                                            nzPlaceHolder="固定角度/默认全选" [nzDropdownRender]="renderTemplate1"
+                                            [nzCustomTemplate]="defaultTemplate" [nzSuffixIcon]="suffixIcon_triangle"
+                                            [nzDropdownStyle]='{"width":"300px", "left":"-66px"}'
+                                            (ngModelChange)="onSelectChange('mip')">
+                                            <nz-option nzCustomContent><label class="m5_r" nz-checkbox
+                                                    [(ngModel)]="mipAllChecked" [nzIndeterminate]="mipIndeterminate"
+                                                    (ngModelChange)="updateAllChecked('mip')">全选</label>
+                                            </nz-option>
+                                            <nz-option nzCustomContent *ngFor="let option of mipFixedImageInfo"
+                                                [nzLabel]="option.name" [nzValue]="option.name">
+                                                <div class="del-hover">
+                                                    <label class="m5_r" nz-checkbox [(ngModel)]="option.isChecked"
+                                                        (ngModelChange)="updateSingleChecked('mip')">{{option.name}}</label>
+                                                    <img *ngIf="option.canDelete" class="option-del img"
+                                                        src="../../../../assets/assets/images/wheelPlay_del.svg"
+                                                        (click)="deleteOption('mip',option)" title="删除">
+                                                </div>
+                                            </nz-option>
+                                        </nz-select>
+                                        <ng-template #defaultTemplate let-selected>
+                                            {{mipDisplayContent}}
+                                        </ng-template>
+                                        <ng-template #renderTemplate1>
+                                            <div style="display: flex;">
+                                                <app-rapid-result-combox (outputInfo)="getOutputInfo($event, 'mip')">
+                                                </app-rapid-result-combox>
+                                            </div>
+                                        </ng-template>
+
+                                        <div class="FlexCol m5_t">
+                                            <div class="FlexRow Fill">
+                                                <span class="m10_r infor-text">左右旋转</span>
+                                                <span class="m10_r">图幅</span>
+                                                <nz-select style="width: 7rem;" class="nz-select-24"
+                                                    [(ngModel)]="mipLrNum" [nzSuffixIcon]="suffixIcon_triangle"
+                                                    [nzDropdownRender]="renderTemplateLr"
+                                                    (ngModelChange)="changeRotateNum('mip')"
+                                                    [nzDropdownStyle]='{"width":"135px"}'>
+
+                                                    <nz-option nzCustomContent *ngFor="let option of mipLrNumList"
+                                                        [nzLabel]="option" [nzValue]="option">
+                                                        <div class="del-hover">
+                                                            <label>{{option}}</label>
+                                                            <img class="option-del img"
+                                                                src="../../../../assets/assets/images/wheelPlay_del.svg"
+                                                                (click)="deleteNum(option,'mip','lr')" title="删除">
+                                                        </div>
+                                                    </nz-option>
+
+                                                </nz-select>
+                                                <ng-template #renderTemplateLr>
+                                                    <app-rapid-result-tooltip
+                                                        (inputVal)="addRotateNum($event, 'mip', 'lr')">
+                                                    </app-rapid-result-tooltip>
+                                                </ng-template>
+                                            </div>
+                                            <div class="FlexRow Fill m5_t">
+                                                <span class="m10_r infor-text">上下旋转</span>
+                                                <span class="m10_r">图幅</span>
+                                                <nz-select style="width: 7rem;" class="nz-select-24"
+                                                    [(ngModel)]="mipAuNum" [nzSuffixIcon]="suffixIcon_triangle"
+                                                    [nzDropdownRender]="renderTemplateAu"
+                                                    (ngModelChange)="changeRotateNum('mip')"
+                                                    [nzDropdownStyle]='{"width":"135px"}'>
+                                                    <nz-option nzCustomContent *ngFor="let option of mipAuNumList"
+                                                        [nzLabel]="option" [nzValue]="option">
+                                                        <div class="del-hover">
+                                                            <label>{{option}}</label>
+                                                            <img class="option-del img"
+                                                                src="../../../../assets/assets/images/wheelPlay_del.svg"
+                                                                (click)="deleteNum(option,'mip','au')" title="删除">
+                                                        </div>
+                                                    </nz-option>
+                                                </nz-select>
+                                                <ng-template #renderTemplateAu>
+                                                    <app-rapid-result-tooltip
+                                                        (inputVal)="addRotateNum($event, 'mip', 'au')">
+                                                    </app-rapid-result-tooltip>
+                                                </ng-template>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nz-radio-group>
+                        </div>
+                        <div class="info-block info-block-style">
+                            <div>
+                                <label class="block m10_b" nz-checkbox name='cpr' [(ngModel)]="cprChecked"
+                                    (ngModelChange)="cprCheckBoxChanged()">CPR</label>
+                                <div *ngIf="cprChecked" class="m40_l info-block-content">
+                                    <nz-select style="width: 187px;" [(ngModel)]="listCprImageInfo" nzMode="default"
+                                        [nzMaxTagCount]="1" [nzDropdownRender]="renderTemplateCpr"
+                                        [nzSuffixIcon]="suffixIcon_triangle" [nzCustomTemplate]="defaultTemplate"
+                                        [nzDropdownStyle]='{"overflow-y": "auto",
+                                        "max-height": "235px"}'>
+                                        <nz-option nzCustomContent></nz-option>
+                                    </nz-select>
+                                    <ng-template #defaultTemplate>
+                                        {{cprDisplayContent}}
+                                    </ng-template>
+                                    <ng-template #renderTemplateCpr>
+                                        <nz-tree [nzData]="nodes" nzCheckable nzMultiple [nzCheckedKeys]="cprNodeValue"
+                                            (nzCheckBoxChange)="onTreeChange($event, 'cpr')">
+                                        </nz-tree>
+                                    </ng-template>
+                                    <span class="m10_l m10_r">图幅</span>
+                                    <nz-select class="nz-select-style" [(ngModel)]="numCPR"
+                                        (ngModelChange)="onNumChange('cpr')" [nzSuffixIcon]="suffixIcon_triangle"
+                                        [nzDropdownRender]="renderTemplate" [nzDropdownStyle]='{"width":"135px"}'>
+                                        <nz-option nzCustomContent *ngFor="let item of cprNumList" [nzLabel]="item"
+                                            [nzValue]="item">
+                                            <div class="del-hover">
+                                                <label>{{item}}</label>
+                                                <img class="option-del img"
+                                                    src="../../../../assets/assets/images/wheelPlay_del.svg"
+                                                    (click)="deleteCprNum(item,'cpr')" title="删除">
+                                            </div>
+                                        </nz-option>
+                                    </nz-select>
+                                    <ng-template #renderTemplate>
+                                        <app-rapid-result-tooltip (inputVal)="addCprOrScprNum($event, 'cpr')">
+                                        </app-rapid-result-tooltip>
+                                    </ng-template>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-block info-block-style">
+                            <div>
+                                <label class="block m10_b" nz-checkbox name='scpr' [(ngModel)]="scprChecked"
+                                    (ngModelChange)="scprCheckBoxChanged()">SCPR</label>
+                                <div *ngIf="scprChecked" class="m40_l info-block-content">
+                                    <nz-select style="width: 187px;" [(ngModel)]="listScprImageInfo" nzMode="default"
+                                        [nzMaxTagCount]="1" [nzDropdownRender]="renderTemplateScpr"
+                                        [nzSuffixIcon]="suffixIcon_triangle" [nzCustomTemplate]="defaultTemplate"
+                                        [nzDropdownStyle]='{"overflow-y": "auto",
+                                        "max-height": "235px"}'>
+                                        <nz-option nzCustomContent></nz-option>
+                                    </nz-select>
+                                    <ng-template #defaultTemplate>
+                                        {{scprDisplayContent}}
+                                    </ng-template>
+                                    <ng-template #renderTemplateScpr>
+                                        <nz-tree class="nz-tree-select-style" [nzData]="nodes" nzCheckable nzMultiple [nzCheckedKeys]="scprNodeValue"
+                                            (nzCheckBoxChange)="onTreeChange($event, 'scpr')">
+                                        </nz-tree>
+                                    </ng-template>
+
+                                    <span class="m10_l m10_r">图幅</span>
+                                    <nz-select class="nz-select-style" [(ngModel)]="numSCPR"
+                                        (ngModelChange)="onNumChange('scpr')" [nzSuffixIcon]="suffixIcon_triangle"
+                                        [nzDropdownRender]="renderTemplate" [nzDropdownStyle]='{"width":"135px"}'>
+                                        <nz-option nzCustomContent *ngFor="let item of scprNumList" [nzLabel]="item"
+                                            [nzValue]="item">
+                                            <div class="del-hover">
+                                                <label>{{item}}</label>
+                                                <img class="option-del img"
+                                                    src="../../../../assets/assets/images/wheelPlay_del.svg"
+                                                    (click)="deleteCprNum(item,'scpr')" title="删除">
+                                            </div>
+                                        </nz-option>
+                                    </nz-select>
+                                    <ng-template #renderTemplate>
+                                        <app-rapid-result-tooltip (inputVal)="addCprOrScprNum($event, 'scpr')">
+                                        </app-rapid-result-tooltip>
+                                    </ng-template>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m15_t text-right">
+                    <label class="m10_r field">序列名称</label>
+                    <input maxlength=20 class="" nz-input [ngClass]="'customInput'" [(ngModel)]="seriesName" />
+                </div>
+
+                <div class="m15_t text-right">
+                    <label class="m10_r field">PACS地址</label>
+                    <nz-select [(ngModel)]="currentPacsAddr" [nzSuffixIcon]="suffixIcon_triangle">
+                        <nz-option *ngFor='let pacsAddr of pacsAddrs.pacsList' nzValue="{{pacsAddr}}"
+                            nzLabel="{{pacsAddr}}">
+                        </nz-option>
+                        <ng-template #suffixIcon_triangle let-node>
+                            <i class="ant-select-arrow-icon">
+                                <svg width="8px" height="8px" viewBox="0 0 8 8">
+                                    <g id="dropdown_triangle" stroke="none" stroke-width="1" fill="none"
+                                        fill-rule="evenodd">
+                                        <polygon id="Rectangle" fill="#AAAAAA" points="8 1 4 7 0 1"></polygon>
+                                    </g>
+                                </svg>
+                            </i>
+                        </ng-template>
+                    </nz-select>
+                </div>
+
+                <div class=" m15_t text-right">
+                    <button nz-button class="btn-bottom" (click)="saveToPACS()">发送到PACS</button>
+                    <label class="m10_r"></label>
+                    <button nz-button class="btn-bottom" (click)="saveToFilming()">发送到胶片</button>
+                </div>
+            </div>
+        </div>
+
+        <filming-review #filmingreviewarea></filming-review>
+    </div>
+</nz-modal>
+
+<nz-modal [(nzVisible)]="isShowNoImage" nzWrapClassName="vertical-center-modal" [nzContent]="noImageContent"
+    [nzFooter]="noImageFooter" (nzOnCancel)="closeShowNoImage()" [nzTitle]="headerTitle" [nzCancelDisabled]=true>
+    <ng-template #noImageContent>
+        <div class="modal-content-wrapper">
+            <img src="assets/images/question.mark.svg" />
+            <p class="modal-content">
+                无相关图片
+            </p>
+        </div>
+    </ng-template>
+    <ng-template #noImageFooter>
+        <button class="modal-butt confirm" (click)="closeShowNoImage()">确 定</button>
+    </ng-template>
+    <ng-template #headerTitle>
+        提示
+    </ng-template>
+</nz-modal>
+
+<!-- alert if quit unsaved template -->
+<nz-modal [(nzVisible)]="showQuitModal" nzWrapClassName="vertical-center-modal" [nzContent]="quitContent"
+    [nzTitle]="quitTitle" [nzFooter]="quitFooter" (nzOnCancel)="cancelQuit()">
+    <ng-template #quitTitle>
+        提示
+    </ng-template>
+    <ng-template #quitContent>
+        <div class="modal-content-wrapper">
+            <img src="assets/images/question.mark.svg" />
+            <p class="modal-content">
+                是否需要保存当前模板？
+            </p>
+        </div>
+
+    </ng-template>
+    <ng-template #quitFooter>
+        <button class="modal-butt cancel" (click)="cancelSave()">取 消</button>
+        <button class="modal-butt confirm" (click)="doSave()">确 定</button>
+    </ng-template>
+</nz-modal>
+
+
+<nz-modal [(nzVisible)]="isShowNoFilming" nzWrapClassName="vertical-center-modal" [nzContent]="exitContent"
+    [nzFooter]="exitFooter" (nzOnCancel)="closeShowNoFilming()" [nzCancelDisabled]=true>
+    <ng-template #exitContent>
+        <div class="modal-content-wrapper">
+            <img src="assets/images/question.mark.svg" />
+            <p class="modal-content">
+                他人正在使用该病例打印功能，您暂时无法使用。
+            </p>
+        </div>
+    </ng-template>
+    <ng-template #exitFooter>
+        <button class="modal-butt confirm" (click)="closeShowNoFilming()">确 定</button>
+    </ng-template>
+</nz-modal>

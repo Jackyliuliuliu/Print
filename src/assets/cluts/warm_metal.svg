@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Warm Metal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#000302" offset="0%"></stop>
+            <stop stop-color="#044040" offset="10.9714288%"></stop>
+            <stop stop-color="#017B76" offset="27.2858896%"></stop>
+            <stop stop-color="#3F3FC3" offset="42.7827%"></stop>
+            <stop stop-color="#A51DBD" offset="56.8126088%"></stop>
+            <stop stop-color="#FD8906" offset="73.1201172%"></stop>
+            <stop stop-color="#E1A126" offset="87.0690918%"></stop>
+            <stop stop-color="#FFFBF5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="7" y="7" width="24" height="24"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Warm-Metal">
+            <g>
+                <g id="Perfusion-Copy" transform="translate(19.000000, 19.000000) scale(-1, 1) translate(-19.000000, -19.000000) ">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" x="7.5" y="7.5" width="23" height="23"></rect>
+                </g>
+                <rect id="Rectangle-Copy-3" x="0" y="0" width="38" height="38"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

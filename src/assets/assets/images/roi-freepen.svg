@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Path-2">
+            <path d="M10.4882812,29.5576172 C16.5483398,29.7148437 15.340332,22.3500977 19.5458984,22.3291016 C23.7514648,22.3081055 22.8540039,29.8632812 29.3774414,30.0166016" stroke="#EEEEEE"></path>
+            <path d="M12.8930664,26.4287109 C12.8930664,26.4287109 8.07421875,25.9331055 8.07421875,21.9160156 C8.07421875,17.8989258 12.40625,17.3427734 12.40625,17.3427734" id="Path-3" stroke="#EEEEEE"></path>
+            <g id="Rectangle-7" transform="translate(17.500000, 16.500000) rotate(30.000000) translate(-17.500000, -16.500000) translate(15.000000, 8.000000)">
+                <polygon fill="#61A5BE" points="0 5 5 5 5 13 2.48458862 17.3016357 0 13"></polygon>
+                <polygon id="Rectangle" fill="#EEEEEE" points="1 13 4 13 2.54443359 16.029541"></polygon>
+                <rect id="Rectangle-8" fill="#61A5BE" x="0" y="3" width="5" height="1"></rect>
+                <rect id="Rectangle-8" fill="#61A5BE" x="0" y="0" width="5" height="2" rx="1"></rect>
+            </g>
+            <path d="M22.1640625,17.3105469 L24.328125,17.4033203 C24.328125,17.4033203 30.8188477,21.4399414 30.4482422,23.5517578 C30.0776367,25.6635742 26.3256836,24.6401367 26.3256836,24.6401367" id="Path-4" stroke="#EEEEEE"></path>
+        </g>
+    </g>
+</svg>

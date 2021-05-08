@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.batch.save series</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon.batch.save-series" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-9-Copy">
+            <rect id="Rectangle-1000" x="0" y="0" width="38" height="38"></rect>
+            <g id="Group-13" transform="translate(7.000000, 5.000000)">
+                <path d="M26,16 L26,26 L24,26 L14,26 L12,26 L12,12 L14,12 L14,15 L22,15 L22,12 L23,12 L26,16 Z M14,17 L14,24 L24,24 L24,17 L14,17 Z M15,18 L23,18 L23,19 L15,19 L15,18 Z M16,13 L20,13 L20,14 L16,14 L16,13 Z M15,20 L23,20 L23,21 L15,21 L15,20 Z M15,22 L23,22 L23,23 L15,23 L15,22 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <path d="M2.64686893,22.6460243 L7.5,2.97597261 L7.5,1.20710678 L0.5,8.20710678 L0.5,24.7928932 L2.64686893,22.6460243 Z" id="Rectangle-692" stroke="#FFFFFF"></path>
+                <path d="M6.63334762,22.6595456 L11.5,2.94737021 L11.5,1.20710678 L4.5,8.20710678 L4.5,24.7928932 L6.63334762,22.6595456 Z" id="Rectangle-692" stroke="#FFFFFF"></path>
+                <path d="M10.6011771,22.6917161 L15.5,10.9260675 L15.5,1.20710678 L8.5,8.20710678 L8.5,24.7928932 L10.6011771,22.6917161 Z" id="Rectangle-692" stroke="#FFFFFF"></path>
+                <path d="M5.5,5.5 L2.5,8.5" id="Line" stroke="#62A5BE" stroke-linecap="square"></path>
+                <path d="M9.5,5.5 L6.5,8.5" id="Line-Copy" stroke="#62A5BE" stroke-linecap="square"></path>
+                <path d="M2.5,8.5 L2.5,20.5" id="Line" stroke="#62A5BE" stroke-linecap="square"></path>
+                <path d="M6.5,8.5 L6.5,20.5" id="Line-Copy-2" stroke="#62A5BE" stroke-linecap="square"></path>
+                <path d="M10.5,9.5 L10.5,20.5" id="Line-Copy-4" stroke="#62A5BE" stroke-linecap="square"></path>
+                <polygon id="Rectangle-16-Copy" fill="#62A5BE" points="10 9.01845401 14 5.03637695 14 9.95040092 10 14.0463772"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

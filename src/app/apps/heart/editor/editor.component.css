@@ -1,0 +1,76 @@
+.m10_r {
+  margin-right: 10px !important;
+}
+
+.m20_l {
+  margin-left: 20px;
+}
+
+.m20_r {
+  margin-right: 20px;
+}
+
+.butt {
+    background: transparent;
+    border: none;
+    /* box-shadow: none !important; */
+    padding: 0px;
+    cursor: pointer;
+    color: white;
+  }
+.editorButt {
+  width: 40px;
+  height: 40px;
+  margin: 2px 0 16px;
+}
+.editorButt:hover {
+  background: #000000;
+}
+
+.modal-butt {
+  padding: 0 36px;
+  height: 36px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.butt-img {
+  width: 40px;
+  height: 40px;
+}
+
+.close-butt{
+  width: 10px;
+  height: 10px;
+}
+
+.modal-butt.confirm {
+  background: #337CFF;
+  border: 0 solid rgba(255, 255, 255, 0.30);
+}
+
+.modal-butt.cancel {
+  background: #5C6066;
+  border: 0 solid rgba(255, 255, 255, 0.30);
+}
+
+.selected {
+  background: #000000;
+}
+
+.rename_label{
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  line-height: 45px;
+  padding: 0 10px;
+}
+
+.rename_select{
+  margin: 8px 0px 20px;
+  width: 106px;
+}

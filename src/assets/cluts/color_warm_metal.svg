@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="20px" viewBox="0 0 80 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Warm Metal 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#000302" offset="0%"></stop>
+            <stop stop-color="#044040" offset="10.9714288%"></stop>
+            <stop stop-color="#017B76" offset="27.2858896%"></stop>
+            <stop stop-color="#3F3FC3" offset="42.7827%"></stop>
+            <stop stop-color="#A51DBD" offset="56.8126088%"></stop>
+            <stop stop-color="#FD8906" offset="73.1201172%"></stop>
+            <stop stop-color="#E1A126" offset="87.0690918%"></stop>
+            <stop stop-color="#FFFBF5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.3d" transform="translate(-312.000000, -1905.000000)" fill="url(#linearGradient-1)">
+            <rect id="Warm-Metal-2" transform="translate(352.000000, 1915.000000) scale(-1, 1) translate(-352.000000, -1915.000000) " x="312" y="1905" width="80" height="20"></rect>
+        </g>
+    </g>
+</svg>

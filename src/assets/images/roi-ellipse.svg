@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Path-1">
+            <path d="M12.4882812,28.5576172 C18.5483398,28.7148437 17.340332,21.3500977 21.5458984,21.3291016 C25.7514648,21.3081055 24.8540039,28.8632812 31.3774414,29.0166016" id="Path-2" stroke="#EEEEEE"></path>
+            <path d="M14,26.3344887 C10.4853801,24.940911 8,21.5107013 8,17.5 C8,12.2532949 12.2532949,8 17.5,8 C22.7467051,8 27,12.2532949 27,17.5 C27,18.7360038 26.7639566,19.9168768 26.3344887,21 L25.2482607,21 C25.7311656,19.9326322 26,18.7477109 26,17.5 C26,12.8055796 22.1944204,9 17.5,9 C12.8055796,9 9,12.8055796 9,17.5 C9,20.9467095 11.0514749,23.9142713 14,25.2482607 L14,26.3344887 Z" id="Combined-Shape" fill="#EEEEEE"></path>
+            <rect id="Rectangle-9" fill="#61A5BE" x="7" y="16" width="3" height="3"></rect>
+            <rect id="Rectangle-9" fill="#61A5BE" x="25" y="16" width="3" height="3"></rect>
+        </g>
+    </g>
+</svg>

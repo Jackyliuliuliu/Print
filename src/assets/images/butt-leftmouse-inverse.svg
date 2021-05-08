@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon/light/contrast</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/light/contrast" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-opacity="0" fill="#BCE6FF" x="0" y="0" width="48" height="48"></rect>
+        <path d="M24,14 C29.5228475,14 34,18.4771525 34,24 C34,29.5228475 29.5228475,34 24,34 C18.4771525,34 14,29.5228475 14,24 C14,18.4771525 18.4771525,14 24,14 Z M24,15 C19.0294373,15 15,19.0294373 15,24 C15,28.9705627 19.0294373,33 24,33 C28.9705627,33 33,28.9705627 33,24 C33,19.0294373 28.9705627,15 24,15 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        <path d="M24,32 C19.581722,32 16,28.418278 16,24 C16,19.581722 19.581722,16 24,16 L24,32 Z" id="Oval" fill="#82B1FF"></path>
+    </g>
+</svg>

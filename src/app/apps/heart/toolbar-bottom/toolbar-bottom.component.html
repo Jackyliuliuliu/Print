@@ -1,0 +1,12 @@
+
+<div class="toolbar-bottom-region">
+
+    <label class="highlight-text m10_r m10_l">显示：</label>
+
+    <label nz-checkbox [(ngModel)]="checkOptionsAll"  (ngModelChange)="updateAllChecked()" [nzIndeterminate]="indeterminate" [ngClass]="'highlight-text m10_r'">全部</label>
+
+    <nz-checkbox-group [(ngModel)]="checkOptionsOne" (ngModelChange)="updateSingleChecked()" [ngClass]="'highlight-text'"></nz-checkbox-group>
+
+</div>
+
+

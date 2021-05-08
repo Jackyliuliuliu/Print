@@ -1,0 +1,369 @@
+<!-- usage region -->
+<nz-modal appMovableModalDirective [(nzVisible)]="isShowUsage" [nzTitle]="usageTitle" [nzContent]="usageContent" nzWidth='680px' 
+ nzHeight='1200px' [nzFooter]="usageFooter" (nzOnCancel)="closeUsage()" nzWrapClassName="vertical-center-modal">
+    <ng-template #usageTitle>
+        使用说明（F2）
+    </ng-template>
+
+    <ng-template #usageContent >
+        <div class="container-content-stent1">
+            <nz-collapse [nzBordered]="false">
+                <div class="container-content-stent">
+                    <div class="stent-table-header">
+                        <span class="stent-item-column1">快捷操作</span>
+                    </div>
+                    <div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field">
+                                    <img src="assets/images/icon_light_move.svg" class="help_icon">
+                                </div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>图像平移</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>同时按住鼠标双键移动</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field">
+                                    <img src="assets/images/icon_light_check.svg" class="help_icon">
+                                </div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>快速翻阅图像（MPR）或旋转图像（VR\CPR\SCPR）</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>按住鼠标左键移动</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field">
+                                    <img src="assets/images/icon_light_zoom_1.svg" class="help_icon">
+                                </div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>图像缩放</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>按住鼠标右键移动</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field">
+                                    
+                                </div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>调节窗宽窗位</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>按住鼠标中键移动</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field"></div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>图像翻页（MPR）或切换定位（CPR\SCPR）</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>滚动鼠标中键</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field"></div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>图像放大</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>双击图像框</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field"></div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>显示/隐藏MPR十字线</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>C</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field"></div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>显示/隐藏所有图元</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>D</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field"></div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>使用说明</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>F2</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field"></div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>切换血管段</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>选中VR图滚动鼠标中键</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field"></div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>切换血管段</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>选中CPR图按空格键</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field"></div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>切换血管段</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>在VR上按住Crtl键同时左键点击血管</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stent-item">
+                            <div class="stent-item-column0">
+                                <div class="stent-item-field"></div>
+                            </div>
+                            <div class="stent-item-column1">
+                                <div class="stent-item-field">
+                                    <label>滑动定位横线</label>
+                                </div>
+                            </div>
+                            <div class="stent-item-column2">
+                                <div class="stent-item-field">
+                                    <label>选中CPR/SCPR滚动鼠标中键</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stent-table-header">
+                        <span class="stent-item-column1">常用功能</span>
+                    </div>
+                    <div class="stent-item">
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/icon_light_PAlist.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>显示/隐藏检查列表</label>
+                            </div>
+                        </div>
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/icon_light_windowing_pre.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>切换窗</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stent-item">
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/icon_light_windowing_re.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>恢复窗宽窗位</label>
+                            </div>
+                        </div>
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/icon_light_reset.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>适应窗口显示</label>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="stent-item">
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/icon_light_length.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>长度测量</label>
+                            </div>
+                        </div>
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/icon_light_re_ai_result.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>一键恢复AI结果</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stent-item">
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/icon_light_stenosis.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>标记狭窄</label>
+                            </div>
+                        </div>
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/icon_light_biaojizhijia.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>标记支架/心肌桥</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stent-item">
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/icon_light_fasongdaojiaopian.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>保存当前选中影像</label>
+                            </div>
+                        </div>
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/icon_light_preview.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>保存序列预览</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stent-item">
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/viewer-help.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>使用说明</label>
+                            </div>
+                        </div>
+                        <div class="stent-item-column0">
+                            <div class="stent-item-field">
+                                <img src="assets/images/icon_light_edit.svg" class="help_icon">
+                            </div>
+                        </div>
+                        <div class="stent-item-column3">
+                            <div class="stent-item-field">
+                                <label>编辑图像</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </nz-collapse>
+        </div>
+   
+    </ng-template>
+
+    <ng-template #usageFooter>
+        <button class="btn-bottom" (click)="closeUsage()">确定</button>
+    </ng-template>
+</nz-modal>

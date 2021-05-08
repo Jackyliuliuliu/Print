@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.tool.3d rotate</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.tool.3d-rotate">
+            <path d="M10.2545405,21.5728448 C11.1798681,25.265387 14.5205825,28 18.5,28 C22.4794175,28 25.8201319,25.265387 26.7454595,21.5728448 C24.8225575,23.6602506 21.8438126,25 18.5,25 C15.1561874,25 12.1774425,23.6602506 10.2545405,21.5728448 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            <path d="M18.4952172,11.0000013 C14.6642729,11.0021108 11.4260726,13.5385742 10.3663741,17.0236338 C10.3156719,17.1903794 10.593527,18.7050315 11.8624376,19.8095186 C13.1313482,20.9140056 15.9796271,21.9709222 18.5,21.9709222 C21.2622866,21.9709222 24.1418863,20.6385314 25.5771274,19.1867202 C26.581034,18.1712234 26.604659,16.9249807 26.5516959,16.7687929 C25.4141494,13.4141765 22.2390053,11 18.5,11 C19.6944801,11.0002703 20.6633333,11.5817488 20.6633333,12.299 C20.6633333,13.0164179 19.6940298,13.598 18.4983333,13.598 C17.3026368,13.598 16.3333333,13.0164179 16.3333333,12.299 C16.3333333,11.5822054 17.3009532,11.0010107 18.4952172,11.0000013 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            <rect id="Rectangle" fill="#FFFFFF" x="18" y="29" width="1" height="2"></rect>
+            <rect id="Rectangle-Copy" fill="#FFFFFF" x="18" y="8" width="1" height="2"></rect>
+            <rect id="Rectangle-Copy-2" fill="#FFFFFF" x="18" y="11" width="1" height="2"></rect>
+            <path d="M8.5,16.5 C9.81404622,21.1715495 13.1958008,23.5073242 18.6452637,23.5073242 C20.3370742,23.5073242 22.663208,23.3005371 25.5650635,21.0582275 C27.4996338,19.5633545 28.477946,17.710612 28.5,15.5" id="Line" stroke="#62A5BE" stroke-linecap="square"></path>
+            <polygon id="Triangle" fill="#62A5BE" points="28.5 13 31 16 26 16"></polygon>
+        </g>
+    </g>
+</svg>

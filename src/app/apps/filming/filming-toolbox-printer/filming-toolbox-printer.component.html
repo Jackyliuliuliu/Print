@@ -1,0 +1,49 @@
+<div>
+    <div class="CDIC-Div-0402">
+        <div class="CDIC-Label-0326">胶片大小</div>
+        <nz-select [(ngModel)]="selectedSize" class="CDIC-Select-0401"  [nzSuffixIcon]="suffixIconTemplateInfo" (ngModelChange)="filmSizeModelChange($event)">
+            <nz-option  *ngFor="let f of filmSizeItems" [nzValue]="f" [nzLabel]="f"></nz-option>
+        </nz-select>
+    </div>
+    <div class="CDIC-Div-0402">
+        <div class="CDIC-Label-0326">打印数量</div>
+        <nz-input-group [nzSuffix]="suffixIcon" style="width: 218px;">
+            <input type="text" [(ngModel)]="printNum"  nz-input class="CDIC-Input-0401"/>
+        </nz-input-group>
+        <ng-template #suffixIcon>
+            <div style="width: 22px;line-height: 0;">
+                <span (click)="increase($event)" class="CDIC-span-0402" style="line-height: 0;">
+                    <i nz-icon nzType="caret-up" style="font-size: 12px"></i>
+                </span>
+                <span (click)="decrease($event)" class="CDIC-span-0402" style="line-height: 0;">
+                    <i nz-icon nzType="caret-down" style="font-size: 12px"></i>
+                </span>
+            </div>
+        </ng-template>
+    </div>
+    <div class="CDIC-Div-0402">
+        <div class="CDIC-Label-0326" style="width: 56px;">打印机</div>
+        <nz-select [(ngModel)]="selectedPrinter" class="CDIC-Select-0401"  (ngModelChange)="printerChange($event)" [nzSuffixIcon]="suffixIconTemplateInfo">
+            <nz-option *ngFor="let p of printers" [nzValue]="p" [nzLabel]="p"></nz-option>
+        </nz-select>
+        <ng-template #suffixIconTemplateInfo><i nz-icon nzType="caret-down" style="color: #AAAAAA;"></i></ng-template>
+    </div>
+    <div style="margin-bottom:25px">
+        <div  class="CDIC-Label-0326" style="width: 56px;">打印模式</div>
+        <nz-select [(ngModel)]="selectePrintdModel" class="CDIC-Select-0401" [nzSuffixIcon]="suffixIconTemplateInfo">
+            <nz-option *ngFor="let model of printModel" [nzValue]="model" [nzLabel]="model | printModelPipe"></nz-option>
+        </nz-select>
+        <ng-template #suffixIconTemplateInfo><i nz-icon nzType="caret-down" style="color: #AAAAAA;"></i></ng-template>
+    </div>
+    <div style="text-align: center">
+        <div>
+            <button [class.disable]="isButtonDisable" class="CDIC-Button-0326" style="background: #337CFF;cursor: pointer;"
+                (click)="printAll()">打印全部</button>
+        </div>
+        <div>
+            <button [class.disable]="isButtonDisable" class="CDIC-Button-0326" style="background: #5C6066; cursor: pointer;"
+                (click)="printCurrentPage()">打印当前页</button>
+        </div>
+    </div>
+     
+</div>

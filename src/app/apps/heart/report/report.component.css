@@ -1,0 +1,106 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #0D0F1A;
+  padding: 0 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .statement {
+    color: gray;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    text-align: center;
+} */
+
+.report-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0.625rem;
+}
+
+.report-body {
+  width: 100%;
+  height: calc(100% - 1.875rem);
+  position: relative;
+  outline: none;
+}
+
+.report-foot {
+  width: 100%;
+  height: 1.875rem;
+  font-family: Roboto-Regular;
+  font-size: 0.75rem;
+  color: #888888;
+  text-align: center;
+  line-height: 1.875rem;
+  position: relative;
+}
+
+.report-result-header-text {
+  font-family: MicrosoftYaHei;
+  font-size: 0.875rem;
+  color: #999999;
+  font-weight: bold;
+  line-height: 2.25rem;
+}
+
+.report-btn-group {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: auto;
+}
+
+.result-button {
+  padding: 0 1.625rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  margin-left: 0.625rem;
+  color: white;
+  cursor: pointer;
+  background: #363D4D;
+  border: 0 solid rgba(255,255,255,0.30);
+  border-radius: 0.125rem;
+}
+
+.text-area {
+  background: #141924;
+  border-radius: 0.25rem;
+  overflow: auto;
+  width: 100%;
+  height: 13.125rem;
+  border: 0.0625rem solid transparent;
+  padding: 0.625rem;
+  resize: none;
+  font-family: MicrosoftYaHei;
+  font-size: 0.875rem;
+  color: #E6E6E6;
+  text-align: justify;
+  line-height: 1.75rem;
+  outline: none;
+}
+
+.text-area:focus {
+  border: 0.0625rem solid #40C4FF;
+  box-shadow: inset 0 -0.0625rem 0 0 #17191A;
+}
+
+.refresh-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.refresh-img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.copy-alert {
+  margin-left: 0.625rem;
+  color: #6a6b6c;
+  line-height: 2.25rem;
+}

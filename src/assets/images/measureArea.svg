@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #000000;">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>icon/length备份 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/length备份-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#000000" x="0" y="0" width="40" height="40"></rect>
+        <path d="M15,28 L12,28 L11,28 L11,11 L12,11 L18.7928932,11 L19,10.7928932 L19.2071068,11 L22.7928932,11 L23,10.7928932 L23.2071068,11 L24,11 L25,11 L25,19.8029184 L25.2066868,20.0243685 L25,20.2172762 L25,21 L22.6957756,21 L24,19.7827238 L24,15.7071068 L18.7071068,21 L17.2928932,21 L24,14.2928932 L24,12 L23.2071068,12 L12.25,22.9571068 L12,22.7071068 L12,26.2928932 L15,23.2928932 L15,24.7071068 L12.7071068,27 L15,27 L15,28 Z M12,15.7055957 L12,17.7928932 L17.7928932,12 L14.7172675,12 L15.2071052,12.4877419 L12.0015159,15.7071052 L12,15.7055957 Z M12,14.2913724 L14.2815688,12 L12,12 L12,14.2913724 Z M12,18.7071068 L12,21.7928932 L21.7928932,12 L19.2071068,12 L12.25,18.9571068 L12,18.7071068 Z" id="形状结合" fill="#4595E6" fill-rule="nonzero"></path>
+        <text id="m" font-family="PingFangSC-Medium, PingFang SC" font-size="16" font-weight="400" fill="#FFFFFF">
+            <tspan x="15" y="30">m</tspan>
+        </text>
+        <text id="2" font-family="PingFangSC-Medium, PingFang SC" font-size="8" font-weight="400" fill="#FFFFFF">
+            <tspan x="29" y="24">2</tspan>
+        </text>
+    </g>
+</svg>

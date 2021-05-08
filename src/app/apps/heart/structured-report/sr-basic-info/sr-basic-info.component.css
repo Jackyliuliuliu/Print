@@ -1,0 +1,43 @@
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text {
+    background: white;
+    color: black;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+
+.four-col-1 {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.four-col-2 {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.four-col-3 {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.four-col-4 {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.region-title {
+    background: rgb(194, 188, 188);
+    color: black;
+    font-weight: 10;
+    font-size: 14px;
+    line-height: 28px;
+    margin: 10px 0;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>icon/light/move</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/light/move" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill-opacity="0" fill="#BCE6FF" x="0" y="0" width="48" height="48"></rect>
+        <path d="M30.3858541,16.168971 L31.0929608,16.8760777 L24.020971,23.9467184 L31.0929608,31.0182134 L30.3858541,31.7253202 L23.313971,24.6537184 L16.3933537,31.5756849 L16.0942235,31.5758252 L15.5366117,31.0182134 L22.607971,23.9477184 L16.2437184,17.5831845 L16.9508252,16.8760777 L23.314971,23.2407184 L30.3858541,16.168971 Z" id="Combined-Shape" fill="#82B1FF" transform="translate(23.947146, 23.947146) rotate(-315.000000) translate(-23.947146, -23.947146) "></path>
+        <path d="M15,27.02 L19.98,32 L15,32 L15,27.02 Z M32,27.02 L32,32 L27.019,32 L32,27.02 Z M32,15 L32,19.98 L27.02,15 L32,15 Z M19.98,15 L15,19.979 L15,15 L19.98,15 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(23.500000, 23.500000) rotate(-315.000000) translate(-23.500000, -23.500000) "></path>
+    </g>
+</svg>

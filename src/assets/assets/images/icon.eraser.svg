@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.eraser</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M30.0798474,9.0546875 C30.3216661,9.7015625 30.2249386,10.446875 29.8259377,10.98125 L18.9924574,25.38125 C18.7022749,25.775 18.2790921,26 17.8317274,26 L8.54588717,26 C7.94134028,26 7.38515715,25.5921875 7.13124745,24.9453125 C6.8894287,24.2984375 6.9861562,23.553125 7.38515715,23.01875 L18.2186374,8.61875 C18.5088199,8.225 18.9320027,8 19.3793674,8 L28.6652077,8 C29.2697545,8 29.8259377,8.4078125 30.0798474,9.0546875 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.eraser">
+            <g id="bg">
+                <rect x="0" y="0" width="38" height="38"></rect>
+            </g>
+            <g id="eraser---FontAwesome">
+                <use fill-opacity="0.2" fill="#EEEEEE" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use fill="black" fill-opacity="1" xlink:href="#path-1"></use>
+            </g>
+            <polygon id="Path" fill="#EEEEEE" points="17.5234689 23.9732486 21.3087735 19 12.7853046 19 9 23.9732486"></polygon>
+            <rect id="Rectangle-85" fill="#61A5BE" x="6" y="29" width="24" height="2" rx="1"></rect>
+        </g>
+    </g>
+</svg>

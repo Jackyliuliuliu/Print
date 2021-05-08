@@ -1,0 +1,32 @@
+.toolbar-bottom-region {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.3125rem 0;
+  background: #1F2430;
+  box-shadow: inset 0 0.0625rem 0 0 #17191A;
+}
+
+.highlight-text {
+  color: #e6e6e6;
+  font-family: MicrosoftYaHei;
+  font-size: 0.875rem;
+  text-align: left;
+  line-height: 1.375rem;
+}
+
+::ng-deep .ant-checkbox-group-item+.ant-checkbox-group-item,
+::ng-deep .ant-checkbox-group-item{
+    margin-right: 0.625rem;
+}
+::ng-deep .ant-checkbox+span{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+::ng-deep .ant-checkbox-group{
+  display: flex;
+  flex-direction: row;
+}

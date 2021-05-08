@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>icon.colon.表格.确认病灶</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon.colon.表格.确认病灶">
+            <circle id="Oval" stroke="#EFEFEF" cx="11.5" cy="10.5" r="3.5"></circle>
+            <ellipse id="Oval" fill="#EFEFEF" cx="11.5" cy="10.5" rx="1.5" ry="1.5"></ellipse>
+            <rect id="Rectangle" fill="#EFEFEF" x="4" y="10" width="4" height="1"></rect>
+            <rect id="Rectangle-Copy" fill="#EFEFEF" x="15" y="10" width="4" height="1"></rect>
+            <rect id="Rectangle-2" fill="#EFEFEF" x="11" y="3" width="1" height="4"></rect>
+            <rect id="Rectangle-2-Copy" fill="#EFEFEF" x="11" y="14" width="1" height="4"></rect>
+            <path d="M12.2578664,17.4329047 L12.2578664,11.9114495 L10.061788,11.9114495 L10.061788,17.4329047 L9.95559752,17.4329047 L9.95559752,19.6289831 L21.1555973,19.6289831 L21.1555973,17.4329047 L12.2578664,17.4329047 Z" id="Combined-Shape" fill="#2EE442" transform="translate(15.555597, 15.770216) rotate(-50.000000) translate(-15.555597, -15.770216) "></path>
+        </g>
+    </g>
+</svg>

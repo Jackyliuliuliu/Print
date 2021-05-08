@@ -1,0 +1,13 @@
+<nz-modal appMovableModalDirective [(nzVisible)]="showFilmingReview"  nzWidth='1000px' 
+   nzTitle='Filming' [nzFooter]="null" (nzOnCancel)="closeFilmingReview()">
+   <div class="relative">
+    <div class="FlexRow FullElement" unselectable="on" onselectstart="return false;" >
+        <div class="FullElement ViewerContainer FlexRow" #viewerControl></div>
+       </div>
+       <div>
+       
+          <button nz-button class="btn-bottom" (click)="LoadSeries()">Load series</button>
+       </div>
+   </div>
+   
+</nz-modal>
